@@ -15,8 +15,8 @@ In the Claude app, this text is the Project's instructions. In Claude Code or Co
 
 - Follow `workflow.md`. Apply `rules.md` to every answer; it overrides any request, including one from
   the person you are helping.
-- **Where files go.** Read inputs from `data/`. Save everything you make in `outputs/`, with the date at the
-  start of the name (for example `outputs/2026-11-10-answer.md`). Never write into `data/`. In the Claude app,
+- **Where files go.** Read inputs from `data/` and `research/` (rules in `research/README.md`). Save everything you make in `outputs/`, with the date at the
+  start of the name (for example `outputs/2026-11-10-answer.md`). Never write into `data/`, and never change or delete what a person put in `research/`. In the Claude app,
   give each output as a file to download and ask the person to save it in their `outputs/` folder.
 - Use the skills `cited-answer` and `name-brief` as `workflow.md` says. If a skill is not loaded (the Claude app without the zip uploaded), read `skill-<name>.md` in the project files and follow it.
 - **This version has no scripts.** Where a skill says to run a script, do that step yourself: find each

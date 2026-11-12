@@ -7,3 +7,4 @@ Criteria filled in:     partly (EBITDA definition, EV basis and interest-cover t
 Output wanted:          both (one page + Slack line)
 Who checks:             The trader
 Approved by compliance: No formal approval recorded. Public names and public filings only, per analyst, 2026-11-12
+Restricted research approved: no (broker, vendor transcripts, expert calls, internal notes stay unread until compliance approves in writing)

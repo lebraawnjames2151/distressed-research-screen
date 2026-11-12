@@ -1,0 +1,5 @@
+# Restricted research (broker, vendor, expert, internal) never leaves this machine.
+research/restricted/**
+!research/restricted/.gitkeep
+# Text copies made for quote checks
+research/**/_text/

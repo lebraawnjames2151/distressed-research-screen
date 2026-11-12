@@ -8,8 +8,11 @@ work, with the PM's view and the red flags for each name.
 
 - **When:** a name enters or moves in the pipeline, or someone asks.
 - **Input:** a public name, its public filings in `data/` (annual report, latest quarter, debt documents if
-  public), and `criteria.md`.
+  public), material in `research/` (see step 0), and `criteria.md`.
 - **Steps:**
+  0. **Read the research folder.** Read everything in `research/public/<TICKER>/`. Read `research/restricted/<TICKER>/`
+     only if `my-setup.md` records written compliance approval for that kind of material; otherwise list the
+     files there as "not read: not yet approved". Follow the rules in `research/README.md`.
   1. **Evidence first.** List each fact you will use (debt by tranche, cash, EBITDA, free cash flow,
      maturities, covenants, price) with its document and page. A fact with no page does not go on the page.
   2. **Calculate in code.** Leverage, interest cover, liquidity runway, yield, IRR or breakeven, each with
