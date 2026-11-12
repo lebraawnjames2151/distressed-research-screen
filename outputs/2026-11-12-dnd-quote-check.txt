@@ -1,0 +1,32 @@
+S1   Q1    FOUND      Revenue was $94.9 million, representing a decrease of $13.4 million, or 12.4% (8
+S2   Q1    FOUND      a decrease of $9.6 million, or 17%, from Q1 FY2026
+S2   Q1    FOUND      primarily reflecting a $26.3 million decrease in finance costs, net, to $19.6 mi
+S2   Q1    FOUND      The Company was in compliance with the financial maintenance covenants under its
+S3   Q1    FOUND      Cash flow provided by operating activities 31,316 40,217
+S4   Q1    FOUND      Adjusted EBITDA (2) 46,559 55,099 42,867 50,352
+S4   Q1    FOUND      Net income (loss) (1) (11,076) (19,862) 41,406 (21,790)
+S4   Q1    FOUND      Adjusted EBITDA (2) 50,435 47,744 52,862 64,652
+S5   Q1    FOUND      Cash and cash equivalents 88,951 41,432
+S5   Q1    FOUND      Loans and borrowings, current 27,108 12,435 Convertible debentures 101,330 104,3
+S5   Q1    FOUND      Loans and borrowings 1,194,785 1,167,014
+S5   Q1    FOUND      Goodwill 1,062,401 1,061,531 Total assets 1,819,246 1,795,488
+S5   Q1    FOUND      Intangible assets, net 540,764 568,856
+S5   Q1    FOUND      Property and equipment, net 5,728 6,305
+S5   Q1    FOUND      Lease liabilities, current 4,620 4,868
+S5   Q1    FOUND      Lease liabilities 9,078 8,895
+S6   Q1    FOUND      Current liabilities:
+S7   FY26  FOUND      Cash flow provided by operating activities 65,175 56,815 153,432 148,200
+S8   FY26  FOUND      the Consolidated First Lien Net Leverage (as such term is defined in the senior 
+S9   FY26  FOUND      the Company's internal controls over financial reporting were not effective as a
+S10  Q3    FOUND      Net income (loss) 66,001 (23,449)
+S11  Q3    FOUND      costs related to the delayed filing of the audited consolidated financial statem
+S11  Q3    FOUND      the waiver the Company received under its senior credit agreement in December 20
+S11  Q3    FOUND      Net interest for LTM March 2026 is $110.6 million
+S12  TC    FOUND      Mr. Schulte has been appointed as the Company's interim CEO effective immediatel
+S13  Q3    FOUND      the Consolidated First Lien Net Leverage Ratio (as such term is defined in the s
+S14  SA    FOUND      representing approximately 36% of shares outstanding
+S14  SA    FOUND      customary standstill and voting support agreements with the Company until Septem
+S14  SA    FOUND      The litigation between Plantro and the Company will be dismissed as part of thes
+S15  CEO   FOUND      The Company's previously announced strategic process remains ongoing.
+S16  Q1    FOUND      changes in fair value of convertible debt and derivatives
+NOT FOUND: 0

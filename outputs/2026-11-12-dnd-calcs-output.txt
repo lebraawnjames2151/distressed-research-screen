@@ -1,0 +1,14 @@
+Gross debt (carrying value)        loans current + loans non-current + convertible debentures        1,323,223
+Net debt ex leases                 gross debt - cash                                                 1,234,272
+Net debt incl leases               net debt + lease liabilities                                      1,247,970
+LTM Sep-26 adj EBITDA              Q2 FY26 + Q3 FY26 + Q4 FY26 + Q1 FY27                               194,877
+Net leverage ex leases (x)         net debt / LTM adj EBITDA                                              6.33
+Net leverage incl leases (x)       (net debt + leases) / LTM adj EBITDA                                    6.4
+LTM Mar-26 adj EBITDA              Q4 FY25 + Q1 FY26 + Q2 FY26 + Q3 FY26                               191,398
+Interest cover LTM Mar-26 (x)      LTM Mar-26 adj EBITDA / LTM Mar-26 net interest                        1.73
+LTM Sep-26 operating cash flow     FY26 OCF + Q1 FY27 OCF - Q1 FY26 OCF                                144,531
+Min EV for 60% LTV, all debt       gross debt / 0.60                                                 2,205,372
+  as multiple of LTM EBITDA (x)    (gross debt / 0.60) / LTM adj EBITDA                                  11.32
+Converts as % of cash              convertible debentures / cash                                          114%
+Q1 revenue change                  Q1 FY27 / Q1 FY26 - 1                                                -12.4%
+Q3 FY26 net income restatement     adjusted - originally reported                                      -24,595

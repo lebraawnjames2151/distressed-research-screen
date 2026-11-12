@@ -1,0 +1,1118 @@
+
+Dye & Durham Reports Fourth Quarter and Year End Fiscal 2026 Financial Results - Dye & Durham
+Newsroom
+Financials Quarterly Reports
+Annual Reports
+Governance Governance Overview
+Board of Directors
+Executive Leadership
+More results
+Newsroom
+Financials
+Quarterly Reports
+Annual Reports
+Governance
+Governance Overview
+Board of Directors
+Executive Leadership
+Dye & Durham Reports Fourth Quarter and Year End Fiscal 2026 Financial Results
+Published on September 29, 2026
+TORONTO , Sept. 29, 2026 /CNW/ — Dye & Durham Limited (the “ Company ” or “ Dye & Durham “) (TSX: DND ), a leading provider of cloud-based legal practice management software, today announced that it has reported its financial results for the three and twelve months ended June 30, 2026 (“ Q4 2026 ” and “ Fiscal 2026 “, respectively).
+“Our fourth quarter results demonstrate the progress we are making in reshaping Dye & Durham.” said Todd Schulte, Interim Chief Executive Officer of Dye & Durham. “Excluding the impact of the Credas disposal, revenue returned to growth, and we saw significant improvements in Adjusted EBITDA and Adjusted EBITDA margin, on a period-over-period basis, and the Company generated strong cash flows from operating activities in the quarter. Fiscal 2026 marked the start of a significant transition for Dye & Durham, and our full-year results reflect that. The transition is ongoing: we exited the year with a more focused business, and we have begun bringing our regional operations together under a single, global operating model that will allow us to serve customers more consistently and operate more efficiently. With this, through increased automation, including AI, and further consolidation, we expect to see cost reductions continue. We intend to build on this momentum as the transition continues through fiscal 2027.”
+Fourth Quarter Fiscal 2026 Highlights
+(Comparison periods in each case are the three months ended June 30, 2025)
+Revenue was $104.2 million, representing a decrease of $1.0 million, or 1%. Excluding the impact of the disposal of Credas Technologies Ltd. (“ Credas “) from all periods, revenue increased by $3.5 million, or 4%.
+Net loss was $19.9 million, compared to a net loss of $29.6 million, which reflects certain adjustments related to stock-based compensation expense (recovery) and finance costs that were recorded in Q4 2026 but relate to the three months ended March 31, 2026 (“ Q3 2026 “). See “Q3 2026 Adjustments” below and “Summary of Quarterly Results” in the Company’s Management Discussion & Analysis for Fiscal 2026 (the “ 2026 MD&A “) for details.
+Adjusted EBITDA (1) was $55.1 million, an increase of $7.4 million, or 15%. Excluding the impact of the disposal of Credas from all periods, Adjusted EBITDA (1) increased by $8.5 million, or 18%.
+The Company was in compliance with the financial maintenance covenants under its senior credit agreement as of June 30, 2026. At June 30, 2026, the Company had drawn $28.5 million on the revolving credit facility and the Consolidated First Lien Net Leverage (as such term is defined in the senior credit agreement) ratio was approximately 5.17x.
+Fiscal 2026 Highlights
+(Comparison periods in each case are the twelve months ended June 30, 2025)
+Revenue was $410.7 million, representing a decrease of $30.1 million, or 7%. Excluding the impact of the disposal of Credas from all periods, revenue decreased by $24.6 million, or 6%.
+Net loss was $38.5 million, compared to a net loss of $88.0 million.
+Adjusted EBITDA (1) was $198.8 million, a decrease of $34.1 million, or 15%. Excluding the impact of the disposal of Credas from all periods, Adjusted EBITDA (1) declined by $32.4 million, or 14%.
+Consolidated highlights Selected key metrics:
+|
+| Three months ended June 30,
+| Year ended June 30,
+|
+| 2026
+| 2025
+| 2026
+| 2025
+|
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+| Revenue
+| 104,171
+| 105,173
+| 410,677
+| 440,730
+| Net loss
+| (19,862)
+| (29,552)
+| (38,518)
+| (87,960)
+| Cash flow provided by operating activities
+| 65,175
+| 56,815
+| 153,432
+| 148,200
+| Adjusted EBITDA (1)
+| 55,099
+| 47,744
+| 198,753
+| 232,809
+|
+| 1)
+| Represents a non-IFRS measure. This measure is not a recognized measure under IFRS, does not have a standardized meaning prescribed by IFRS and is therefore unlikely to be comparable to similar measures presented by other companies. For the relevant definition and other relevant information, see the “Non-IFRS Financial Measures” section of this press release.
+Q3 2026 Adjustments
+As disclosed in the 2026 MD&A, net loss for Q4 2026 reflects certain adjustments related to stock-based compensation expense (recovery) and finance costs that were recorded in Q4 2026 but relate to Q3 2026 and have been adjusted as such, including the related tax impacts. Specifically, net loss for Q3 2026 decreased by $32.5 million due to a decrease in stock-based compensation expense (recovery) of $29.9 million and a decrease in finance costs, net of $2.6 million. The adjustment for stock-based compensation, which is a non-cash accounting adjustment, was primarily due to the reversal of an incorrectly recorded stock-based compensation recovery related to certain vested options of former employees that were forfeited or expired. The adjustment for finance costs was due to a remeasurement of the fair value on changes in the credit risk associated with repayment of the Company’s convertible debentures due March 2026 and a settlement loss associated with the repayments made toward the Company’s Term Loan B and Senior Secured 2029 Notes (as such terms are defined in the 2026 MD&A).
+The adjustments reflect technical corrections with no effect on the Company’s financial health or performance. Specifically, the adjustments do not impact the Company’s ongoing cash position, or the Company’s reported revenue, cash flows from operating activities or Adjusted EBITDA for Q3 2026.
+The tables set out under “Q3 2026 Adjustments” below present the relevant line items in the Company’s Statements of Financial Position and Statement of Comprehensive Income (Loss) for Q3 2026 as reported and as adjusted to account for the above noted adjustments.
+As disclosed in the 2026 MD&A, in connection with the adjustments, the Company’s CEO and CFO concluded that the Company’s internal controls over financial reporting were not effective as at June 30, 2026 due to a material weakness. As these adjustments relate to Q3 2026, the Company has determined that the same material weakness existed as at March 31, 2026. Please see the 2026 MD&A for further details on the material weakness and remediation steps in respect thereof.
+Conference Call Notification
+The Company will hold a conference call to discuss its business on Wednesday, September 30, 2026, at 4:30 p.m. ET hosted by senior management. A question-and-answer session will follow the corporate update.
+| DATE:
+| Wednesday, September 30, 2026
+| TIME:
+| 4:30 p.m. ET
+| RAPIDCONNECT:
+| To instantly join the conference call by phone, please use the following URL to easily register and be connected into the conference call automatically: https://emportal.ink/4rB2LJp
+| TRADITIONAL DIAL-IN NUMBER (TOLL FREE):
+| 1-888-699-1199
+| GTA DIAL-IN:
+| 1-416-945-7677
+| WEBCAST URL:
+| https://app.webinar.net/NbXyqPzoge2
+| Please dial-in at least five minutes before the call begins.
+| REPLAY AVAILABLE UNTIL:
+| OCTOBER 7, 2026
+| TAPED REPLAY (TOLL FREE):
+| 1-888-660-6345
+| GTA DIAL-IN:
+| (+1) 289 819 1450
+| REPLAY CODE:
+| 96834 #
+ABOUT DYE & DURHAM LIMITED
+Dye & Durham Limited provides premier practice management solutions empowering legal professionals every day, delivers vital data insights to support critical corporate transactions and enables the essential payments infrastructure trusted by government and financial institutions. The Company has operations in Canada, the United Kingdom, Ireland, Australia, and South Africa.
+Additional information can be found at www.dyedurham.com .
+Non-IFRS Measures
+This press release makes reference to Adjusted EBITDA and Segment Adjusted EBITDA, which are non-IFRS measures. These measures are not recognized measures under IFRS, do not have standardized meanings prescribed by IFRS and are therefore unlikely to be comparable to similar measures presented by other companies.
+Rather, these measures are provided as additional information to complement those IFRS measures by providing further understanding of the Company’s results of operations from management’s perspective and to discuss Dye & Durham’s financial outlook. The Company’s definitions of non-IFRS measures may not be the same as the definitions for such measures used by other companies in their reporting. Non-IFRS measures have limitations as analytical tools. Accordingly, these measures should not be considered in isolation nor as a substitute for analysis of Dye & Durham’s financial information reported under IFRS. The Company uses non-IFRS financial measures, namely, “Adjusted EBITDA” and “Segment Adjusted EBITDA”, to provide investors with supplemental measures of its operating performance and to eliminate items that have less bearing on operating performance or operating conditions and thus highlight trends in its core business that may not otherwise be apparent when relying solely on IFRS financial measures. Specifically, the Company believes that the aforementioned non-IFRS financial measures, when viewed with the Company’s results under IFRS and the accompanying reconciliations, provide useful information about the Company’s business without regard to potential distortions. By eliminating potential differences in results of operations between periods caused by factors such as depreciation and amortization methods and acquisition, restructuring, impairment, gain on disposal of subsidiary and other charges such as acquisition and reorganization related expenses, integration expenses and corporate cost allocations, the Company believes that the non-IFRS financial measures included herein can provide a useful additional basis for comparing the current performance of the underlying operations being evaluated. The Company believes that securities analysts, investors, and other interested parties frequently use non-IFRS financial measures in the evaluation of issuers. The Company’s management also uses non-IFRS financial measures in order to facilitate operating performance comparisons from period to period. Please see “Cautionary Note Regarding Non-IFRS Measures” and “Select Information and Reconciliation of Non-IFRS Measures” in the Company’s most recent Management’s Discussion and Analysis, which is available on the Company’s profile on SEDAR+ at www.sedarplus.ca , for further details, including reconciliations of Adjusted EBITDA and Segment Adjusted EBITDA to their most directly comparable IFRS measures, which information is incorporated by reference herein.
+Below are the Company’s definitions of the non-IFRS measures used herein:
+“ Adjusted EBITDA ” adjusts net loss by adding back finance costs, amortization, depreciation and impairment costs, income tax expense (recovery), gain on disposal of subsidiary, stock-based compensation expense (recovery), and loss (gain) on contingent receivables, specific transaction-related expenses related to acquisition and reorganization related expenses, integration and operational restructuring costs, and other non-recurring expenses. Operational restructuring costs are incurred as a direct or indirect result of acquisition activities.
+“ Segment Adjusted EBITDA ” is Adjusted EBITDA as defined above and adds back corporate cost allocations. “Segment Adjusted EBITDA” is representative of “Segment (loss) income” noted in the Segment Information footnote of the Financial Statements. “Segment (loss) income after allocated costs” adjusts the “Segment income (loss)” by deducting the corporate cost allocations.
+Forward-looking Statements
+This press release may contain forward-looking information and forward-looking statements within the meaning of applicable securities laws, which reflects the Company’s current expectations regarding future events. All information that is not clearly historical in nature may constitute forward-looking statements. In some cases, but not necessarily in all cases, forward-looking statements can be identified by the use of forward-looking terminology such as “plans”, “targets”, “expects” or “does not expect”, “is expected”, “an opportunity exists”, “is positioned”, “estimates”, “intends”, “assumes”, “anticipates” or “does not anticipate” or “believes”, or variations of such words and phrases or state that certain actions, events or results “may”, “could”, “would”, “might”, “will” or “will be taken”, “occur” or “be achieved”. In addition, any statements that refer to expectations, projections or other characterizations of future events or circumstances contain forward-looking statements.
+Forward-looking statements are not historical facts, nor guarantees or assurances of future performance but instead represent management’s current beliefs, expectations, estimates and projections regarding future events and operating performance. The forward-looking information is based on management’s opinions, estimates and assumptions. While these opinions, estimates and assumptions are considered by Dye & Durham to be appropriate and reasonable in the circumstances as of the date of this press release, they are subject to a number of risks and uncertainties, many of which are beyond Dye & Durham’s control, which could cause actual results and events to differ materially from those that are disclosed in or implied by such forward-looking information. Such risks and uncertainties include, but are not limited to those risk factors discussed in greater detail under the “Risk Factors” section of the Company’s most recent annual information form and under the heading “Risks and Uncertainties” in the Company’s most recent Management’s Discussion and Analysis, which are available under Dye & Durham’s profile on SEDAR+ at www.sedarplus.ca . If any of these risks or uncertainties materialize, or if the opinions, estimates or assumptions underlying the forward-looking information prove incorrect, actual results or future events might vary materially from those anticipated in the forward-looking information.
+There can be no assurance that such information will prove to be accurate, as actual results and future events could differ materially from those anticipated in such information. No forward-looking statement is a guarantee of future results. Accordingly, you should not place undue reliance on forward-looking information, which speaks only as of the date made. The forward-looking information contained in this press release represents Dye & Durham’s expectations as of the date specified herein and are subject to change after such date. The Company disclaims any intention or obligation or undertaking to update or revise any forward-looking information or to publicly announce the results of any revisions to any of those statements for any reason, except as required under applicable securities laws. Comparisons of results for current and any prior periods are not intended to express any future trends or indications of future performance, unless specifically expressed as such, and should only be viewed as historical data.
+Consolidated Results of Operations
+|
+| Three months ended June 30,
+| Year ended June 30,
+|
+| 2026⁽⁷⁾
+| 2025
+| 2026
+| 2025
+|
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+| Revenue
+| 104,171
+| 105,173
+| 410,677
+| 440,730
+|
+|
+|
+|
+|
+| Expenses
+|
+|
+|
+|
+| Direct costs
+| (8,281)
+| (8,807)
+| (33,449)
+| (37,175)
+| Technology and operations
+| (23,264)
+| (27,747)
+| (107,608)
+| (104,995)
+| General and administrative
+| (12,062)
+| (15,798)
+| (49,648)
+| (47,287)
+| Sales and marketing
+| (5,465)
+| (5,077)
+| (21,219)
+| (18,464)
+| Stock-based compensation (expense) recovery
+| 8
+| (1,010)
+| (4,133)
+| 40,995
+| Finance costs, net
+| (34,954)
+| (15,944)
+| (147,879)
+| (132,802)
+| Amortization, depreciation and impairment
+| (33,140)
+| (54,788)
+| (127,617)
+| (177,610)
+| Gain on disposal of subsidiary
+| —
+| —
+| 81,474
+| —
+| Acquisition, restructuring and other costs
+| (10,332)
+| (11,180)
+| (49,713)
+| (70,704)
+| Loss before income taxes
+| (23,319)
+| (35,178)
+| (49,115)
+| (107,312)
+| Income tax recovery
+| [1,385]
+| 5,626
+| 5,818
+| 19,352
+| Net loss
+| [(21,934)]
+| (29,552)
+| (43,297)
+| (87,960)
+|
+|
+|
+|
+|
+| Net (loss) income attributable to:
+|
+|
+|
+|
+| Non-controlling interests
+| (207)
+| (277)
+| 27
+| 86
+| Shareholders
+| [(21,727)]
+| (29,275)
+| (43,324)
+| (88,046)
+|
+| [(21,934)]
+| (29,552)
+| (43,297)
+| (87,960)
+|
+|
+|
+|
+|
+| Net loss per common share
+|
+|
+|
+|
+| Basic
+| (0.32)
+| (0.44)
+| (0.64)
+| (1.31)
+| Diluted
+| (0.32)
+| (0.44)
+| (0.64)
+| (1.31)
+|
+|
+|
+|
+|
+| Weighted average number of shares outstanding
+|
+|
+|
+|
+| Basic
+| 67,182
+| 67,051
+| 67,175
+| 67,051
+| Diluted
+| 67,182
+| 67,051
+| 67,175
+| 67,051
+Adjusted EBITDA (6)
+|
+| Three months ended June 30,
+| Year ended June 30,
+|
+| 2026⁽⁷⁾
+| 2025
+| 2026
+| 2025
+|
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+| Loss for the period
+| [(21,934)]
+| (29,552)
+| (43,297)
+| (87,960)
+| Amortization, depreciation and impairment (1)
+| 33,140
+| 54,788
+| 127,617
+| 177,610
+| Finance costs, net (2)
+| 34,954
+| 15,944
+| 147,879
+| 132,802
+| Income tax recovery
+| [(1,385)]
+| (5,626)
+| (5,818)
+| (19,352)
+| Stock-based compensation recovery (expense) (3)
+| (8)
+| 1,010
+| 4,133
+| (40,995)
+| Acquisition, restructuring and other costs (4)
+| 10,332
+| 11,180
+| 49,713
+| 70,704
+| (Loss) gain on disposal⁽⁵⁾
+| —
+| —
+| (81,474)
+| —
+| Adjusted EBITDA (6)
+| 55,099
+| 47,744
+| 198,753
+| 232,809
+|
+| (1)
+| Depreciation and amortization expense is primarily related to acquired and developed intangible assets, depreciation expense on property, equipment, and right-of-use assets.
+|
+|
+| (2)
+| Finance costs are primarily related to interest expenses incurred on borrowings, changes in fair value of convertible debt and derivatives, lease obligations, net of interest income.
+|
+|
+| (3)
+| Stock-based compensation represents expenditures recognized in connection with stock options issued to employees and directors and cash-settled share appreciation rights issued to directors and other related costs.
+|
+|
+| (4)
+| Acquisition, restructuring, and other costs relates to professional fees and integration costs incurred in connection with acquisition, divestiture, reorganization-related expenses and changes in fair value of contingent consideration. Restructuring expenses mainly represent employee exit costs and severance due to organizational changes, including senior executive severance and are expected to be paid within the next fiscal year. Other costs primarily relate to non-recurring costs, such as legal, advisory and other professional fees associated with the changes in the composition of the Board and the delayed filing of the Company’s audited consolidated financial statements for the fiscal year ended June 30, 2025 and condensed consolidated interim financial statements for the three months ended September 30, 2025, and 2024, and other corresponding documents and the related waiver process.
+|
+|
+| (5)
+| Gain on disposal of Credas, which closed on January 6, 2026.
+|
+|
+| (6)
+| Represents a non-IFRS measure. See the “Non-IFRS Financial Measures” section of this press release and “Cautionary Note Regarding Non-IFRS Measures” and “Consolidated Results of Operations – Adjusted EBITDA” in the 2026 MD&A.
+|
+|
+| (7)
+| The three months ended June 30, 2026 reflects certain adjustments related to stock-based compensation expense (recovery) and finance costs that were recorded in the three months ended June 30, 2026 but relate to the three months ended March 31, 2026 and have been restated as such, including the related tax impacts. See the “Q3 2026 Adjustments” section in this press release and “Summary of Quarterly Results” in the 2026 MD&A.
+Consolidated Statements of Financial Position (Expressed in thousands of Canadian dollars)
+As at:
+|
+| 2026
+| 2025
+|
+|
+|
+|
+| $
+| $
+| Assets
+|
+|
+| Current assets:
+|
+|
+| Cash and cash equivalents
+| 41,432
+| 43,098
+| Trade and other receivables
+| 71,021
+| 88,077
+| Prepaid expenses and other assets
+| 10,226
+| 11,865
+| Restricted investments
+| —
+| 185,000
+| Derivative assets, current
+| 13,981
+| —
+|
+| 136,660
+| 328,040
+| Non-current assets:
+|
+|
+| Prepayment option
+| —
+| 20,947
+| Derivative assets
+| 7,606
+| —
+| Other assets
+| 4,289
+| 3,776
+| Property and equipment, net
+| 6,305
+| 8,111
+| Right-of-use assets, net
+| 10,241
+| 13,872
+| Intangible assets, net
+| 568,856
+| 676,599
+| Goodwill
+| 1,061,531
+| 1,100,171
+| Total assets
+| 1,795,488
+| 2,151,516
+|
+|
+|
+| Liabilities and equity
+|
+|
+| Current liabilities:
+|
+|
+| Accounts payable and accrued liabilities
+| 87,976
+| 78,833
+| Customer advances
+| 18,374
+| 24,888
+| Holdbacks and contingent consideration on acquisitions, current
+| 30,132
+| 36,218
+| Lease liabilities, current
+| 4,868
+| 5,153
+| Loans and borrowings, current
+| 12,435
+| 18,285
+| Convertible debentures
+| 104,396
+| 335,433
+|
+| 258,181
+| 498,810
+| Non-current liabilities:
+|
+|
+| Holdbacks and contingent consideration on acquisitions
+| —
+| 20,637
+| Lease liabilities
+| 8,895
+| 12,452
+| Loans and borrowings
+| 1,167,014
+| 1,233,158
+| Derivative liabilities
+| —
+| 29,268
+| Deferred tax liabilities
+| 78,971
+| 99,641
+| Other liabilities
+| 2,033
+| 2,226
+| Total liabilities
+| 1,515,094
+| 1,896,192
+|
+|
+|
+| Equity
+|
+|
+| Capital stock
+| 824,205
+| 824,113
+| Contributed surplus
+| 53,461
+| 50,116
+| Accumulated other comprehensive income (loss)
+| 53,896
+| (6,286)
+| Deficit
+| (651,682)
+| (613,137)
+| Non-controlling interests
+| 514
+| 518
+|
+| 280,394
+| 255,324
+| Total liabilities and equity
+| 1,795,488
+| 2,151,516
+Segment Results (Expressed in thousands of Canadian dollars)
+|
+|
+|
+|
+|
+|
+|
+| Canada
+| UK & Ireland
+| Australia
+| South Africa
+| Total
+|
+| $
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+|
+| Three months ended June 30, 2026
+|
+|
+|
+|
+|
+| Revenue
+| 65,545
+| 20,848
+| 17,065
+| 713
+| 104,171
+|
+|
+|
+|
+|
+|
+| Income (Loss) before taxes
+| (20,665)
+| (2,840)
+| 452
+| (266)
+| (23,319)
+| Finance costs, net (2)
+| 36,405
+| (587)
+| (585)
+| (279)
+| 34,954
+| Stock-based compensation expense (recovery) 2
+| (8)
+| —
+| —
+| —
+| (8)
+| Amortization, depreciation and impairment
+| 19,803
+| 8,130
+| 4,866
+| 341
+| 33,140
+| Acquisition, restructuring, and other costs
+| 6,655
+| 1,606
+| 2,071
+| —
+| 10,332
+| Corporate cost allocation
+| (2,380)
+| 1,860
+| 1,332
+| (812)
+| —
+| Segment Adjusted EBITDA (1)
+| 39,810
+| 8,169
+| 8,136
+| (1,016)
+| 55,099
+|
+|
+|
+|
+|
+|
+|
+| Canada
+| UK & Ireland
+| Australia
+| South Africa
+| Total
+|
+| $
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+|
+| Three months ended June 30, 2025
+|
+|
+|
+|
+|
+| Revenue
+| 60,316
+| 25,155
+| 18,359
+| 1,343
+| 105,173
+|
+|
+|
+|
+|
+|
+| Income (Loss) before taxes
+| (14,252)
+| (6,706)
+| 192
+| (14,412)
+| (35,178)
+| Finance costs, net
+| (427)
+| 19,454
+| (2,193)
+| (890)
+| 15,944
+| Stock-based compensation expense (recovery)
+| 726
+| 284
+| —
+| —
+| 1,010
+| Amortization, depreciation and impairment
+| 25,445
+| 10,258
+| 4,748
+| 14,337
+| 54,788
+| Acquisition, restructuring, and other costs
+| 21,862
+| (14,042)
+| 3,360
+| —
+| 11,180
+| Corporate cost allocation
+| 1,785
+| (2,096)
+| (150)
+| 461
+| —
+| Segment Adjusted EBITDA (1)
+| 35,139
+| 7,152
+| 5,957
+| (504)
+| 47,744
+|
+|
+|
+|
+|
+|
+|
+| Canada
+| UK & Ireland
+| Australia
+| South Africa
+| Total
+|
+| $
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+|
+| Year ended June 30, 2026
+|
+|
+|
+|
+|
+| Revenue
+| 238,594
+| 94,807
+| 69,051
+| 8,225
+| 410,677
+|
+|
+|
+|
+|
+|
+| Income (Loss) before taxes
+| (120,839)
+| 61,418
+| 10,639
+| (333)
+| (49,115)
+| Finance costs, net
+| 149,446
+| 1,153
+| (2,409)
+| (311)
+| 147,879
+| Stock-based compensation expense (recovery)
+| 4,133
+| —
+| —
+| —
+| 4,133
+| Gain on disposal of subsidiary
+| —
+| (81,474)
+| —
+| —
+| (81,474)
+| Amortization, depreciation and impairment
+| 83,934
+| 30,772
+| 11,602
+| 1,309
+| 127,617
+| Acquisition, restructuring, and other costs
+| 33,129
+| 11,378
+| 4,828
+| 378
+| 49,713
+| Corporate cost allocation
+| (18,077)
+| 10,583
+| 7,081
+| 413
+| —
+| Segment Adjusted EBITDA (1)
+| 131,726
+| 33,830
+| 31,741
+| 1,456
+| 198,753
+|
+|
+|
+|
+|
+|
+|
+| Canada
+| UK & Ireland
+| Australia
+| South Africa
+| Total
+|
+| $
+| $
+| $
+| $
+| $
+|
+|
+|
+|
+|
+|
+| Year ended June 30, 2025
+|
+|
+|
+|
+|
+| Revenue
+| 252,114
+| 109,207
+| 69,704
+| 9,705
+| 440,730
+|
+|
+|
+|
+|
+|
+| Income (Loss) before taxes
+| (57,127)
+| (40,778)
+| 3,645
+| (13,052)
+| (107,312)
+| Finance costs, net
+| 118,903
+| 11,924
+| 2,887
+| (912)
+| 132,802
+| Stock-based compensation expense (recovery)
+| (40,995)
+| —
+| —
+| —
+| (40,995)
+| Amortization, depreciation and impairment
+| 109,700
+| 36,540
+| 14,776
+| 16,594
+| 177,610
+| Acquisition, restructuring, and other costs
+| 42,404
+| 22,643
+| 5,920
+| (263)
+| 70,704
+| Corporate cost allocation
+| (17,806)
+| 9,706
+| 6,429
+| 1,671
+| —
+| Segment Adjusted EBITDA (1)
+| 155,079
+| 40,035
+| 33,657
+| 4,038
+| 232,809
+|
+|
+| (1)
+| Represents a non-IFRS measure. See the “Non-IFRS Financial Measures” section of this press release and “Cautionary Note Regarding Non-IFRS Measures” and “Consolidated Results of Operations – Adjusted EBITDA” in the 2026 MD&A.
+|
+|
+| (2)
+| The three months ended June 30, 2026 reflects certain adjustments related to stock-based compensation expense (recovery) and finance costs that were recorded in the three months ended June 30, 2026 but relate to the three months ended March 31, 2026 and have been restated as such, including the related tax impacts. See the “Q3 2026 Adjustments” section in this press release and “Summary of Quarterly Results” in the 2026 MD&A.
+Summary of Quarterly Results
+| Quarterly results
+| Q4 2026
+| Q3 2026
+| Q2 2026
+| Q1 2026
+| (Expressed in thousands of Canadian dollars except per share data)
+| $
+|
+(Restated) (3) $
+| $
+| $
+|
+|
+|
+|
+|
+| Revenue
+| 104,171
+| 91,180
+| 107,024
+| 108,302
+| Net income (loss) (1)
+| (19,862)
+| 41,406
+| (21,790)
+| (38,272)
+| Adjusted EBITDA (2)
+| 55,099
+| 42,867
+| 50,352
+| 50,435
+|
+|
+|
+|
+|
+| Net loss per common share
+| (0.30)
+| 0.62
+| (0.32)
+| (0.57)
+| Net loss per diluted share
+| (0.30)
+| 0.62
+| (0.32)
+| (0.57)
+|
+|
+|
+|
+|
+| Quarterly results
+| Q4 2025
+| Q3 2025
+| Q2 2025
+| Q1 2025
+| (Expressed in thousands of Canadian dollars except per share data)
+| $
+|
+$
+|
+$
+|
+$
+|
+|
+|
+|
+|
+| Revenue
+| 105,173
+| 103,420
+| 115,746
+| 116,391
+| Net loss (1)
+| (29,552)
+| (23,449)
+| (19,664)
+| (15,295)
+| Adjusted EBITDA (2)
+| 47,744
+| 52,862
+| 64,652
+| 67,551
+|
+|
+|
+|
+|
+| Net loss per common share
+| (0.44)
+| (0.35)
+| (0.30)
+| (0.23)
+| Net loss per diluted share
+| (0.44)
+| (0.35)
+| (0.30)
+| (0.23)
+|
+| (1)
+| Includes income tax expense (recovery).
+|
+|
+| (2)
+| Represents a non-IFRS measure. See the “Non-IFRS Financial Measures” section of this press release and “Cautionary Note Regarding Non-IFRS Measures” and “Consolidated Results of Operations – Adjusted EBITDA” in the 2026 MD&A.
+|
+|
+| (3)
+| Certain comparative figures for Q3 2026 have been adjusted. See below for details.
+Q3 2026 Adjustments Tables
+Condensed Consolidated Interim Statements of Operations (Unaudited) (Expressed in thousands of Canadian dollars and thousands of shares, except per share amounts)
+|
+| As Reported
+Three Months Ended
+March 31,2026
+$
+| As Adjusted
+Three Months Ended
+March 31, 2026
+$
+| As Reported
+Nine months ended
+March 31, 2026
+$
+| As Adjusted
+Nine months ended
+March 31, 2026
+$
+| Stock-based compensation recovery (expense)
+| 29,442
+| (443)
+| 25,744
+| (4,141)
+| Finance costs, net
+| (42,284)
+| (39,701)
+| (115,508)
+| (112,925)
+| Income (loss) before income taxes
+| 64,557
+| 37,255
+| 1,506
+| (25,796)
+| Income tax recovery
+| 1,444
+| 4,151
+| 4,433
+| 7,140
+| Net income (loss)
+|
+66,001
+|
+41,406
+|
+5,939
+|
+(18,656)
+|
+|
+|
+|
+|
+| Net income (loss) attributed to:
+|
+|
+|
+|
+| Shareholders
+| 65,517
+| 40,922
+| 5,705
+| (18,890)
+| Net income (loss) for the period
+| 66,001
+| 41,406
+| 5,939
+| (18,656)
+|
+|
+|
+|
+|
+| Net income (loss) per common share
+|
+|
+|
+|
+| Basic
+| 0.98
+| 0.62
+| 0.08
+| (0.27)
+| Diluted
+| 0.98
+| 0.62
+| 0.08
+| (0.27)
+Condensed Consolidated Interim Statements of Financial Positions (Unaudited) (Expressed in thousands of Canadian dollars)
+|
+| As Reported
+Three Months Ended
+March 31,2026
+$
+| As Adjusted
+Nine months ended
+March 31, 2026
+$
+| Non-current liabilities:
+|
+|
+| Loans and borrowings
+| 1,143,271
+| 1,144,679
+| Deferred tax liabilities
+| 85,743
+| 83,036
+| Total liabilities
+| 1,535,824
+| 1,534,525
+|
+|
+|
+|
+|
+|
+| Equity
+|
+|
+| Contributed surplus
+| 24,555
+| 54,440
+| Accumulated other comprehensive income (loss)
+| 30,220
+| 26,229
+| Deficit
+| (607, 432)
+| (632,027)
+|
+| 272,269
+| 273,568
+SOURCE Dye & Durham Limited
+FOR FURTHER INFORMATION, PLEASE CONTACT: Investor Relations, investors@dyedurham.com, 1378-7421-4692
+Topics:
+News
+Press Releases
+Previous story
+← Dye & Durham Announces Conclusion of Transformation Committee, and Announces Appointment of Interim CEO and New Board Chair
+Next story
+Dye & Durham Announces Support Agreements with Plantro and EdgePoint, Strengthening Governance with New Appointments →
+About Dye & Durham
+Dye & Durham Corporation is a leading provider of legal software and payments and banking infrastructure designed to improve efficiency and increase productivity for the legal and banking sectors.
+Global Headquarters
+1100-25 York Street Toronto, Canada
+Global Headquarters
+Investor Relations
+investors@dyedurham.com
+Investor Relations
+Copyright © 2026 Dye & Durham Corporation
+Terms of Use
+Privacy Notice
+Accessibility
+Cookie Policy
