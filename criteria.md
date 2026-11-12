@@ -19,12 +19,14 @@ A hard limit is a number with a unit; a fail on any hard limit makes the result 
 
 | Criterion | Limit | Unit | Why |
 |---|---|---|---|
-| Net leverage, max (both funds) | 10.0 | times EBITDA (EBITDA definition to confirm) | Set at onboarding |
+| Net leverage, max (both funds) | 10.0 | times EBITDA: company-adjusted less capitalised development/software costs; adjusted shown alongside (default, not yet confirmed) | Set at onboarding |
 | Liquidity runway, min (both funds) | 12 | months; cash plus undrawn revolver against cash burn | Set at onboarding |
-| Loan-to-value, max (CLO) | 60 | % of enterprise value, debt through the loan bought (EV basis to confirm) | Value coverage |
+| Loan-to-value, max (CLO) | 60 | % of enterprise value, debt through the loan bought (EV = equity market cap + net debt on screen date; default, not yet confirmed) | Value coverage |
 | Maturity wall (CLO) | 18 | months; no maturity inside this without a refinancing plan | Downside |
 
-Not used, by choice: interest cover minimum, positive free cash flow, CLO maximum purchase price (can be above par).
+Red flag only, not a hard limit: interest cover below 1.5x EBITDA / cash interest (default, not yet confirmed).
+
+Not used, by choice: interest cover as a hard limit, positive free cash flow, CLO maximum purchase price (can be above par).
 
 ## What we look for (not a hard limit)
 
