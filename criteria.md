@@ -28,11 +28,16 @@ Not used, by choice: interest cover minimum, positive free cash flow, CLO maximu
 
 ## What we look for (not a hard limit)
 
-- not set yet
+- Hard assets with real value (value we can support, not book value alone).
+- Recurring revenue that is sticky, with some perceived competitive moat (evidence: retention, churn, renewal terms, pricing history).
+- Sponsor contributing new equity (committed or funded, not just stated support).
+- Clear catalysts within 6 to 24 months.
+- If free cash flow is negative: a credible path to positive FCF before liquidity runs out. Test: months to FCF breakeven (company plan or our case) against liquidity runway in months.
 
 ## Changes
 
 | Date | Change | Who agreed |
 |---|---|---|
 | 2026-11-12 | Return threshold set for opportunities fund (IRR >15%, 2-5 yrs) and CLO focus set (downside, debt service, value coverage) | Analyst, at onboarding |
+| 2026-11-12 | What-we-look-for list set: hard assets, sticky recurring revenue with moat, sponsor equity, catalysts in 6-24 months, path to positive FCF inside the liquidity runway | Analyst, at onboarding |
 | 2026-11-12 | Hard limits set: net leverage 10x max, liquidity 12 months, CLO LTV 60% max, CLO maturity wall 18 months; no interest cover or FCF test | Analyst, at onboarding |
