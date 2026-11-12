@@ -1,0 +1,23 @@
+{
+  "id": "research-distressed-screen",
+  "client": "raft",
+  "slug": "research-distressed-screen",
+  "status": "approved",
+  "built": "2026-11-12",
+  "source": "23889d181bf5",
+  "engine": "e959808",
+  "skills": [
+    {
+      "name": "cited-answer",
+      "version": "0.1.0",
+      "hash": "517b6407cf6b",
+      "commit": "441fbcb"
+    },
+    {
+      "name": "name-brief",
+      "version": "0.3.0",
+      "hash": "3962d69992f5",
+      "commit": "e959808"
+    }
+  ]
+}

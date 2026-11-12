@@ -1,0 +1,214 @@
+{
+  "name": "WD-40 Company",
+  "ticker": "WDFC",
+  "exchange": "Nasdaq",
+  "slug": "wdfc",
+  "as_of": "2026-11-11",
+  "chart_unit": "USD millions",
+  "parts": [
+    {
+      "id": "why-look",
+      "title": "Why it is worth a look",
+      "reads": [
+        "*"
+      ]
+    },
+    {
+      "id": "credit-analyst",
+      "title": "Distressed credit analyst",
+      "reads": [
+        "Capital structure and debt",
+        "Debt timeline",
+        "Restructuring terms",
+        "Key dates",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "liquidity-treasury",
+      "title": "Liquidity and treasury",
+      "reads": [
+        "Capital structure and debt",
+        "Results by year",
+        "Recent results",
+        "Key dates",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "forensic-accountant",
+      "title": "Forensic accountant",
+      "reads": [
+        "Results by year",
+        "Recent results",
+        "Accounting and controls",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "industry-operator",
+      "title": "Industry operator",
+      "reads": [
+        "Business",
+        "Results by year",
+        "Recent results"
+      ]
+    },
+    {
+      "id": "catalyst-tracker",
+      "title": "Catalyst tracker",
+      "reads": [
+        "Key dates",
+        "Recent results",
+        "Restructuring terms"
+      ]
+    },
+    {
+      "id": "skeptic",
+      "title": "Skeptic",
+      "reads": [
+        "*"
+      ]
+    }
+  ],
+  "artifacts": {
+    "facts": null,
+    "lenses": null
+  },
+  "lens_inputs": {
+    "why-look": {
+      "date": "2026-11-11",
+      "sections": {
+        "Business": "ea46d0565851847e",
+        "Capital structure and debt": "09a5f032df169f46",
+        "Results by year": "887eee60dfa30c0c",
+        "Recent results": "0f1b78a770ccb505",
+        "Key dates": "872809738922d59d",
+        "Gaps": "6f0fdb1e7d0d1c30"
+      },
+      "sources": {
+        "S11": "0661a88e85723840",
+        "S23": "62515635dab290b3",
+        "S9": "0ec100ec398cc25d",
+        "S7": "07c371541f7dc7c0",
+        "S17": "6db75fc54292f35a",
+        "S10": "328cf3fa48fc4788",
+        "S18": "15af2d4062a8a555",
+        "S47": "903a00a34e672cbe",
+        "S38": "7675ed6f83d7ed02",
+        "S26": "15629f374905f30c",
+        "S27": "273cb5d84429976d",
+        "S24": "f001df262fc8e107",
+        "S20": "1bafb39657aba96c",
+        "S21": "78370b0dff99f412",
+        "S28": "0503299565950b08",
+        "S31": "20ec4c5148291695"
+      }
+    },
+    "credit-analyst": {
+      "date": "2026-11-11",
+      "sections": {
+        "Capital structure and debt": "09a5f032df169f46",
+        "Debt timeline": "missing",
+        "Restructuring terms": "missing",
+        "Key dates": "872809738922d59d",
+        "Gaps": "6f0fdb1e7d0d1c30"
+      },
+      "sources": {
+        "S7": "07c371541f7dc7c0",
+        "S16": "daeec82aed7e19f0",
+        "S17": "6db75fc54292f35a",
+        "S9": "0ec100ec398cc25d",
+        "S10": "328cf3fa48fc4788",
+        "S8": "60098bad963ee9fc",
+        "S18": "15af2d4062a8a555",
+        "S11": "0661a88e85723840",
+        "S21": "78370b0dff99f412"
+      }
+    },
+    "liquidity-treasury": {
+      "date": "2026-11-11",
+      "sections": {
+        "Capital structure and debt": "09a5f032df169f46",
+        "Results by year": "887eee60dfa30c0c",
+        "Recent results": "0f1b78a770ccb505",
+        "Key dates": "872809738922d59d",
+        "Gaps": "6f0fdb1e7d0d1c30"
+      },
+      "sources": {
+        "S23": "62515635dab290b3",
+        "S12": "0ae230d57f11bb9c",
+        "S7": "07c371541f7dc7c0",
+        "S17": "6db75fc54292f35a",
+        "S20": "1bafb39657aba96c",
+        "S21": "78370b0dff99f412",
+        "S24": "f001df262fc8e107",
+        "S27": "273cb5d84429976d",
+        "S9": "0ec100ec398cc25d"
+      }
+    },
+    "forensic-accountant": {
+      "date": "2026-11-11",
+      "sections": {
+        "Results by year": "887eee60dfa30c0c",
+        "Recent results": "0f1b78a770ccb505",
+        "Accounting and controls": "missing",
+        "Gaps": "6f0fdb1e7d0d1c30"
+      },
+      "sources": {
+        "S24": "f001df262fc8e107",
+        "S21": "78370b0dff99f412",
+        "S28": "0503299565950b08"
+      }
+    },
+    "industry-operator": {
+      "date": "2026-11-11",
+      "sections": {
+        "Business": "ea46d0565851847e",
+        "Results by year": "887eee60dfa30c0c",
+        "Recent results": "0f1b78a770ccb505"
+      },
+      "sources": {
+        "S3": "0918296a42499827",
+        "S4": "52886ce6d639cd0d",
+        "S24": "f001df262fc8e107",
+        "S28": "0503299565950b08",
+        "S31": "20ec4c5148291695"
+      }
+    },
+    "catalyst-tracker": {
+      "date": "2026-11-11",
+      "sections": {
+        "Key dates": "872809738922d59d",
+        "Recent results": "0f1b78a770ccb505",
+        "Restructuring terms": "missing"
+      },
+      "sources": {
+        "S18": "15af2d4062a8a555",
+        "S38": "7675ed6f83d7ed02",
+        "S9": "0ec100ec398cc25d",
+        "S7": "07c371541f7dc7c0",
+        "S10": "328cf3fa48fc4788",
+        "S33": "99d58fc8f9de4507"
+      }
+    },
+    "skeptic": {
+      "date": "2026-11-11",
+      "sections": {
+        "Business": "ea46d0565851847e",
+        "Capital structure and debt": "09a5f032df169f46",
+        "Results by year": "887eee60dfa30c0c",
+        "Recent results": "0f1b78a770ccb505",
+        "Key dates": "872809738922d59d",
+        "Gaps": "6f0fdb1e7d0d1c30"
+      },
+      "sources": {
+        "S21": "78370b0dff99f412",
+        "S20": "1bafb39657aba96c",
+        "S24": "f001df262fc8e107",
+        "S33": "99d58fc8f9de4507",
+        "S31": "20ec4c5148291695"
+      }
+    }
+  }
+}

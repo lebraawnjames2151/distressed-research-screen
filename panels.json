@@ -1,0 +1,20 @@
+{
+  "overview": { "id": "why-look", "title": "Why it is worth a look", "reads": ["*"] },
+  "lenses": {
+    "credit-analyst": { "title": "Distressed credit analyst", "reads": ["Capital structure and debt", "Debt timeline", "Restructuring terms", "Key dates", "Gaps"] },
+    "restructuring-counsel": { "title": "Restructuring counsel", "reads": ["Capital structure and debt", "Restructuring terms", "Key dates", "Gaps"] },
+    "liquidity-treasury": { "title": "Liquidity and treasury", "reads": ["Capital structure and debt", "Results by year", "Recent results", "Key dates", "Gaps"] },
+    "forensic-accountant": { "title": "Forensic accountant", "reads": ["Results by year", "Recent results", "Accounting and controls", "Gaps"] },
+    "industry-operator": { "title": "Industry operator", "reads": ["Business", "Results by year", "Recent results"] },
+    "equity-special-sits": { "title": "Equity special situations", "reads": ["Capital structure and debt", "Restructuring terms", "Recent results"] },
+    "catalyst-tracker": { "title": "Catalyst tracker", "reads": ["Key dates", "Recent results", "Restructuring terms"] },
+    "skeptic": { "title": "Skeptic", "reads": ["*"] }
+  },
+  "panels": {
+    "in-court": { "title": "In-court restructuring", "lenses": ["credit-analyst", "restructuring-counsel", "liquidity-treasury", "equity-special-sits", "catalyst-tracker", "skeptic"] },
+    "post-emergence": { "title": "Post-emergence name", "lenses": ["credit-analyst", "forensic-accountant", "industry-operator", "equity-special-sits", "catalyst-tracker", "skeptic"] },
+    "pre-default": { "title": "Pre-default stress or a liability management exercise", "lenses": ["credit-analyst", "restructuring-counsel", "liquidity-treasury", "forensic-accountant", "industry-operator", "catalyst-tracker", "skeptic"] },
+    "single-asset": { "title": "Distressed name with a single asset or project", "lenses": ["credit-analyst", "liquidity-treasury", "industry-operator", "catalyst-tracker", "skeptic"] },
+    "going-concern": { "title": "Operating company that is not in court", "lenses": ["credit-analyst", "liquidity-treasury", "forensic-accountant", "industry-operator", "catalyst-tracker", "skeptic"] }
+  }
+}

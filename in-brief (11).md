@@ -1,0 +1,6 @@
+- WD-40 Company makes and sells products that solve problems in workshops, factories and homes. It is based in San Diego, California, and sells in more than 176 countries and territories. [S1] [S3]
+- In fiscal 2026, the year to Aug 31, 2026, net sales were $688.0 million and net income was $82.3 million. [S24]
+- Total borrowings were $86.0 million at Aug 31, 2026: a revolver and three series of fixed-rate notes. [S11]
+- The revolver allows borrowing up to $125.0 million and is due Apr 30, 2029. [S12] [S14]
+- The company reported that it met all its debt covenants as of Aug 31, 2026. [S21]
+- Cash and cash equivalents were $70.6 million at Aug 31, 2026. [S23]

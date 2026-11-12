@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WD-40 Company lenses</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Instrument+Serif&amp;display=swap">
+<style>
+:root {
+  --bg: #f1f1ec; --surface: #fcfcfa; --ink: #1d2a25; --muted: #52645b; --rule: #d9dfd7; --accent: #19624c; --chip: #e5f0e8; --soft: #e9efe4;
+  --band: #19362c; --band-ink: #f6f7ec; --band-muted: #d9e3d6; --lime: #d8eca2; --draft: #a84a39; --neg: #a84a39;
+  --amber-bg: #f3ead2; --amber: #6d5418; --rose-bg: #f6e3dc; --rose: #8a3a2c; --grey-bg: #ecece6;
+  --secured: #2f6f9f; --unsecured: #c0652b; --unstated: #7b8794;
+  --c1: #2f6f9f; --c2: #c0652b; --c3: #19624c; --c4: #a97f1f; --c5: #7c4e8a; --c6: #b24a68; --c7: #2f8a96; --c8: #7b8794; --c9: #5f7f1f; --c10: #8c564b;
+  --working: #19624c; --watching: #8a6412; --passed: #52645b; color-scheme: light;
+  --serif: "Instrument Serif", Georgia, serif; --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #121815; --surface: #1a221e; --ink: #e3e9e4; --muted: #a3b2a9; --rule: #2d3a33; --accent: #7cc4a6; --chip: #213129; --soft: #1f2b25;
+  --band: #0f2a21; --band-ink: #f6f7ec; --band-muted: #c6d3c8; --lime: #d8eca2; --draft: #f0a493; --neg: #e08a76;
+  --amber-bg: #3a3120; --amber: #e3c27a; --rose-bg: #3d2522; --rose: #f0a493; --grey-bg: #262d29;
+  --secured: #5f9fd4; --unsecured: #e08a52; --unstated: #9aa6b2;
+  --c1: #5f9fd4; --c2: #e08a52; --c3: #4fb08a; --c4: #d6ad4a; --c5: #b08ac2; --c6: #e07a96; --c7: #5ec0cc; --c8: #9aa6b2; --c9: #9bc34a; --c10: #c49285;
+  --working: #7cc4a6; --watching: #e3c27a; --passed: #a3b2a9; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #121815; --surface: #1a221e; --ink: #e3e9e4; --muted: #a3b2a9; --rule: #2d3a33; --accent: #7cc4a6; --chip: #213129; --soft: #1f2b25;
+  --band: #0f2a21; --band-ink: #f6f7ec; --band-muted: #c6d3c8; --lime: #d8eca2; --draft: #f0a493; --neg: #e08a76;
+  --amber-bg: #3a3120; --amber: #e3c27a; --rose-bg: #3d2522; --rose: #f0a493; --grey-bg: #262d29;
+  --secured: #5f9fd4; --unsecured: #e08a52; --unstated: #9aa6b2;
+  --c1: #5f9fd4; --c2: #e08a52; --c3: #4fb08a; --c4: #d6ad4a; --c5: #b08ac2; --c6: #e07a96; --c7: #5ec0cc; --c8: #9aa6b2; --c9: #9bc34a; --c10: #c49285;
+  --working: #7cc4a6; --watching: #e3c27a; --passed: #a3b2a9; color-scheme: dark; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); overflow-wrap: anywhere; overflow-x: clip; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 22px; }
+header.band { background: var(--band); color: var(--band-ink); border-bottom: 4px solid #a8ca81; margin-inline: calc(50% - 50vw); padding: 18px max(16px, calc(50vw - 560px)) 0; display: grid; gap: 12px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font: 600 11px/1.4 var(--mono); color: var(--band-muted); letter-spacing: .08em; text-transform: uppercase; }
+.draft { color: var(--lime); border: 1px solid var(--lime); padding: 1px 8px; border-radius: 4px; }
+.title-row { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 28px; }
+.kicker { font: 600 11px/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--lime); }
+h1 { font: 400 clamp(34px, 6vw, 54px)/1.04 var(--serif); letter-spacing: -.03em; margin: 6px 0 4px; text-wrap: balance; }
+.sub { color: var(--band-muted); font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-size: 12px; font-weight: 650; padding: 5px 10px; border-radius: 6px; }
+.chip.sit { background: var(--amber-bg); color: var(--amber); }
+.chip.lane { background: var(--lime); color: #20352c; }
+nav.tabs { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+nav.tabs a, nav.tabs span { color: var(--band-muted); text-decoration: none; padding: 9px 2px 11px; border-bottom: 3px solid transparent; font-weight: 650; font-size: 14px; }
+nav.tabs a:hover { color: var(--band-ink); }
+nav.tabs [aria-current="page"] { color: var(--band-ink); border-bottom-color: var(--lime); }
+h2 { font-size: 21px; line-height: 1.25; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+h3 { font-size: 16px; line-height: 1.3; margin: 0; }
+h4 { font: 600 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 6px 0 0; }
+p { margin: 0; max-width: 72ch; }
+ul, ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.lede { color: var(--muted); font-size: 14px; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+section { display: grid; gap: 12px; align-content: start; min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: clamp(14px, 2.4vw, 22px); }
+section.bare { background: none; border: 0; padding: 0; }
+.tab-panel { display: grid; gap: 22px; min-width: 0; }
+.js .tab-panel:not(.on), .js .pane:not(.on) { display: none; }
+.duo { display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
+.duo > * { flex: 1 1 340px; min-width: 0; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+code { font: 13px var(--mono); }
+.tag { font: 600 10.5px/1 var(--mono); color: var(--accent); text-decoration: none; background: var(--chip); padding: 3px 5px; border-radius: 4px; white-space: nowrap; }
+.tag:hover { text-decoration: underline; }
+.scroll { overflow-x: auto; min-width: 0; border: 1px solid var(--rule); border-radius: 9px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; vertical-align: top; padding: 8px 12px; border-bottom: 1px solid var(--rule); }
+.scroll table { overflow-wrap: normal; }
+.scroll td { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.scroll td:last-child { white-space: normal; min-width: 7rem; }
+.scroll tr.total td { font-weight: 700; background: var(--soft); }
+th { font: 600 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); background: var(--soft); }
+i.sw { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 7px; }
+.tiles { display: flex; flex-wrap: wrap; gap: 10px; }
+.tile { flex: 1 1 170px; min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 11px; padding: 14px; display: grid; gap: 4px; align-content: start; }
+.t-label { font: 600 10.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.t-value { font-size: 28px; font-weight: 650; letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tile.neg .t-value { color: var(--neg); }
+.tile.date .t-value { font-size: 22px; }
+.t-sub { font-size: 12.5px; color: var(--muted); }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+figcaption { font-size: 13px; color: var(--muted); }
+.viz { display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
+.plot { flex: 999 1 520px; min-width: 0; }
+.readout { flex: 1 1 220px; min-width: 0; background: var(--soft); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 5px; font-size: 13px; }
+.r-title { font: 600 10.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.r-label { color: var(--muted); }
+.r-value { font-size: 26px; font-weight: 650; letter-spacing: -.04em; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.r-sub:empty, .r-tags:empty, .r-rows:empty { display: none; }
+.r-rows { list-style: none; padding: 0; gap: 0; border-top: 1px solid var(--rule); }
+.r-rows li { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--rule); }
+.r-rows i { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.r-rows span { flex: 1; min-width: 0; }
+.r-rows b { font-variant-numeric: tabular-nums; }
+.r-hint { margin-top: auto; font-size: 11.5px; color: var(--muted); }
+.switch { display: none; flex-wrap: wrap; gap: 6px; }
+.js .switch { display: flex; }
+.switch button { font: 650 12.5px/1.2 var(--sans); min-height: 36px; padding: 6px 12px; border-radius: 99px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); cursor: pointer; }
+.switch button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+svg { width: 100%; height: auto; display: block; overflow: visible; }
+svg text { fill: var(--ink); font: 12px var(--sans); }
+svg .sm { fill: var(--muted); font: 11px var(--mono); }
+svg .val { font: 600 12px var(--sans); }
+svg .num { font: 600 11px var(--mono); }
+svg .grid { stroke: var(--rule); stroke-width: 1; }
+svg .axis { stroke: var(--muted); stroke-width: 1; }
+svg .today { stroke: var(--draft); stroke-width: 1; stroke-dasharray: 3 3; }
+svg [data-read]:focus-visible { outline: none; stroke: var(--ink); stroke-width: 2.5; }
+svg.narrow { display: none; }
+@media (max-width: 600px) { svg.wide { display: none; } svg.narrow { display: block; } }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.legend i.limit { border: 1.5px dashed var(--muted); }
+.legend i.ring { border: 2px solid; border-radius: 50%; }
+ol.events { list-style: none; padding: 0; gap: 0; }
+ol.events li, ul.dates li { display: grid; grid-template-columns: 24px 104px 1fr; gap: 10px; padding: 8px 0; border-top: 1px solid var(--rule); font-size: 14px; }
+ul.dates { list-style: none; padding: 0; gap: 0; }
+ul.dates li { grid-template-columns: 150px 1fr; }
+.n { font: 600 12px/1.7 var(--mono); color: var(--muted); }
+time { font: 600 13px/1.6 var(--mono); color: var(--muted); }
+.ahead time { color: var(--ink); }
+ul.dates li.ahead time::after { content: "ahead"; margin-left: 6px; font: 700 10px/1 var(--sans); text-transform: uppercase; letter-spacing: .04em; background: var(--amber-bg); color: var(--amber); padding: 2px 5px; border-radius: 4px; vertical-align: 2px; }
+.exp { font: 500 11px var(--mono); color: var(--muted); margin-left: 6px; }
+@media (max-width: 520px) { ol.events li { gap: 6px; font-size: 13px; } ul.dates li { grid-template-columns: 1fr; gap: 2px; } }
+.flags { display: flex; flex-wrap: wrap; gap: 10px; }
+.flag { flex: 1 1 300px; min-width: 0; border: 1px solid var(--rule); border-radius: 10px; padding: 14px; display: grid; gap: 7px; align-content: start; }
+.f-meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12px; color: var(--muted); }
+.f-kind { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 5px; background: var(--grey-bg); color: var(--ink); }
+.flag.audit .f-kind { background: var(--rose-bg); color: var(--rose); }
+.flag.deadline .f-kind { background: var(--amber-bg); color: var(--amber); }
+.flag.audit { border-top: 4px solid var(--rose); }
+.flag.deadline { border-top: 4px solid var(--amber); }
+.flag p { font-size: 14px; }
+details.words > summary { font-size: 12.5px; font-weight: 650; color: var(--accent); }
+details.words q { display: block; margin-top: 8px; background: var(--soft); border-radius: 7px; padding: 10px 12px; font-size: 13px; color: var(--ink); }
+.cards { display: grid; gap: 12px; }
+.cards.debt { grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); align-items: start; }
+.card { position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 14px 14px; display: grid; gap: 8px; min-width: 0; overflow: hidden; }
+.card .stripe { position: absolute; inset: 0 0 auto 0; height: 5px; }
+.card .terms { font-size: 13.5px; color: var(--muted); }
+.card dl { margin: 0; display: grid; }
+.card dl > div { display: grid; grid-template-columns: 9rem 1fr; gap: 12px; padding: 7px 0; border-top: 1px solid var(--rule); font-size: 13.5px; min-width: 0; }
+.card dt { font: 600 11px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.card dd { margin: 0; min-width: 0; }
+@media (max-width: 560px) { .card dl > div { grid-template-columns: 1fr; gap: 2px; } }
+ul.wall { list-style: none; padding: 0; gap: 8px; }
+ul.wall li { display: grid; grid-template-columns: 52px minmax(0, 1fr) 64px; gap: 10px; align-items: center; font-size: 13px; }
+.w-year { font-weight: 650; }
+.w-track { display: block; min-width: 0; }
+.w-bar { display: flex; height: 24px; min-width: 4px; border-radius: 4px; overflow: hidden; }
+.w-bar span { min-width: 2px; }
+.w-total { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.cards.lenses { grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); align-items: start; }
+.cards.lenses .card { font-size: 14px; scroll-margin-top: 12px; transition: opacity .15s; }
+.cards.lenses .card.dim { opacity: .35; }
+.reads { display: flex; flex-wrap: wrap; gap: 4px; font-size: 11.5px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.reads span { background: var(--chip); color: var(--ink); padding: 1px 6px; border-radius: 4px; }
+.change-box { background: var(--soft); border-radius: 8px; padding: 10px; display: grid; gap: 4px; }
+ul.jump { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; font-size: 13.5px; }
+ul.jump a { display: inline-block; padding: 3px 11px; border: 1px solid var(--rule); border-radius: 99px; background: var(--surface); text-decoration: none; }
+.splits { display: grid; gap: 10px; }
+.split { border: 1px solid var(--rule); border-radius: 10px; padding: 12px; display: grid; gap: 8px; }
+.sides { display: flex; flex-wrap: wrap; gap: 10px; }
+.side { flex: 1 1 260px; min-width: 0; background: var(--soft); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; font-size: 14px; }
+.side:nth-child(even) { background: var(--grey-bg); }
+.s-lens { font: 600 10.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.s-lens a { text-decoration: none; }
+.pill { display: inline-block; font: 600 11px/1.6 var(--mono); padding: 0 8px; border-radius: 10px; border: 1px solid currentColor; text-transform: uppercase; letter-spacing: .04em; }
+.note { font-size: 13px; color: var(--muted); border-left: 3px solid var(--draft); padding: 6px 12px; }
+.stale { color: var(--draft); }
+section.view-box { border: 2px solid var(--accent); }
+section.view-box > h2 { font: 400 34px/1.1 var(--serif); letter-spacing: -.02em; }
+.view { display: grid; gap: 12px; }
+.view .status { font: 600 14px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+ul.points { list-style: none; padding: 0; gap: 6px; }
+ul.points li { background: var(--soft); border-radius: 8px; padding: 9px 12px; font-size: 14.5px; }
+.next { background: var(--amber-bg); color: var(--amber); border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+ol.why { list-style: none; padding: 0; counter-reset: why; gap: 8px; }
+ol.why li { position: relative; background: var(--soft); border-radius: 8px; padding: 10px 12px 10px 40px; }
+ol.why li::before { counter-increment: why; content: counter(why); position: absolute; left: 15px; top: 10px; font: 600 13px/1.6 var(--mono); color: var(--accent); }
+ol.src { list-style: none; padding: 0; gap: 0; font-size: 13px; }
+ol.src li { display: grid; grid-template-columns: 44px 1fr; gap: 8px; min-width: 0; padding: 10px 0; border-top: 1px solid var(--rule); scroll-margin-top: 12px; }
+ol.src li > div { display: grid; gap: 3px; min-width: 0; }
+.sid { font: 600 12px/1.6 var(--mono); color: var(--accent); }
+.sdate { color: var(--muted); font: 11.5px var(--mono); }
+q { color: var(--muted); }
+:target { background: var(--chip); }
+svg [data-tip]:hover { opacity: .85; cursor: help; }
+abbr[data-tip] { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
+#tip { position: fixed; z-index: 20; display: none; max-width: min(20rem, calc(100vw - 32px)); background: var(--ink); color: var(--bg); font-size: 13px; line-height: 1.4; padding: 6px 9px; border-radius: 5px; pointer-events: none; }
+details > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "\25B8"; color: var(--muted); font-size: 18px; }
+details[open] > summary::before { content: "\25BE"; }
+details > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+details[open] > summary { margin-bottom: 12px; }
+footer { font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="band">
+<div class="meta"><span class="draft">Draft, public filings only</span><span>As of Nov 11, 2026</span><span>Nasdaq: WDFC</span></div>
+<div class="title-row"><div><p class="kicker">Name brief</p><h1>WD-40 Company</h1><p class="sub">6 expert lenses on the same facts, each written blind</p></div><div class="chips"><span class="chip lane">Analyst lane: Watching</span></div></div>
+<nav class="tabs" aria-label="Name pages"><a href="../../board.html">Research board</a><a href="facts.html">Facts</a><a href="facts.html#debt-tab">Debt</a><span aria-current="page">Lenses and analyst view</span></nav>
+</header>
+<section aria-labelledby="brief"><h2 id="brief">In brief</h2><ul><li>WD-40 Company makes and sells products that solve problems in workshops, factories and homes. It is based in San Diego, California, and sells in more than 176 countries and territories. <a class="tag" href="#S1">S1</a> <a class="tag" href="#S3">S3</a></li><li>In fiscal 2026, the year to Aug 31, 2026, net sales were $688.0 million and net income was $82.3 million. <a class="tag" href="#S24">S24</a></li><li>Total borrowings were $86.0 million at Aug 31, 2026: a revolver and three series of fixed-rate notes. <a class="tag" href="#S11">S11</a></li><li>The revolver allows borrowing up to $125.0 million and is due Apr 30, 2029. <a class="tag" href="#S12">S12</a> <a class="tag" href="#S14">S14</a></li><li>The company reported that it met all its debt <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenants</abbr> as of Aug 31, 2026. <a class="tag" href="#S21">S21</a></li><li>Cash and cash equivalents were $70.6 million at Aug 31, 2026. <a class="tag" href="#S23">S23</a></li></ul></section>
+<p class="note"><strong>Source checks: 0 of 47 quotes matched to saved source copies.</strong> Some checks are missing, outdated or unsuccessful. <a href="#sources">Review the source checks</a> before relying on a claim. Matching words does not verify their interpretation or check for newer filings. Click any tag such as <a class="tag" href="#S1">S1</a> to read its quote.</p>
+<p class="note">The system makes no recommendation and sets no price target. A view on what to do belongs to the analyst, in the box at the end of this page.</p>
+<div class="duo">
+<section aria-labelledby="why"><h2 id="why">Why it is worth a look</h2><p class="lede">Written Nov 11, 2026; its facts have not changed since.</p><ol class="why"><li>Total borrowings were 86,049 thousand at August 31, 2026, against 86,995 thousand at August 31, 2025. Cash and cash equivalents were 70,607 thousand at August 31, 2026. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S23">S23</a></li><li>Three fixed-rate notes and one revolver make up the debt. The Series B Notes (26,000 thousand, 2.50% fixed) are due 11/15/2027, and the revolver (20,849 thousand at August 31, 2026, entirely in euros) is due 4/30/2029. The Series C Notes (26,000 thousand, 2.69% fixed) are due 11/15/2030. <a class="tag" href="#S9">S9</a> <a class="tag" href="#S7">S7</a> <a class="tag" href="#S17">S17</a> <a class="tag" href="#S10">S10</a></li><li>On November 15, 2026, a Series A principal installment of $0.4 million and Series B interest are due. Series A principal is paid every May and November through May 15, 2032, with the remaining $8.4 million due on November 15, 2032. <a class="tag" href="#S18">S18</a> <a class="tag" href="#S47">S47</a> <a class="tag" href="#S38">S38</a></li><li>For fiscal 2026, the company's own Adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> measure was $120,789 thousand and net cash from operating activities was $104,977 thousand. Interest expense was 2,774 thousand. <a class="tag" href="#S26">S26</a> <a class="tag" href="#S27">S27</a> <a class="tag" href="#S24">S24</a></li><li>Under the <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenants</abbr>, the consolidated <abbr tabindex="0" data-tip="Debt divided by a yearly measure of earnings.">leverage ratio</abbr> cannot be above three and a half to one, and interest coverage cannot be below three to one. The company reported compliance with all debt <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenants</abbr> as of August 31, 2026, but the year-end ratios are not in the parts read. <a class="tag" href="#S20">S20</a> <a class="tag" href="#S21">S21</a></li><li>In the fourth quarter of fiscal 2026, net income fell 32% to $14.4 million and gross margin was 52.8%, against 54.7%. Fiscal 2027 guidance puts operating income between $114 million and $120 million. <a class="tag" href="#S28">S28</a> <a class="tag" href="#S31">S31</a></li></ol></section>
+<section aria-labelledby="how"><h2 id="how">How this page works</h2><ul>
+<li>Each part below was written by a separate agent that saw only the facts page and its sources, and no other part. Drafts for a person to edit.</li>
+<li>No lens votes, scores or recommends. Each says what would change its view.</li>
+<li>Where lenses rest on the same source, or on an assumption, the lines are set side by side. Nothing is weighed: that is for a person.</li>
+<li>The analyst's view at the end is written by a person.</li></ul></section>
+</div>
+<section aria-labelledby="differ"><h2 id="differ">Where the lenses differ</h2>
+<p class="lede">Listed by code from the lens parts. The lenses did not see each other. Nothing here is weighed or combined: that is for a person.</p>
+<h3>Assumed by a lens, not taken from the facts</h3><ul><li><strong><a href="#lens-credit-analyst">Distressed credit analyst</a>:</strong> No court case is mentioned in the sections read.</li><li><strong><a href="#lens-catalyst-tracker">Catalyst tracker</a>:</strong> None of these dates is a company expectation.</li><li><strong><a href="#lens-skeptic">Skeptic</a>:</strong> Filed figures are as stated.</li></ul>
+<details open><summary><h3>The same source, read by more than one lens (7)</h3></summary><div class="splits"><article class="split"><p class="lede">Same source <a class="tag" href="#S7">S7</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>Revolver: 20,849 outstanding, due 4/30/2029, <abbr tabindex="0" data-tip="Not backed by pledged assets.">unsecured</abbr>, all in euros. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S16">S16</a> <a class="tag" href="#S17">S17</a></p></div><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>The revolver had 20,849 outstanding at Aug 31, 2026, all in euros. <a class="tag" href="#S7">S7</a><a class="tag" href="#S17">S17</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>The revolver matures 4/30/2029 and Series C matures 11/15/2030. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S10">S10</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S9">S9</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>Series B: 26,000 at 2.50%, due 11/15/2027. Series C: 26,000 at 2.69%, due 11/15/2030. <a class="tag" href="#S9">S9</a> <a class="tag" href="#S10">S10</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>Series B notes mature 11/15/2027. <a class="tag" href="#S9">S9</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S10">S10</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>Series B: 26,000 at 2.50%, due 11/15/2027. Series C: 26,000 at 2.69%, due 11/15/2030. <a class="tag" href="#S9">S9</a> <a class="tag" href="#S10">S10</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>The revolver matures 4/30/2029 and Series C matures 11/15/2030. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S10">S10</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S18">S18</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>Series A: 13,200 outstanding, paid in installments of $0.4 million, with $8.4 million due on November 15, 2032. <a class="tag" href="#S8">S8</a> <a class="tag" href="#S18">S18</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>Series A principal of $0.4 million is paid each May and November through May 15, 2032. <a class="tag" href="#S18">S18</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>The last Series A payment of $8.4 million is due November 15, 2032. <a class="tag" href="#S18">S18</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S21">S21</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>Total borrowings were 86,049. The company reported <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> compliance at Aug 31, 2026. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S21">S21</a></p></div><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>Leverage cannot exceed three and a half to one. Interest coverage cannot fall below three to one. Compliance was reported at Aug 31, 2026. <a class="tag" href="#S20">S20</a><a class="tag" href="#S21">S21</a></p></div><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>The company states: &quot;in compliance with all debt <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenants</abbr>&quot; as of August 31, 2026. <a class="tag" href="#S21">S21</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p><abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">Covenant</abbr> compliance is the company's own statement. Year-end ratios are not found in the sources read. <a class="tag" href="#S21">S21</a> <a class="tag" href="#S20">S20</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S24">S24</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>Cash from operations was 104,977 in fiscal 2026. Interest expense was 2,774. <a class="tag" href="#S24">S24</a><a class="tag" href="#S27">S27</a></p></div><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>Fiscal 2026 net income was 82,346 beside adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> of 120,789. <a class="tag" href="#S24">S24</a></p></div><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>Fiscal 2025 net income was 90,994 beside adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> of 114,426. <a class="tag" href="#S24">S24</a></p></div><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>The bridge adds tax, interest, amortization and depreciation lines. <a class="tag" href="#S24">S24</a></p></div><div class="side"><p class="s-lens"><a href="#lens-industry-operator">Industry operator</a></p><p>Net sales were 590,557, 619,985 and 687,993 thousand in fiscal 2024, 2025 and 2026. <a class="tag" href="#S24">S24</a></p></div><div class="side"><p class="s-lens"><a href="#lens-industry-operator">Industry operator</a></p><p>Net income was 69,644, 90,994 and 82,346 thousand in the same years. <a class="tag" href="#S24">S24</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p>Adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> is the company's own measure: 120,789 thousand for fiscal 2026, against net income 82,346. <a class="tag" href="#S24">S24</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S28">S28</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>Fourth quarter net income &quot;decreased 32% to $14.4 million&quot;, a three-month figure. <a class="tag" href="#S28">S28</a></p></div><div class="side"><p class="s-lens"><a href="#lens-industry-operator">Industry operator</a></p><p>Q4 gross margin was 52.8% against 54.7%. SG&amp;A rose 19% to $58.2 million. <a class="tag" href="#S28">S28</a></p></div><div class="side"><p class="s-lens"><a href="#lens-industry-operator">Industry operator</a></p><p>Q4 maintenance product sales rose 9% to $170.5 million. <a class="tag" href="#S28">S28</a></p></div></div></article></div></details>
+</section>
+<section aria-labelledby="change"><h2 id="change">What would change these views</h2><ul><li><strong><a href="#lens-credit-analyst">Distressed credit analyst</a>:</strong> A missed payment, or a <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> breach, at a Nov 15 payment date.</li><li><strong><a href="#lens-liquidity-treasury">Liquidity and treasury</a>:</strong> Series B notes of 26,000 mature Nov 15, 2027. <a class="tag" href="#S9">S9</a></li><li><strong><a href="#lens-forensic-accountant">Forensic accountant</a>:</strong> The audit report or controls report in the <abbr tabindex="0" data-tip="Annual report filed with the SEC.">10-K</abbr>, once read, could add going-concern wording, a weakness or a restatement.</li><li><strong><a href="#lens-industry-operator">Industry operator</a>:</strong> Fiscal 2027 results against the stated gross margin guidance of 54.0% to 55.5%. <a class="tag" href="#S31">S31</a></li><li><strong><a href="#lens-catalyst-tracker">Catalyst tracker</a>:</strong> An announced date for the next results release. A court filing or amendment that sets a new date.</li><li><strong><a href="#lens-skeptic">Skeptic</a>:</strong> Year-end ratios, or a fiscal 2026 operating income figure.</li></ul></section>
+<section aria-labelledby="lenses"><h2 id="lenses">The lenses</h2>
+<ul class="jump"><li><a href="#lens-credit-analyst">Distressed credit analyst</a></li><li><a href="#lens-liquidity-treasury">Liquidity and treasury</a></li><li><a href="#lens-forensic-accountant">Forensic accountant</a></li><li><a href="#lens-industry-operator">Industry operator</a></li><li><a href="#lens-catalyst-tracker">Catalyst tracker</a></li><li><a href="#lens-skeptic">Skeptic</a></li></ul>
+<div class="switch" role="group" aria-label="Show the lenses that read a section" data-switch="lenses"><button type="button" data-pick="*" aria-pressed="true">All lenses</button><button type="button" data-pick="Capital structure and debt" aria-pressed="false">Capital structure and debt</button><button type="button" data-pick="Debt timeline" aria-pressed="false">Debt timeline</button><button type="button" data-pick="Restructuring terms" aria-pressed="false">Restructuring terms</button><button type="button" data-pick="Key dates" aria-pressed="false">Key dates</button><button type="button" data-pick="Gaps" aria-pressed="false">Gaps</button><button type="button" data-pick="Results by year" aria-pressed="false">Results by year</button><button type="button" data-pick="Recent results" aria-pressed="false">Recent results</button><button type="button" data-pick="Accounting and controls" aria-pressed="false">Accounting and controls</button><button type="button" data-pick="Business" aria-pressed="false">Business</button></div>
+<div class="cards lenses">
+<article class="card" id="lens-credit-analyst"><h3>Distressed credit analyst</h3><p class="terms">Written Nov 11, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>The revolver is the only instrument described as <abbr tabindex="0" data-tip="Not backed by pledged assets.">unsecured</abbr> (from the facts).</li><li>No court case is mentioned in the sections read (assumed).</li><li>Amounts are in thousands at Aug 31, 2026 (from the facts).</li></ul><h4>What the facts show</h4><ul><li>Revolver: 20,849 outstanding, due 4/30/2029, <abbr tabindex="0" data-tip="Not backed by pledged assets.">unsecured</abbr>, all in euros. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S16">S16</a> <a class="tag" href="#S17">S17</a></li><li>Series B: 26,000 at 2.50%, due 11/15/2027. Series C: 26,000 at 2.69%, due 11/15/2030. <a class="tag" href="#S9">S9</a> <a class="tag" href="#S10">S10</a></li><li>Series A: 13,200 outstanding, paid in installments of $0.4 million, with $8.4 million due on November 15, 2032. <a class="tag" href="#S8">S8</a> <a class="tag" href="#S18">S18</a></li><li>Total borrowings were 86,049. The company reported <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> compliance at Aug 31, 2026. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S21">S21</a></li></ul><h4>Not covered</h4><ul><li>Rank between instruments, note security and guarantors, and which entity owes each note: not found in the sources read.</li><li>Plan terms and <abbr tabindex="0" data-tip="Time after a missed payment before it counts as a default.">grace periods</abbr>: not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>A missed payment, or a <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> breach, at a Nov 15 payment date.</li></ul></div><p class="reads">Reads <span>Capital structure and debt</span><span>Debt timeline</span><span>Restructuring terms</span><span>Key dates</span><span>Gaps</span></p></article>
+<article class="card" id="lens-liquidity-treasury"><h3>Liquidity and treasury</h3><p class="terms">Written Nov 11, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Figures are USD thousands unless stated (from the facts).</li><li>Fiscal years end August 31 (from the facts).</li></ul><h4>What the facts show</h4><ul><li>Cash and cash equivalents were 70,607 at Aug 31, 2026. <a class="tag" href="#S23">S23</a></li><li>The revolver limit is $125.0 million, with a $95.0 million sublimit for WD-40 Company Limited. <a class="tag" href="#S12">S12</a></li><li>The revolver had 20,849 outstanding at Aug 31, 2026, all in euros. <a class="tag" href="#S7">S7</a><a class="tag" href="#S17">S17</a></li><li>Leverage cannot exceed three and a half to one. Interest coverage cannot fall below three to one. Compliance was reported at Aug 31, 2026. <a class="tag" href="#S20">S20</a><a class="tag" href="#S21">S21</a></li><li>Cash from operations was 104,977 in fiscal 2026. Interest expense was 2,774. <a class="tag" href="#S24">S24</a><a class="tag" href="#S27">S27</a></li></ul><h4>Not covered</h4><ul><li>Not found in the sources read: undrawn revolver amount, year-end <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> ratios, waivers, minimum cash conditions, interest paid.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>Series B notes of 26,000 mature Nov 15, 2027. <a class="tag" href="#S9">S9</a></li></ul></div><p class="reads">Reads <span>Capital structure and debt</span><span>Results by year</span><span>Recent results</span><span>Key dates</span><span>Gaps</span></p></article>
+<article class="card" id="lens-forensic-accountant"><h3>Forensic accountant</h3><p class="terms">Written Nov 11, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Figures are USD thousands for fiscal years ended August 31 (from the facts).</li><li>Adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> is the company's own measure (from the facts).</li></ul><h4>What the facts show</h4><ul><li>Fiscal 2026 net income was 82,346 beside adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> of 120,789. <a class="tag" href="#S24">S24</a></li><li>Fiscal 2025 net income was 90,994 beside adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> of 114,426. <a class="tag" href="#S24">S24</a></li><li>The bridge adds tax, interest, amortization and depreciation lines. <a class="tag" href="#S24">S24</a></li><li>The company states: &quot;in compliance with all debt <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenants</abbr>&quot; as of August 31, 2026. <a class="tag" href="#S21">S21</a></li><li>Fourth quarter net income &quot;decreased 32% to $14.4 million&quot;, a three-month figure. <a class="tag" href="#S28">S28</a></li></ul><h4>Not covered</h4><ul><li>Audit opinion, controls conclusion, going-concern wording, material weaknesses, restatements, late filings and auditor change: not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>The audit report or controls report in the <abbr tabindex="0" data-tip="Annual report filed with the SEC.">10-K</abbr>, once read, could add going-concern wording, a weakness or a restatement.</li></ul></div><p class="reads">Reads <span>Results by year</span><span>Recent results</span><span>Accounting and controls</span><span>Gaps</span></p></article>
+<article class="card" id="lens-industry-operator"><h3>Industry operator</h3><p class="terms">Written Nov 11, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Reads are Business, Results by year and Recent results only (from the facts).</li><li>Fiscal years end August 31 (from the facts).</li><li>Dollar figures are in USD (from the facts).</li></ul><h4>What the facts show</h4><ul><li>It sells in more than 176 countries and territories, in two product groups. <a class="tag" href="#S3">S3</a> <a class="tag" href="#S4">S4</a></li><li>Net sales were 590,557, 619,985 and 687,993 thousand in fiscal 2024, 2025 and 2026. <a class="tag" href="#S24">S24</a></li><li>Net income was 69,644, 90,994 and 82,346 thousand in the same years. <a class="tag" href="#S24">S24</a></li><li>Q4 gross margin was 52.8% against 54.7%. SG&amp;A rose 19% to $58.2 million. <a class="tag" href="#S28">S28</a></li><li>Q4 maintenance product sales rose 9% to $170.5 million. <a class="tag" href="#S28">S28</a></li></ul><h4>Not covered</h4><ul><li>Customers, suppliers, sites, permits and capacity are not in the facts. Segment and product sales by year are not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>Fiscal 2027 results against the stated gross margin guidance of 54.0% to 55.5%. <a class="tag" href="#S31">S31</a></li></ul></div><p class="reads">Reads <span>Business</span><span>Results by year</span><span>Recent results</span></p></article>
+<article class="card" id="lens-catalyst-tracker"><h3>Catalyst tracker</h3><p class="terms">Written Nov 11, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>The as-of date is Nov 11, 2026. (from the facts)</li><li>Every future date found is set by contract. (from the facts)</li><li>None of these dates is a company expectation. (assumed)</li></ul><h4>What the facts show</h4><ul><li>Series A principal of $0.4 million is paid each May and November through May 15, 2032. <a class="tag" href="#S18">S18</a></li><li>Series B interest is paid each May 15 and November 15. <a class="tag" href="#S38">S38</a></li><li>Series B notes mature 11/15/2027. <a class="tag" href="#S9">S9</a></li><li>The revolver matures 4/30/2029 and Series C matures 11/15/2030. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S10">S10</a></li><li>The last Series A payment of $8.4 million is due November 15, 2032. <a class="tag" href="#S18">S18</a></li></ul><h4>Not covered</h4><ul><li>No Restructuring terms section is in the file, and no court dates.</li><li>Outcomes if a date is missed are not tagged. The Oct 30, 2026 dividend payment result is not in the facts. <a class="tag" href="#S33">S33</a></li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>An announced date for the next results release.</li><li>A court filing or amendment that sets a new date.</li></ul></div><p class="reads">Reads <span>Key dates</span><span>Recent results</span><span>Restructuring terms</span></p></article>
+<article class="card" id="lens-skeptic"><h3>Skeptic</h3><p class="terms">Written Nov 11, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Filed figures are as stated (assumed).</li><li>Readers lean on <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> and guidance lines (from the facts).</li></ul><h4>What the facts show</h4><ul><li><abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">Covenant</abbr> compliance is the company's own statement. Year-end ratios are not found in the sources read. <a class="tag" href="#S21">S21</a> <a class="tag" href="#S20">S20</a></li><li>Adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> is the company's own measure: 120,789 thousand for fiscal 2026, against net income 82,346. <a class="tag" href="#S24">S24</a></li><li>Dividend payable Oct 30, 2026 has no payment outcome in the sources read. <a class="tag" href="#S33">S33</a></li><li>Operating income guidance is $114 million to $120 million; fiscal 2026 operating income is not shown. <a class="tag" href="#S31">S31</a></li></ul><h4>Not covered</h4><ul><li>Market prices and security terms of the notes.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>Year-end ratios, or a fiscal 2026 operating income figure.</li></ul></div><p class="reads">Reads <span>all sections</span></p></article>
+</div>
+<script type="application/json" data-for="lenses">{"credit-analyst":["Capital structure and debt","Debt timeline","Restructuring terms","Key dates","Gaps"],"liquidity-treasury":["Capital structure and debt","Results by year","Recent results","Key dates","Gaps"],"forensic-accountant":["Results by year","Recent results","Accounting and controls","Gaps"],"industry-operator":["Business","Results by year","Recent results"],"catalyst-tracker":["Key dates","Recent results","Restructuring terms"],"skeptic":["*"]}</script>
+</section>
+<section class="view-box" aria-labelledby="view"><h2 id="view">Analyst's view</h2>
+<div class="view"><p class="status" style="color:var(--watching)">watching</p>
+<p><strong>Board lane:</strong> Watching</p>
+<p>Example entry, to show where a person's view goes. Replace it with your own: for example, what to read before the next look.</p>
+
+
+
+<p class="lede">By analyst, Nov 11, 2026. Written by a person; not checked against the facts.</p></div></section>
+<section aria-labelledby="sources">
+<details id="sources-box">
+<summary><h2 id="sources">Sources (24)</h2></summary>
+<p class="lede">Each entry gives the supplied quote and its check status. A quote match does not confirm the claim's meaning or that the filing is the latest. A long dash is shown as a hyphen.</p>
+<ol class="src">
+<li id="S1"><span class="sid">S1</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>WD-40 Company is a global marketing organization dedicated to creating positive lasting memories by developing and selling products that solve problems in workshops, factories and homes around the world. The Company was founded in 1953 and is headquartered in San Diego, California.</q></div></li>
+<li id="S3"><span class="sid">S3</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>We currently market and sell our products in more than 176 countries and territories worldwide</q></div></li>
+<li id="S4"><span class="sid">S4</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Our sales come from two product groups – maintenance products and homecare and cleaning products.</q></div></li>
+<li id="S7"><span class="sid">S7</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Credit Agreement – revolving credit facility (1) Various 4/30/2029 $ 20,849 $ 20,995</q></div></li>
+<li id="S8"><span class="sid">S8</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Series A Notes – 3.39 % fixed rate (2) 11/15/2017 2026-2032 13,200 14,000</q></div></li>
+<li id="S9"><span class="sid">S9</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Series B Notes – 2.50 % fixed rate (3) 9/30/2020 11/15/2027 26,000 26,000</q></div></li>
+<li id="S10"><span class="sid">S10</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Series C Notes – 2.69 % fixed rate (3) 9/30/2020 11/15/2030 26,000 26,000</q></div></li>
+<li id="S11"><span class="sid">S11</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>(in thousands): Issuance Maturities (calendar year) August 31, 2026 August 31, 2025 Credit Agreement – revolving credit facility (1) Various 4/30/2029 $ 20,849 $ 20,995 Note Agreement Series A Notes – 3.39 % fixed rate (2) 11/15/2017 2026-2032 13,200 14,000 Series B Notes – 2.50 % fixed rate (3) 9/30/2020 11/15/2027 26,000 26,000 Series C Notes – 2.69 % fixed rate (3) 9/30/2020 11/15/2030 26,000 26,000 Total borrowings 86,049 86,995</q></div></li>
+<li id="S12"><span class="sid">S12</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>consists of a revolving commitment for borrowing by the Company up to $ 125.0 million and with a sublimit from $ 95.0 million for WD-40 Company Limited, a wholly owned operating subsidiary of the Company</q></div></li>
+<li id="S14"><span class="sid">S14</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>The Credit Agreement modified certain terms and conditions of the Company's previous Amended and Restated Agreement dated March 16, 2020 (as amended on September 30, 2020, and November 29, 2021), and extended the maturity date for the revolving credit facility from September 30, 2025 to April 30, 2029</q></div></li>
+<li id="S16"><span class="sid">S16</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>cash currently available from our existing unsecured revolving credit facility under the Credit Agreement with Bank of America, N.A.</q></div></li>
+<li id="S17"><span class="sid">S17</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>As of August 31, 2026, $20.8 million of this facility was classified as long-term and was entirely denominated in Euros.</q></div></li>
+<li id="S18"><span class="sid">S18</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Principal payments are required semi-annually in May and November of each year in equal installments of $ 0.4 million through May 15, 2032, resulting in $ 0.8 million classified as short-term. The remaining outstanding principal in the amount of $ 8.4 million will become due on November 15, 2032</q></div></li>
+<li id="S20"><span class="sid">S20</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>our consolidated leverage ratio cannot be greater than three and a half to one and our consolidated interest coverage ratio cannot be less than three to one.</q></div></li>
+<li id="S21"><span class="sid">S21</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>As of August 31, 2026, the Company was in compliance with all debt covenants under both the Note Agreement and the Credit Agreement.</q></div></li>
+<li id="S23"><span class="sid">S23</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>(In thousands, except share and per share amounts) August 31, 2026 August 31, 2025 Assets Current assets: Cash and cash equivalents $ 70,607 $ 58,130</q></div></li>
+<li id="S24"><span class="sid">S24</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Adjusted EBITDA (in thousands, except percentages): Fiscal Year Ended August 31, 2026 2025 2024 Net income – GAAP $ 82,346 $ 90,994 $ 69,644 Provision for income taxes 24,153 10,632 21,864 Interest income (671) (517) (474) Interest expense 2,774 3,441 4,287 Amortization (1)(2) 4,013 2,254 2,327 Depreciation (2) 8,174 7,622 8,350 Adjusted EBITDA $ 120,789 $ 114,426 $ 105,998 Net sales $ 687,993 $ 619,985 $ 590,557</q></div></li>
+<li id="S26"><span class="sid">S26</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Adjusted EBITDA (in thousands, except percentages): Fiscal Year Ended August 31, 2026 2025 2024 Net income – GAAP $ 82,346 $ 90,994 $ 69,644 Provision for income taxes 24,153 10,632 21,864 Interest income (671) (517) (474) Interest expense 2,774 3,441 4,287 Amortization (1)(2) 4,013 2,254 2,327 Depreciation (2) 8,174 7,622 8,350 Adjusted EBITDA $ 120,789 $ 114,426 $ 105,998</q></div></li>
+<li id="S27"><span class="sid">S27</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000091/wdfc-20260831.htm" target="_blank" rel="noopener">WD-40 Company Form 10-K for the fiscal year ended Aug 31, 2026</a><span class="sdate">Oct 26, 2026 (filed). Quote check is outdated; recheck this source.</span><q>Fiscal Year Ended August 31, 2026 2025 2024 Net cash provided by operating activities $ 104,977 $ 87,925 $ 92,034</q></div></li>
+<li id="S28"><span class="sid">S28</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000086/wdfc-20261021xexx991.htm" target="_blank" rel="noopener">Press release: fourth quarter and fiscal year 2026 results (8-K exhibit 99.1)</a><span class="sdate">Oct 21, 2026. Quote check is outdated; recheck this source.</span><q>Fourth Quarter Summary (Compared with Fourth Quarter Fiscal Year 2025) • Net sales increased 8% to $176.8 million. On a constant currency basis, net sales increased 7% to $174.9 million. • Net sales of maintenance products increased 9% to $170.5 million. On a constant currency basis, maintenance product sales increased 8% to $168.8 million. • Gross margin decreased to 52.8% compared to 54.7%. • Selling, general and administrative expenses increased 19% to $58.2 million. • Advertising and sales promotion expenses increased 26% to $15.8 million. • Operating income decreased 32% to $19.1 million. • Net income decreased 32% to $14.4 million, and diluted earnings per share were $1.06, compared with $1.56.</q></div></li>
+<li id="S31"><span class="sid">S31</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000086/wdfc-20261021xexx991.htm" target="_blank" rel="noopener">Press release: fourth quarter and fiscal year 2026 results (8-K exhibit 99.1)</a><span class="sdate">Oct 21, 2026. Quote check is outdated; recheck this source.</span><q>Fiscal Year 2027 Guidance The Company is providing guidance for fiscal year 2027 as follows: • Net sales growth is projected to be between 4% and 7% compared with fiscal year 2026, with net sales expected to be between $715 million and $735 million on a constant currency basis. • Gross margin for the full year is expected to be between 54.0% and 55.5%. • Advertising and promotion investments are projected to be approximately 6% of net sales. • Operating income is projected to be between $114 million and $120 million</q></div></li>
+<li id="S33"><span class="sid">S33</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513226000086/wdfc-20261021xexx991.htm" target="_blank" rel="noopener">Press release: fourth quarter and fiscal year 2026 results (8-K exhibit 99.1)</a><span class="sdate">Oct 21, 2026. Quote check is outdated; recheck this source.</span><q>On October 8, 2026, the Board of Directors declared a quarterly cash dividend of $1.02 per share. The dividend is payable on October 30, 2026, to stockholders of record at the close of business on October 19, 2026.</q></div></li>
+<li id="S38"><span class="sid">S38</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513220000035/wdfc-20200930xex10_f.htm" target="_blank" rel="noopener">Series B Senior Note No. B-1 (8-K exhibit 10(f))</a><span class="sdate">Sep 30, 2020 (issue date; 8-K filed Oct 6, 2020). Quote check is outdated; recheck this source.</span><q>ORIGINAL ISSUE DATE: September 30, 2020 INTEREST RATE: 2.50% INTEREST PAYMENT DATES: Semi-annually on each May 15 and November 15 , beginning on May 15, 2021 FINAL MATURITY DATE: November 15, 2027</q></div></li>
+<li id="S47"><span class="sid">S47</span><div><a href="https://www.sec.gov/Archives/edgar/data/105132/000010513217000041/wdfc-20171117xex10_a.htm" target="_blank" rel="noopener">Note Purchase and Private Shelf Agreement dated Nov 15, 2017 (8-K exhibit 10(a))</a><span class="sdate">Nov 15, 2017 (agreement date; 8-K filed Nov 17, 2017). Quote check is outdated; recheck this source.</span><q>On May 15 , 20 18 and on the 15 th day of each November and May thereafter , to and including May 15, 2032, the Company will prepay</q></div></li>
+</ol>
+</details>
+</section>
+<footer>Built by build-artifacts.mjs from the name folder. Draft for a person to check. Not advice: no price targets, no recommendation. Dotted terms show a general definition on hover; the definitions are reference, not facts from the filings.</footer>
+</div>
+<div id="tip" role="tooltip"></div>
+<script>
+(() => {
+  const tip = document.getElementById('tip');
+  const show = el => {
+    tip.textContent = el.dataset.tip; tip.style.display = 'block';
+    const r = el.getBoundingClientRect(), t = tip.getBoundingClientRect();
+    tip.style.left = Math.max(16, Math.min(r.left, innerWidth - t.width - 16)) + 'px';
+    tip.style.top = (r.bottom + t.height + 8 > innerHeight ? r.top - t.height - 6 : r.bottom + 6) + 'px';
+  };
+  const hide = () => { tip.style.display = 'none'; };
+  const reveal = () => {
+    const target = document.getElementById(location.hash.slice(1));
+    const box = target && target.closest('details');
+    if (box && !box.open) { box.open = true; target.scrollIntoView(); }
+  };
+  window.addEventListener('hashchange', reveal);
+  reveal();
+  const term = e => e.target.closest && e.target.closest('[data-tip]');
+  // A tap is followed by mouse events at a stale pointer position; let the tap decide.
+  let touched = 0;
+  document.addEventListener('touchstart', () => { touched = Date.now(); }, { passive: true });
+  document.addEventListener('mouseover', e => { if (Date.now() - touched < 800) return; const a = term(e); a ? show(a) : hide(); });
+  document.addEventListener('click', e => { const a = term(e); a ? show(a) : hide(); });
+  document.addEventListener('focusin', e => { const a = term(e); if (a) show(a); });
+  document.addEventListener('focusout', hide);
+  window.addEventListener('scroll', hide, true);
+})();
+</script>
+<script>
+(() => {
+  document.documentElement.classList.add('js');
+  const all = (sel, el = document) => [...el.querySelectorAll(sel)];
+  const panels = all('.tab-panel');
+  const showTab = id => {
+    if (!panels.some(p => p.id === id)) return;
+    panels.forEach(p => p.classList.toggle('on', p.id === id));
+    all('.tabs a[data-tab]').forEach(a => a.setAttribute('aria-current', a.dataset.tab === id ? 'page' : 'false'));
+  };
+  const follow = () => {
+    const target = location.hash.length > 1 && document.getElementById(location.hash.slice(1));
+    const panel = target && (target.classList.contains('tab-panel') ? target : target.closest('.tab-panel'));
+    if (panel) showTab(panel.id);
+  };
+  follow();
+  window.addEventListener('hashchange', follow);
+  all('.tabs a[data-tab]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    showTab(a.dataset.tab);
+    history.replaceState(null, '', '#' + a.dataset.tab);
+  }));
+  const data = {};
+  all('script[type="application/json"][data-for]').forEach(s => { data[s.dataset.for] = JSON.parse(s.textContent); });
+  const fill = (kind, d) => {
+    const box = document.querySelector('.readout[data-for="' + kind + '"]');
+    if (!box || !d) return;
+    const set = (cls, text) => { box.querySelector(cls).textContent = text || ''; };
+    set('.r-title', d.title); set('.r-label', d.label); set('.r-value', d.value); set('.r-sub', d.sub);
+    box.querySelector('.r-rows').replaceChildren(...(d.rows || []).map(r => {
+      const li = document.createElement('li'), sw = document.createElement('i'), n = document.createElement('span'), v = document.createElement('b');
+      sw.style.background = r.color; n.textContent = r.name; v.textContent = r.value;
+      li.append(sw, n, v);
+      return li;
+    }));
+    const t = box.querySelector('.r-tags');
+    t.replaceChildren();
+    if (d.tags && d.tags.length) {
+      t.append('Source ');
+      d.tags.forEach(id => { const a = document.createElement('a'); a.className = 'tag'; a.href = '#' + id; a.textContent = id; t.append(a, ' '); });
+    }
+  };
+  const read = e => {
+    const el = e.target.closest && e.target.closest('[data-read]');
+    if (!el) return;
+    const [kind, view, i] = el.dataset.read.split(':');
+    fill(kind, data[kind] && data[kind][view] && data[kind][view][+i]);
+  };
+  ['mouseover', 'focusin', 'click'].forEach(type => document.addEventListener(type, read));
+  all('[data-switch]').forEach(group => group.addEventListener('click', e => {
+    const b = e.target.closest('button[data-pick]');
+    if (!b) return;
+    const key = group.dataset.switch, pick = b.dataset.pick;
+    all('button[data-pick]', group).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    if (key === 'lenses') {
+      const reads = data.lenses || {};
+      all('.cards.lenses .card').forEach(card => {
+        const r = reads[card.id.replace(/^lens-/, '')] || [];
+        card.classList.toggle('dim', pick !== '*' && !r.includes('*') && !r.includes(pick));
+      });
+      return;
+    }
+    all('.pane[data-group="' + key + '"]').forEach(p => p.classList.toggle('on', p.dataset.key === pick));
+    const list = data[key] && data[key][pick];
+    if (list && list.length) fill(key, list[list.length - 1]);
+  }));
+})();
+</script>
+</body>
+</html>

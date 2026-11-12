@@ -1,0 +1,246 @@
+[
+  {
+    "name": "Revolving credit facility (Bank of America)",
+    "short": "Revolver",
+    "in_case": false,
+    "security": {
+      "value": "unsecured",
+      "src": [
+        "S16"
+      ]
+    },
+    "amount": {
+      "value": "up to $125.0 million; 20,849 thousand drawn at Aug 31, 2026, all in euros",
+      "src": [
+        "S12",
+        "S7",
+        "S17"
+      ]
+    },
+    "issued": {
+      "value": "Apr 30, 2024 (current agreement); 8-K filed May 2, 2024",
+      "src": [
+        "S13",
+        "S39"
+      ]
+    },
+    "issued_date": "2024-04-30",
+    "maturity": {
+      "value": "Apr 30, 2029",
+      "src": [
+        "S14"
+      ]
+    },
+    "maturity_date": "2029-04-30",
+    "coupon": {
+      "value": "index is SOFR for U.S. dollar borrowings and EURIBOR for euro borrowings; margin not quoted",
+      "src": [
+        "S15"
+      ]
+    },
+    "pricing": {
+      "note": "bank facility; the margin over SOFR was not in the parts read"
+    },
+    "current": {
+      "note": "bank facility; no market quote"
+    },
+    "chart": {
+      "outstanding": 20.8,
+      "limit": 125.0,
+      "unit": "USD millions",
+      "as_of": "2026-08-31",
+      "src": [
+        "S17",
+        "S12"
+      ]
+    }
+  },
+  {
+    "name": "3.39% Series A Notes due 2032",
+    "short": "Series A notes",
+    "in_case": false,
+    "security": {
+      "value": "not stated"
+    },
+    "amount": {
+      "value": "13,200 thousand at Aug 31, 2026; paid down $0.4 million each May and November",
+      "src": [
+        "S8",
+        "S18"
+      ]
+    },
+    "issued": {
+      "value": "Nov 15, 2017; 8-K filed Nov 17, 2017",
+      "src": [
+        "S8",
+        "S40"
+      ]
+    },
+    "issued_date": "2017-11-15",
+    "maturity": {
+      "value": "Nov 15, 2032 (last $8.4 million); installments through May 15, 2032",
+      "src": [
+        "S18"
+      ]
+    },
+    "maturity_date": "2032-11-15",
+    "coupon": {
+      "value": "3.39% fixed",
+      "src": [
+        "S8"
+      ]
+    },
+    "pricing": {
+      "value": "sold at 100% of principal",
+      "src": [
+        "S36"
+      ]
+    },
+    "spreads": [
+      {
+        "label": "at issue, Nov 15, 2017",
+        "bps": 106,
+        "formula": "3.39% coupon (sold at 100%, so yield taken as the coupon) minus 2.33% ten-year Treasury; the notes run to Nov 15, 2032, with $8.4 million due then, so the ten-year rate is a judgment of the nearest tenor",
+        "src": [
+          "S8",
+          "S36",
+          "S18",
+          "S43"
+        ]
+      }
+    ],
+    "current": {
+      "note": "privately placed notes; no public trade record"
+    },
+    "chart": {
+      "outstanding": 13.2,
+      "unit": "USD millions",
+      "as_of": "2026-08-31",
+      "src": [
+        "S8"
+      ]
+    }
+  },
+  {
+    "name": "2.50% Series B Senior Notes due 2027",
+    "short": "Series B notes",
+    "in_case": false,
+    "security": {
+      "value": "not stated"
+    },
+    "amount": {
+      "value": "26,000 thousand at Aug 31, 2026",
+      "src": [
+        "S9"
+      ]
+    },
+    "issued": {
+      "value": "Sep 30, 2020; 8-K filed Oct 6, 2020",
+      "src": [
+        "S38",
+        "S41"
+      ]
+    },
+    "issued_date": "2020-09-30",
+    "maturity": {
+      "value": "Nov 15, 2027",
+      "src": [
+        "S38"
+      ]
+    },
+    "maturity_date": "2027-11-15",
+    "coupon": {
+      "value": "2.50% fixed, paid May 15 and Nov 15",
+      "src": [
+        "S9",
+        "S38"
+      ]
+    },
+    "pricing": {
+      "note": "issue price not stated in the Series B note or the annual report"
+    },
+    "spreads": [
+      {
+        "label": "at issue, Sep 30, 2020",
+        "bps": 203,
+        "formula": "2.50% coupon (yield taken as the coupon, an assumption: the price is not stated) minus 0.47% seven-year Treasury; term about 7.1 years",
+        "src": [
+          "S38",
+          "S44"
+        ]
+      }
+    ],
+    "current": {
+      "note": "privately placed notes; no public trade record"
+    },
+    "chart": {
+      "outstanding": 26.0,
+      "unit": "USD millions",
+      "as_of": "2026-08-31",
+      "src": [
+        "S9"
+      ]
+    }
+  },
+  {
+    "name": "2.69% Series C Senior Notes due 2030",
+    "short": "Series C notes",
+    "in_case": false,
+    "security": {
+      "value": "not stated"
+    },
+    "amount": {
+      "value": "26,000 thousand at Aug 31, 2026",
+      "src": [
+        "S10"
+      ]
+    },
+    "issued": {
+      "value": "Sep 30, 2020; 8-K filed Oct 6, 2020",
+      "src": [
+        "S10",
+        "S42"
+      ]
+    },
+    "issued_date": "2020-09-30",
+    "maturity": {
+      "value": "Nov 15, 2030",
+      "src": [
+        "S10"
+      ]
+    },
+    "maturity_date": "2030-11-15",
+    "coupon": {
+      "value": "2.69% fixed, paid May and November (footnote 3 of the debt note)",
+      "src": [
+        "S10",
+        "S19"
+      ]
+    },
+    "pricing": {
+      "note": "issue price not stated in the filings read"
+    },
+    "spreads": [
+      {
+        "label": "at issue, Sep 30, 2020",
+        "bps": 200,
+        "formula": "2.69% coupon (yield taken as the coupon, an assumption: the price is not stated) minus 0.69% ten-year Treasury; term about 10.1 years",
+        "src": [
+          "S10",
+          "S45"
+        ]
+      }
+    ],
+    "current": {
+      "note": "privately placed notes; no public trade record"
+    },
+    "chart": {
+      "outstanding": 26.0,
+      "unit": "USD millions",
+      "as_of": "2026-08-31",
+      "src": [
+        "S10"
+      ]
+    }
+  }
+]

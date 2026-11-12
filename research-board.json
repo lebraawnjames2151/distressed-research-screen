@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "title": "Research board (sample)",
+  "as_of": "2026-11-12",
+  "horizon_days": 90,
+  "names": [
+    { "ticker": "CRVN", "folder": "../corvane" },
+    { "ticker": "WDFC", "folder": "../wdfc", "note": "Real public name. Fixed-rate notes and a revolver, no stress in the filings read." },
+    { "ticker": "BWRG", "name": "Brightwell Retail Group", "fictional": true, "situation": "in-court", "lane": "check", "note": "Chapter 11 since July. Plan vote closed Nov 6." },
+    { "ticker": "TMHC", "name": "Tamsin Health Clinics", "fictional": true, "situation": "pre-default", "lane": "check", "note": "Forbearance signed Oct 28. Waiver runs to Jan 15." },
+    { "ticker": "OPM", "name": "Ostrander Paper Mills", "fictional": true, "situation": "going-concern", "lane": "watch", "note": "Packaging supplier to Brightwell, with a claim filed in its case." },
+    { "ticker": "RGEF", "name": "Ridgeline Equipment Finance", "fictional": true, "situation": "going-concern", "lane": "watch", "note": "Leases trucks to Corvane. Second order on the coupon bet." },
+    { "ticker": "HDO", "name": "Halden Offshore", "fictional": true, "situation": "post-emergence", "lane": "pass", "note": "Exit loan refinanced in September. Next maturity 2030." },
+    { "ticker": "MAPT", "name": "Marlow Auto Parts", "fictional": true, "situation": "in-court", "lane": "new", "note": "Added by the screen on Nov 11. No brief yet." },
+    { "ticker": "GLNR", "name": "Glenrock Foods", "fictional": true, "situation": "going-concern", "lane": "new", "note": "Added from the diesel bet. Relies on contract carriers." }
+  ],
+  "events": [
+    { "kind": "Court", "at": "2026-11-18T15:00:00Z", "title": "Brightwell plan confirmation hearing", "check": "Trade committee objections and the exit financing date.", "tickers": ["BWRG", "OPM"] },
+    { "kind": "Macro", "at": "2026-12-09T19:00:00Z", "title": "Fed rate decision", "check": "Rate path for floating-rate debt at CRVN and TMHC. Confirm the date on the official calendar.", "tickers": ["CRVN", "TMHC"] },
+    { "kind": "Covenant", "at": "2027-01-15", "title": "Tamsin leverage waiver ends", "check": "Q4 leverage test once the waiver runs out.", "tickers": ["TMHC"] }
+  ],
+  "bets": [
+    { "id": "b1", "if": "If Corvane does not pay the Nov 15 coupon", "window": "Grace ends Dec 15", "status": "open", "updated": "Nov 11, 2026", "by": "analyst", "orders": [
+      [{ "ticker": "CRVN", "why": "Notes enter the grace period. Check for a cross-default into the ABL and the term loan." }],
+      [{ "ticker": "RGEF", "why": "Leases trucks to Corvane. Lease payments are next in line." }],
+      [{ "ticker": "GLNR", "why": "Uses Corvane for regional refrigerated loads." }] ] },
+    { "id": "b2", "if": "If the Fed cuts at the December meeting", "window": "Dec 9", "status": "open", "updated": "Nov 10, 2026", "by": "analyst", "orders": [
+      [{ "ticker": "CRVN", "why": "Term loan floats at SOFR plus 4.50%." }],
+      [{ "ticker": "TMHC", "why": "Variable-rate term loan, with a leverage test in January." }], [] ] },
+    { "id": "b3", "if": "If the Brightwell confirmation hearing is adjourned", "window": "Nov 18", "status": "open", "updated": "Nov 9, 2026", "by": "analyst", "orders": [
+      [{ "ticker": "BWRG", "why": "The exit financing commitment has an end date." }],
+      [{ "ticker": "OPM", "why": "Recovery on its claim waits." }], [] ] },
+    { "id": "b4", "if": "If Tamsin signs a forbearance before Oct 31", "window": "Oct 31", "status": "triggered", "updated": "Oct 28, 2026", "by": "analyst", "orders": [
+      [{ "ticker": "TMHC", "why": "Signed Oct 28. Moved to Worth checking." }], [], [] ] },
+    { "id": "b5", "if": "If Halden misses its Q3 leverage test", "window": "Oct 30", "status": "lapsed", "updated": "Oct 30, 2026", "by": "analyst", "orders": [
+      [{ "ticker": "HDO", "why": "Refinanced before the test, so the bet lapsed." }], [], [] ] }
+  ]
+}

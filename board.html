@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research board (sample)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Instrument+Serif&amp;display=swap">
+<style>
+:root { --bg: #f1f1ec; --surface: #fcfcfa; --ink: #1d2a25; --muted: #52645b; --rule: #d9dfd7; --accent: #19624c; --chip: #e5f0e8; --soft: #e9efe4;
+  --band: #19362c; --band-ink: #f6f7ec; --band-muted: #d9e3d6; --lime: #d8eca2; --draft: #a84a39; --neg: #a84a39;
+  --amber-bg: #f3ead2; --amber: #6d5418; --rose-bg: #f6e3dc; --rose: #8a3a2c; --grey-bg: #ecece6;
+  --secured: #2f6f9f; --unsecured: #c0652b; --unstated: #7b8794;
+  --c1: #2f6f9f; --c2: #c0652b; --c3: #19624c; --c4: #a97f1f; --c5: #7c4e8a; --c6: #b24a68; --c7: #2f8a96; --c8: #7b8794; --c9: #5f7f1f; --c10: #8c564b;
+  --working: #19624c; --watching: #8a6412; --passed: #52645b; color-scheme: light; --serif: "Instrument Serif", Georgia, serif; --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #121815; --surface: #1a221e; --ink: #e3e9e4; --muted: #a3b2a9; --rule: #2d3a33; --accent: #7cc4a6; --chip: #213129; --soft: #1f2b25;
+  --band: #0f2a21; --band-ink: #f6f7ec; --band-muted: #c6d3c8; --lime: #d8eca2; --draft: #f0a493; --neg: #e08a76;
+  --amber-bg: #3a3120; --amber: #e3c27a; --rose-bg: #3d2522; --rose: #f0a493; --grey-bg: #262d29;
+  --secured: #5f9fd4; --unsecured: #e08a52; --unstated: #9aa6b2;
+  --c1: #5f9fd4; --c2: #e08a52; --c3: #4fb08a; --c4: #d6ad4a; --c5: #b08ac2; --c6: #e07a96; --c7: #5ec0cc; --c8: #9aa6b2; --c9: #9bc34a; --c10: #c49285;
+  --working: #7cc4a6; --watching: #e3c27a; --passed: #a3b2a9; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #121815; --surface: #1a221e; --ink: #e3e9e4; --muted: #a3b2a9; --rule: #2d3a33; --accent: #7cc4a6; --chip: #213129; --soft: #1f2b25;
+  --band: #0f2a21; --band-ink: #f6f7ec; --band-muted: #c6d3c8; --lime: #d8eca2; --draft: #f0a493; --neg: #e08a76;
+  --amber-bg: #3a3120; --amber: #e3c27a; --rose-bg: #3d2522; --rose: #f0a493; --grey-bg: #262d29;
+  --secured: #5f9fd4; --unsecured: #e08a52; --unstated: #9aa6b2;
+  --c1: #5f9fd4; --c2: #e08a52; --c3: #4fb08a; --c4: #d6ad4a; --c5: #b08ac2; --c6: #e07a96; --c7: #5ec0cc; --c8: #9aa6b2; --c9: #9bc34a; --c10: #c49285;
+  --working: #7cc4a6; --watching: #e3c27a; --passed: #a3b2a9; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 var(--sans); overflow-wrap: anywhere; overflow-x: clip; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-bottom: 56px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 30px; }
+header.band { background: var(--band); color: var(--band-ink); border-bottom: 4px solid #a8ca81; margin-inline: calc(50% - 50vw); padding: 24px max(16px, calc(50vw - 660px)) 26px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 30px; }
+.kicker { font: 600 11px/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--lime); margin: 0; }
+h1 { font: 400 clamp(36px, 5vw, 56px)/1.04 var(--serif); letter-spacing: -.03em; margin: 8px 0 6px; }
+header p { margin: 0; color: var(--band-muted); font-size: 14px; max-width: 640px; }
+.clock { text-align: right; font-size: 13px; color: var(--band-muted); }
+.clock b { display: block; color: var(--band-ink); font-size: 16px; font-variant-numeric: tabular-nums; }
+h2 { font-size: 22px; letter-spacing: -.02em; margin: 0; }
+h3 { margin: 0; font-size: 15px; line-height: 1.25; }
+p { margin: 0; }
+section { display: grid; gap: 12px; min-width: 0; }
+.head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 8px 16px; }
+.muted, .head p { color: var(--muted); font-size: 13px; }
+.eyebrow { font: 600 10.5px/1.3 var(--mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.grid-up { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: 10px; }
+.ev, .card, .bet, form.add { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.ev-top, .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.cd { flex: none; font-size: 12px; font-weight: 700; padding: 3px 8px; border-radius: 99px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.u-day { background: var(--rose-bg); color: var(--rose); } .u-3 { background: var(--amber-bg); color: var(--amber); } .u-later { background: var(--chip); color: var(--accent); }
+.tks { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 4px; align-items: center; }
+.tk { border: 0; border-radius: 5px; padding: 5px 8px; font: 600 11px/1 var(--mono); background: var(--chip); color: var(--ink); cursor: pointer; min-height: 28px; }
+.tk.on { background: var(--band); color: var(--band-ink); }
+a { color: var(--accent); }
+.go { font-size: 12px; font-weight: 650; }
+.focus { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; background: var(--band); color: var(--band-ink); border-radius: 9px; padding: 9px 12px; font-size: 13px; }
+.focus button { border: 1px solid #789488; background: transparent; color: var(--band-ink); border-radius: 6px; padding: 5px 10px; font: 600 12px var(--sans); cursor: pointer; }
+.lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 12px; align-items: start; }
+.lane { background: var(--soft); border: 1px solid var(--rule); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 10px; min-height: 180px; min-width: 0; }
+.lane.check { background: color-mix(in srgb, var(--accent) 12%, var(--soft)); }
+.count { font: 600 11px/1 var(--mono); background: var(--surface); border: 1px solid var(--rule); border-radius: 99px; padding: 4px 8px; }
+.card.on { outline: 2px solid var(--accent); }
+.sit { font-size: 11px; font-weight: 650; padding: 3px 7px; border-radius: 5px; white-space: nowrap; background: var(--grey-bg); }
+.sit.in-court { background: var(--rose-bg); color: var(--rose); } .sit.pre-default { background: var(--amber-bg); color: var(--amber); } .sit.post-emergence { background: var(--chip); color: var(--accent); }
+.tick { font: 600 11px/1.4 var(--mono); color: var(--muted); }
+.next { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 7px; }
+.next b { color: var(--ink); white-space: nowrap; }
+.from { font-size: 11px; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+select, input, textarea, .btn { font: inherit; color: inherit; }
+select { flex: 1 1 130px; min-width: 0; min-height: 34px; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; padding: 5px 8px; font-size: 12px; }
+.btn { min-height: 34px; border: 1px solid var(--rule); background: transparent; border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 650; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn.warn { border-color: var(--neg); color: var(--neg); }
+.btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.empty { font-size: 12px; color: var(--muted); border: 1px dashed var(--rule); border-radius: 9px; padding: 14px; text-align: center; }
+.bets-wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+.bets { flex: 999 1 600px; min-width: 0; display: grid; gap: 12px; }
+.bet h3 { font-size: 17px; letter-spacing: -.01em; }
+.orders { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 12px; }
+.order { border-top: 3px solid; padding-top: 8px; display: grid; gap: 8px; align-content: start; }
+.o1 { border-color: var(--accent); } .o2 { border-color: #5d9175; } .o3 { border-color: #a8ca81; }
+.why { font-size: 12.5px; }
+.status { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 99px; }
+.status.open { background: var(--chip); color: var(--accent); } .status.triggered { background: var(--rose-bg); color: var(--rose); } .status.lapsed { background: var(--grey-bg); color: var(--muted); }
+.meta { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 12px; color: var(--muted); }
+.meta .when { margin-left: auto; }
+form.add { flex: 1 1 300px; background: var(--soft); gap: 10px; }
+form.add label { display: grid; gap: 4px; font-size: 12px; font-weight: 650; }
+form.add input, form.add textarea { min-height: 38px; border: 1px solid var(--rule); border-radius: 7px; padding: 6px 8px; background: var(--surface); font-weight: 400; }
+form.add textarea { min-height: 64px; resize: vertical; }
+textarea.out { width: 100%; min-height: 140px; font: 12px/1.4 var(--mono); border: 1px solid var(--rule); border-radius: 8px; padding: 8px; background: var(--surface); }
+.note { font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="band"><div><p class="kicker">Distressed research · names marked fictional are made up</p><h1>Research board (sample)</h1><p>What lands next, which names are worth a look, and the if-then bets that put them there. Board file as of Nov 12, 2026.</p></div><p class="clock">Now<b id="now">Turn on scripts to see the board.</b></p></header>
+<noscript><p class="empty">This board draws itself with a script. Open it in a browser with scripts on, or read research-board.json.</p></noscript>
+<section aria-labelledby="up-title"><div class="head"><h2 id="up-title">Coming up</h2><p>Live countdowns for the next 90 days. Red is under a day, amber under three. Each card says what to check.</p></div><div id="focus"></div><div class="grid-up" id="up"></div></section>
+<section aria-labelledby="lanes-title"><div class="head"><h2 id="lanes-title">Names by lane</h2><p>A person moves a name. A name with a brief takes its lane from the analyst's view in that brief.</p></div><div class="lanes" id="lanes"></div></section>
+<section aria-labelledby="bets-title"><div class="head"><div><h2 id="bets-title">If-then bets</h2><p>If this happens, these names are worth checking, by order of effect.</p></div><div class="actions" id="filters"></div></div>
+<p id="copy-msg" class="muted" role="status"></p><div id="copy-out"></div>
+<div class="bets-wrap"><div class="bets" id="bets"></div>
+<form class="add" id="add"><h3>Add a bet</h3><p class="muted">Write the condition, then the tickers it touches, separated by commas.</p>
+<label>If<textarea name="if" placeholder="If the Q3 10-Q keeps the going-concern note"></textarea></label>
+<label>Window<input name="window" placeholder="Nov 16"></label>
+<label>1st order<input name="o1" placeholder="CRVN"></label>
+<label>2nd order<input name="o2" placeholder="RGEF"></label>
+<label>3rd order<input name="o3" placeholder="GLNR"></label>
+<button class="btn primary" type="submit">Add bet</button><p class="muted" id="add-msg" role="status"></p>
+<p class="muted">Changes stay in this browser until someone saves them: "Copy the board file" gives the updated research-board.json for the skill to save.</p></form></div></section>
+<p class="note">Built by build-board.mjs from research-board.json and the name folders it names. Lanes and bets are a person's calls, not the system's: the system never recommends. Check every date against its filing or the official calendar before relying on it.</p>
+<script type="application/json" id="board-data">{"title":"Research board (sample)","as_of":"2026-11-12","horizon_days":90,"fictional_note":true,"situations":{"in-court":"In court","pre-default":"Pre-default","post-emergence":"Post-emergence","single-asset":"Single asset","going-concern":"Operating company"},"lanes":{"new":"New names","check":"Worth checking","watch":"Watching","pass":"Not worth checking"},"names":[{"ticker":"CRVN","name":"Corvane Logistics Inc.","situation":"pre-default","lane":"check","lane_from":"analyst view, 2026-11-12","note":"Sample view, written to show where a person's view goes. The week of Nov 16 settles more than any filing so far.","fictional":true,"slug":"corvane","brief":"names/corvane/facts.html"},{"ticker":"WDFC","name":"WD-40 Company","situation":null,"lane":"watch","lane_from":"analyst view, 2026-11-11","note":"Real public name. Fixed-rate notes and a revolver, no stress in the filings read.","fictional":false,"slug":"wdfc","brief":"names/wdfc/facts.html"},{"ticker":"BWRG","name":"Brightwell Retail Group","situation":"in-court","lane":"check","lane_from":"board file","note":"Chapter 11 since July. Plan vote closed Nov 6.","fictional":true,"slug":null,"brief":null},{"ticker":"TMHC","name":"Tamsin Health Clinics","situation":"pre-default","lane":"check","lane_from":"board file","note":"Forbearance signed Oct 28. Waiver runs to Jan 15.","fictional":true,"slug":null,"brief":null},{"ticker":"OPM","name":"Ostrander Paper Mills","situation":"going-concern","lane":"watch","lane_from":"board file","note":"Packaging supplier to Brightwell, with a claim filed in its case.","fictional":true,"slug":null,"brief":null},{"ticker":"RGEF","name":"Ridgeline Equipment Finance","situation":"going-concern","lane":"watch","lane_from":"board file","note":"Leases trucks to Corvane. Second order on the coupon bet.","fictional":true,"slug":null,"brief":null},{"ticker":"HDO","name":"Halden Offshore","situation":"post-emergence","lane":"pass","lane_from":"board file","note":"Exit loan refinanced in September. Next maturity 2030.","fictional":true,"slug":null,"brief":null},{"ticker":"MAPT","name":"Marlow Auto Parts","situation":"in-court","lane":"new","lane_from":"board file","note":"Added by the screen on Nov 11. No brief yet.","fictional":true,"slug":null,"brief":null},{"ticker":"GLNR","name":"Glenrock Foods","situation":"going-concern","lane":"new","lane_from":"board file","note":"Added from the diesel bet. Relies on contract carriers.","fictional":true,"slug":null,"brief":null}],"events":[{"at":"2026-11-15T13:00:00Z","date_only":true,"kind":"Key date","title":"Senior Notes interest of $5.8 million due. Nov 15 is a Sunday.","check":"","tickers":["CRVN"],"link":"names/corvane/facts.html","in_strip":true},{"at":"2026-11-15T13:00:00Z","date_only":true,"kind":"Key date","title":"Series A installment of $0.4 million, and Series B interest.","check":"","tickers":["WDFC"],"link":"names/wdfc/facts.html","in_strip":true},{"at":"2026-11-16T13:00:00Z","date_only":true,"kind":"Key date","title":"Extended deadline for the Q3 2026 10-Q.","check":"","tickers":["CRVN"],"link":"names/corvane/facts.html","in_strip":true},{"kind":"Court","title":"Brightwell plan confirmation hearing","check":"Trade committee objections and the exit financing date.","tickers":["BWRG","OPM"],"at":"2026-11-18T15:00:00Z","date_only":false,"link":null,"in_strip":true},{"at":"2026-11-30T13:00:00Z","date_only":true,"kind":"Key date","title":"ABL forbearance ends.","check":"","tickers":["CRVN"],"link":"names/corvane/facts.html","in_strip":true},{"kind":"Macro","title":"Fed rate decision","check":"Rate path for floating-rate debt at CRVN and TMHC. Confirm the date on the official calendar.","tickers":["CRVN","TMHC"],"at":"2026-12-09T19:00:00Z","date_only":false,"link":null,"in_strip":true},{"kind":"Covenant","title":"Tamsin leverage waiver ends","check":"Q4 leverage test once the waiver runs out.","tickers":["TMHC"],"at":"2027-01-15T13:00:00Z","date_only":true,"link":null,"in_strip":true},{"at":"2027-03-31T13:00:00Z","date_only":true,"kind":"Key date","title":"ABL Facility matures.","check":"","tickers":["CRVN"],"link":"names/corvane/facts.html","in_strip":false},{"at":"2027-05-15T13:00:00Z","date_only":true,"kind":"Key date","title":"6.875% Senior Notes mature.","check":"","tickers":["CRVN"],"link":"names/corvane/facts.html","in_strip":false},{"at":"2027-11-15T13:00:00Z","date_only":true,"kind":"Key date","title":"Series B notes mature.","check":"","tickers":["WDFC"],"link":"names/wdfc/facts.html","in_strip":false},{"at":"2028-06-30T13:00:00Z","date_only":true,"kind":"Key date","title":"Term Loan B matures.","check":"","tickers":["CRVN"],"link":"names/corvane/facts.html","in_strip":false},{"at":"2029-04-30T13:00:00Z","date_only":true,"kind":"Key date","title":"Revolver matures.","check":"","tickers":["WDFC"],"link":"names/wdfc/facts.html","in_strip":false},{"at":"2030-11-15T13:00:00Z","date_only":true,"kind":"Key date","title":"Series C notes mature.","check":"","tickers":["WDFC"],"link":"names/wdfc/facts.html","in_strip":false},{"at":"2032-11-15T13:00:00Z","date_only":true,"kind":"Key date","title":"Last Series A payment of $8.4 million.","check":"","tickers":["WDFC"],"link":"names/wdfc/facts.html","in_strip":false}],"bets":[{"id":"b1","if":"If Corvane does not pay the Nov 15 coupon","window":"Grace ends Dec 15","status":"open","updated":"Nov 11, 2026","by":"analyst","orders":[[{"ticker":"CRVN","why":"Notes enter the grace period. Check for a cross-default into the ABL and the term loan."}],[{"ticker":"RGEF","why":"Leases trucks to Corvane. Lease payments are next in line."}],[{"ticker":"GLNR","why":"Uses Corvane for regional refrigerated loads."}]]},{"id":"b2","if":"If the Fed cuts at the December meeting","window":"Dec 9","status":"open","updated":"Nov 10, 2026","by":"analyst","orders":[[{"ticker":"CRVN","why":"Term loan floats at SOFR plus 4.50%."}],[{"ticker":"TMHC","why":"Variable-rate term loan, with a leverage test in January."}],[]]},{"id":"b3","if":"If the Brightwell confirmation hearing is adjourned","window":"Nov 18","status":"open","updated":"Nov 9, 2026","by":"analyst","orders":[[{"ticker":"BWRG","why":"The exit financing commitment has an end date."}],[{"ticker":"OPM","why":"Recovery on its claim waits."}],[]]},{"id":"b4","if":"If Tamsin signs a forbearance before Oct 31","window":"Oct 31","status":"triggered","updated":"Oct 28, 2026","by":"analyst","orders":[[{"ticker":"TMHC","why":"Signed Oct 28. Moved to Worth checking."}],[],[]]},{"id":"b5","if":"If Halden misses its Q3 leverage test","window":"Oct 30","status":"lapsed","updated":"Oct 30, 2026","by":"analyst","orders":[[{"ticker":"HDO","why":"Refinanced before the test, so the bet lapsed."}],[],[]]}],"spec":{"version":1,"title":"Research board (sample)","as_of":"2026-11-12","horizon_days":90,"names":[{"ticker":"CRVN","folder":"../corvane"},{"ticker":"WDFC","folder":"../wdfc","note":"Real public name. Fixed-rate notes and a revolver, no stress in the filings read."},{"ticker":"BWRG","name":"Brightwell Retail Group","fictional":true,"situation":"in-court","lane":"check","note":"Chapter 11 since July. Plan vote closed Nov 6."},{"ticker":"TMHC","name":"Tamsin Health Clinics","fictional":true,"situation":"pre-default","lane":"check","note":"Forbearance signed Oct 28. Waiver runs to Jan 15."},{"ticker":"OPM","name":"Ostrander Paper Mills","fictional":true,"situation":"going-concern","lane":"watch","note":"Packaging supplier to Brightwell, with a claim filed in its case."},{"ticker":"RGEF","name":"Ridgeline Equipment Finance","fictional":true,"situation":"going-concern","lane":"watch","note":"Leases trucks to Corvane. Second order on the coupon bet."},{"ticker":"HDO","name":"Halden Offshore","fictional":true,"situation":"post-emergence","lane":"pass","note":"Exit loan refinanced in September. Next maturity 2030."},{"ticker":"MAPT","name":"Marlow Auto Parts","fictional":true,"situation":"in-court","lane":"new","note":"Added by the screen on Nov 11. No brief yet."},{"ticker":"GLNR","name":"Glenrock Foods","fictional":true,"situation":"going-concern","lane":"new","note":"Added from the diesel bet. Relies on contract carriers."}],"events":[{"kind":"Court","at":"2026-11-18T15:00:00Z","title":"Brightwell plan confirmation hearing","check":"Trade committee objections and the exit financing date.","tickers":["BWRG","OPM"]},{"kind":"Macro","at":"2026-12-09T19:00:00Z","title":"Fed rate decision","check":"Rate path for floating-rate debt at CRVN and TMHC. Confirm the date on the official calendar.","tickers":["CRVN","TMHC"]},{"kind":"Covenant","at":"2027-01-15","title":"Tamsin leverage waiver ends","check":"Q4 leverage test once the waiver runs out.","tickers":["TMHC"]}],"bets":[{"id":"b1","if":"If Corvane does not pay the Nov 15 coupon","window":"Grace ends Dec 15","status":"open","updated":"Nov 11, 2026","by":"analyst","orders":[[{"ticker":"CRVN","why":"Notes enter the grace period. Check for a cross-default into the ABL and the term loan."}],[{"ticker":"RGEF","why":"Leases trucks to Corvane. Lease payments are next in line."}],[{"ticker":"GLNR","why":"Uses Corvane for regional refrigerated loads."}]]},{"id":"b2","if":"If the Fed cuts at the December meeting","window":"Dec 9","status":"open","updated":"Nov 10, 2026","by":"analyst","orders":[[{"ticker":"CRVN","why":"Term loan floats at SOFR plus 4.50%."}],[{"ticker":"TMHC","why":"Variable-rate term loan, with a leverage test in January."}],[]]},{"id":"b3","if":"If the Brightwell confirmation hearing is adjourned","window":"Nov 18","status":"open","updated":"Nov 9, 2026","by":"analyst","orders":[[{"ticker":"BWRG","why":"The exit financing commitment has an end date."}],[{"ticker":"OPM","why":"Recovery on its claim waits."}],[]]},{"id":"b4","if":"If Tamsin signs a forbearance before Oct 31","window":"Oct 31","status":"triggered","updated":"Oct 28, 2026","by":"analyst","orders":[[{"ticker":"TMHC","why":"Signed Oct 28. Moved to Worth checking."}],[],[]]},{"id":"b5","if":"If Halden misses its Q3 leverage test","window":"Oct 30","status":"lapsed","updated":"Oct 30, 2026","by":"analyst","orders":[[{"ticker":"HDO","why":"Refinanced before the test, so the bet lapsed."}],[],[]]}]}}</script>
+<script>// Draws the research board from its data block. Inlined into board.html by build-board.mjs.
+// Changes a person makes (lanes, bet status, new bets) stay in this browser until they copy the board file.
+(() => {
+  const D = JSON.parse(document.getElementById('board-data').textContent);
+  const KEY = 'research-board:' + D.title + ':' + D.as_of;
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { saved = {}; }
+  const S = { lanes: saved.lanes || {}, status: saved.status || {}, bets: saved.bets || [], names: saved.names || [], focus: null, filter: 'all' };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify({ lanes: S.lanes, status: S.status, bets: S.bets, names: S.names })); } catch (e) { /* storage off: changes last for this visit */ } };
+  const $ = id => document.getElementById(id);
+
+  const el = (tag, attrs, ...kids) => {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === 'class') e.className = v;
+      else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v === true ? '' : v);
+    }
+    kids.flat().forEach(k => { if (k != null && k !== false) e.append(k); });
+    return e;
+  };
+
+  const names = () => D.names.concat(S.names);
+  const laneOf = n => S.lanes[n.ticker] || n.lane;
+  const bets = () => D.bets.concat(S.bets).map(b => Object.assign({}, b, { status: S.status[b.id] || b.status }));
+  const touches = (b, t) => b.orders.some(o => o.some(i => i.ticker === t));
+  const countdown = ms => {
+    if (ms <= 0) return ms > -6 * 36e5 ? 'now' : 'passed';
+    const m = Math.floor(ms / 6e4), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60);
+    if (d >= 1) return 'in ' + d + 'd ' + h + 'h';
+    if (h >= 1) return 'in ' + h + 'h ' + (m % 60) + 'm';
+    return 'in ' + (m % 60) + 'm';
+  };
+  const urgency = ms => (ms < 864e5 ? 'u-day' : ms < 3 * 864e5 ? 'u-3' : 'u-later');
+  const when = e => e.date_only
+    ? new Date(e.at).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+    : new Date(e.at).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
+  const pick = t => () => { S.focus = S.focus === t ? null : t; render(); };
+  const chip = t => el('button', { type: 'button', class: 'tk' + (S.focus === t ? ' on' : ''), 'aria-pressed': String(S.focus === t), onclick: pick(t) }, t);
+  const timer = e => el('span', { class: 'cd', 'data-at': e.at }, '');
+
+  function tick() {
+    const now = Date.now();
+    $('now').textContent = new Date(now).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
+    document.querySelectorAll('[data-at]').forEach(x => {
+      const ms = Date.parse(x.dataset.at) - now;
+      x.textContent = countdown(ms);
+      x.className = 'cd ' + urgency(ms);
+    });
+  }
+
+  function render() {
+    const now = Date.now();
+    const events = D.events.filter(e => e.in_strip && Date.parse(e.at) - now > -6 * 36e5 && (!S.focus || e.tickers.includes(S.focus)));
+    $('focus').replaceChildren(...(S.focus ? [el('div', { class: 'focus' }, el('span', {}, 'Showing dates, names and bets for ', el('strong', {}, S.focus)), el('button', { type: 'button', onclick: pick(S.focus) }, 'Show all'))] : []));
+    $('up').replaceChildren(...(events.length ? events.map(e => el('article', { class: 'ev' },
+      el('div', { class: 'ev-top' }, el('span', { class: 'eyebrow' }, e.kind), timer(e)),
+      el('h3', {}, e.title), el('p', { class: 'muted' }, when(e)), e.check ? el('p', {}, e.check) : null,
+      el('div', { class: 'tks' }, e.tickers.map(chip), e.link ? el('a', { class: 'go', href: e.link }, 'Open brief') : null)))
+      : [el('p', { class: 'empty' }, 'No dated events in the next ' + D.horizon_days + ' days' + (S.focus ? ' for ' + S.focus : '') + '.')]));
+
+    $('lanes').replaceChildren(...Object.entries(D.lanes).map(([id, title]) => {
+      const cards = names().filter(n => laneOf(n) === id).map(n => {
+        const next = D.events.find(e => Date.parse(e.at) > now && e.tickers.includes(n.ticker));
+        const count = bets().filter(b => b.status !== 'lapsed' && touches(b, n.ticker)).length;
+        const sit = n.situation ? el('span', { class: 'sit ' + n.situation }, D.situations[n.situation] || n.situation) : null;
+        const select = el('select', { 'aria-label': 'Lane for ' + n.name, onchange: ev => { S.lanes[n.ticker] = ev.target.value; save(); render(); } },
+          Object.entries(D.lanes).map(([v, t]) => el('option', { value: v, selected: v === laneOf(n) }, t)));
+        return el('article', { class: 'card' + (S.focus === n.ticker ? ' on' : '') },
+          el('div', { class: 'row' }, el('div', {}, el('h3', {}, n.name + (n.fictional ? ' (fictional)' : '')), el('span', { class: 'tick' }, n.ticker)), sit),
+          n.note ? el('p', { class: 'why' }, n.note) : null,
+          el('div', { class: 'next' }, el('span', {}, 'Next: ' + (next ? next.title : 'no dated event on the board')), next ? timer(next) : null),
+          el('p', { class: 'from' }, S.lanes[n.ticker] ? 'Lane moved here in this browser' : 'Lane from the ' + n.lane_from),
+          el('div', { class: 'actions' }, select,
+            el('button', { type: 'button', class: 'btn', onclick: pick(n.ticker) }, count === 1 ? '1 bet' : count + ' bets'),
+            n.brief ? el('a', { class: 'btn primary', href: n.brief }, 'Open brief') : null));
+      });
+      return el('div', { class: 'lane ' + id }, el('div', { class: 'row' }, el('h3', {}, title), el('span', { class: 'count' }, String(cards.length))),
+        cards.length ? cards : el('p', { class: 'empty' }, 'No names in this lane.'));
+    }));
+
+    $('filters').replaceChildren(...[['all', 'All'], ['open', 'Open'], ['triggered', 'Triggered'], ['lapsed', 'Lapsed']].map(([v, t]) =>
+      el('button', { type: 'button', class: 'btn', 'aria-pressed': String(S.filter === v), onclick: () => { S.filter = v; render(); } }, t)),
+      el('button', { type: 'button', class: 'btn', onclick: copyRows }, 'Copy bets as sheet rows'),
+      el('button', { type: 'button', class: 'btn', onclick: copyFile }, 'Copy the board file'));
+
+    const shown = bets().filter(b => (S.filter === 'all' || b.status === S.filter) && (!S.focus || touches(b, S.focus)));
+    const setStatus = (id, st) => () => { S.status[id] = st; save(); render(); };
+    $('bets').replaceChildren(...(shown.length ? shown.map(b => el('article', { class: 'bet' },
+      el('div', { class: 'meta' }, el('span', { class: 'status ' + b.status }, b.status[0].toUpperCase() + b.status.slice(1)), el('span', {}, 'Window: ', el('strong', {}, b.window)), el('span', { class: 'when' }, [b.updated, b.by].filter(Boolean).join(' · '))),
+      el('h3', {}, b.if),
+      el('div', { class: 'orders' }, ['1st order', '2nd order', '3rd order'].map((label, k) => el('div', { class: 'order o' + (k + 1) },
+        el('span', { class: 'eyebrow' }, label),
+        b.orders[k].length ? b.orders[k].map(i => el('div', {}, chip(i.ticker), i.why ? el('p', { class: 'why' }, i.why) : null)) : el('span', { class: 'muted' }, 'None named yet.')))),
+      el('div', { class: 'actions' }, b.status === 'open'
+        ? [el('button', { type: 'button', class: 'btn warn', onclick: setStatus(b.id, 'triggered') }, 'Mark triggered'), el('button', { type: 'button', class: 'btn', onclick: setStatus(b.id, 'lapsed') }, 'Mark lapsed')]
+        : el('button', { type: 'button', class: 'btn', onclick: setStatus(b.id, 'open') }, 'Reopen'))))
+      : [el('p', { class: 'empty' }, 'No bets match this filter.')]));
+    tick();
+  }
+
+  const show = (msg, text) => {
+    $('copy-msg').textContent = msg;
+    $('copy-out').replaceChildren(...(text ? [el('textarea', { class: 'out', readonly: true, 'aria-label': 'Text to copy' }, text)] : []));
+  };
+  const copy = (text, what) => {
+    const fallback = () => show('Copying is blocked here. Select the text below and copy it.', text);
+    try { navigator.clipboard.writeText(text).then(() => show('Copied ' + what + '.', ''), fallback); } catch (e) { fallback(); }
+  };
+  function copyRows() {
+    const rows = [['If', 'Window', 'Status', 'Order', 'Ticker', 'Why', 'Updated']];
+    bets().forEach(b => b.orders.forEach((o, k) => o.forEach(i => rows.push([b.if, b.window, b.status, String(k + 1), i.ticker, i.why, b.updated]))));
+    copy(rows.map(r => r.map(c => String(c).replace(/[\t\n]/g, ' ')).join('\t')).join('\n'), (rows.length - 1) + ' rows. Paste them into the sheet');
+  }
+  function copyFile() {
+    const spec = JSON.parse(JSON.stringify(D.spec));
+    spec.names = (spec.names || []).map(n => (S.lanes[n.ticker] && !n.folder ? Object.assign({}, n, { lane: S.lanes[n.ticker] }) : n))
+      .concat(S.names.map(n => ({ ticker: n.ticker, name: n.name, lane: S.lanes[n.ticker] || 'new', note: n.note })));
+    spec.bets = bets().map(b => ({ id: b.id, if: b.if, window: b.window, status: b.status, updated: b.updated, by: b.by, orders: b.orders }));
+    const moved = names().filter(n => n.brief && S.lanes[n.ticker]).map(n => n.ticker + ' to ' + D.lanes[S.lanes[n.ticker]]);
+    copy(JSON.stringify(spec, null, 2) + '\n', 'the board file. Ask Claude to save it as research-board.json' + (moved.length ? ', and to record these lane moves in each brief’s board.json: ' + moved.join(', ') : ''));
+  }
+
+  $('add').addEventListener('submit', ev => {
+    ev.preventDefault();
+    const f = new FormData(ev.target);
+    const cond = String(f.get('if') || '').trim();
+    if (!cond) { $('add-msg').textContent = 'Write the condition first.'; return; }
+    const parse = k => String(f.get(k) || '').split(',').map(x => x.trim().toUpperCase()).filter(Boolean).map(t => ({ ticker: t, why: '' }));
+    const orders = [parse('o1'), parse('o2'), parse('o3')];
+    const known = new Set(names().map(n => n.ticker));
+    const fresh = [];
+    orders.flat().forEach(i => { if (!known.has(i.ticker)) { known.add(i.ticker); fresh.push({ ticker: i.ticker, name: i.ticker, lane: 'new', lane_from: 'board file', note: 'Added from a bet. No brief yet.', situation: null, brief: null }); } });
+    const day = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    S.bets.push({ id: 'b' + Date.now(), if: cond, window: String(f.get('window') || '').trim() || 'No end date', status: 'open', updated: day, by: 'this browser', orders });
+    S.names.push(...fresh);
+    save();
+    ev.target.reset();
+    S.filter = 'all';
+    $('add-msg').textContent = fresh.length ? 'Bet added. ' + fresh.map(n => n.ticker).join(', ') + ' added to New names.' : 'Bet added.';
+    render();
+  });
+
+  render();
+  setInterval(tick, 30000);
+})();
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corvane Logistics Inc. lenses</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Instrument+Serif&amp;display=swap">
+<style>
+:root {
+  --bg: #f1f1ec; --surface: #fcfcfa; --ink: #1d2a25; --muted: #52645b; --rule: #d9dfd7; --accent: #19624c; --chip: #e5f0e8; --soft: #e9efe4;
+  --band: #19362c; --band-ink: #f6f7ec; --band-muted: #d9e3d6; --lime: #d8eca2; --draft: #a84a39; --neg: #a84a39;
+  --amber-bg: #f3ead2; --amber: #6d5418; --rose-bg: #f6e3dc; --rose: #8a3a2c; --grey-bg: #ecece6;
+  --secured: #2f6f9f; --unsecured: #c0652b; --unstated: #7b8794;
+  --c1: #2f6f9f; --c2: #c0652b; --c3: #19624c; --c4: #a97f1f; --c5: #7c4e8a; --c6: #b24a68; --c7: #2f8a96; --c8: #7b8794; --c9: #5f7f1f; --c10: #8c564b;
+  --working: #19624c; --watching: #8a6412; --passed: #52645b; color-scheme: light;
+  --serif: "Instrument Serif", Georgia, serif; --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #121815; --surface: #1a221e; --ink: #e3e9e4; --muted: #a3b2a9; --rule: #2d3a33; --accent: #7cc4a6; --chip: #213129; --soft: #1f2b25;
+  --band: #0f2a21; --band-ink: #f6f7ec; --band-muted: #c6d3c8; --lime: #d8eca2; --draft: #f0a493; --neg: #e08a76;
+  --amber-bg: #3a3120; --amber: #e3c27a; --rose-bg: #3d2522; --rose: #f0a493; --grey-bg: #262d29;
+  --secured: #5f9fd4; --unsecured: #e08a52; --unstated: #9aa6b2;
+  --c1: #5f9fd4; --c2: #e08a52; --c3: #4fb08a; --c4: #d6ad4a; --c5: #b08ac2; --c6: #e07a96; --c7: #5ec0cc; --c8: #9aa6b2; --c9: #9bc34a; --c10: #c49285;
+  --working: #7cc4a6; --watching: #e3c27a; --passed: #a3b2a9; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #121815; --surface: #1a221e; --ink: #e3e9e4; --muted: #a3b2a9; --rule: #2d3a33; --accent: #7cc4a6; --chip: #213129; --soft: #1f2b25;
+  --band: #0f2a21; --band-ink: #f6f7ec; --band-muted: #c6d3c8; --lime: #d8eca2; --draft: #f0a493; --neg: #e08a76;
+  --amber-bg: #3a3120; --amber: #e3c27a; --rose-bg: #3d2522; --rose: #f0a493; --grey-bg: #262d29;
+  --secured: #5f9fd4; --unsecured: #e08a52; --unstated: #9aa6b2;
+  --c1: #5f9fd4; --c2: #e08a52; --c3: #4fb08a; --c4: #d6ad4a; --c5: #b08ac2; --c6: #e07a96; --c7: #5ec0cc; --c8: #9aa6b2; --c9: #9bc34a; --c10: #c49285;
+  --working: #7cc4a6; --watching: #e3c27a; --passed: #a3b2a9; color-scheme: dark; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); overflow-wrap: anywhere; overflow-x: clip; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 0 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 22px; }
+header.band { background: var(--band); color: var(--band-ink); border-bottom: 4px solid #a8ca81; margin-inline: calc(50% - 50vw); padding: 18px max(16px, calc(50vw - 560px)) 0; display: grid; gap: 12px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font: 600 11px/1.4 var(--mono); color: var(--band-muted); letter-spacing: .08em; text-transform: uppercase; }
+.draft { color: var(--lime); border: 1px solid var(--lime); padding: 1px 8px; border-radius: 4px; }
+.title-row { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 28px; }
+.kicker { font: 600 11px/1.2 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--lime); }
+h1 { font: 400 clamp(34px, 6vw, 54px)/1.04 var(--serif); letter-spacing: -.03em; margin: 6px 0 4px; text-wrap: balance; }
+.sub { color: var(--band-muted); font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-size: 12px; font-weight: 650; padding: 5px 10px; border-radius: 6px; }
+.chip.sit { background: var(--amber-bg); color: var(--amber); }
+.chip.lane { background: var(--lime); color: #20352c; }
+nav.tabs { display: flex; flex-wrap: wrap; gap: 4px 22px; }
+nav.tabs a, nav.tabs span { color: var(--band-muted); text-decoration: none; padding: 9px 2px 11px; border-bottom: 3px solid transparent; font-weight: 650; font-size: 14px; }
+nav.tabs a:hover { color: var(--band-ink); }
+nav.tabs [aria-current="page"] { color: var(--band-ink); border-bottom-color: var(--lime); }
+h2 { font-size: 21px; line-height: 1.25; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+h3 { font-size: 16px; line-height: 1.3; margin: 0; }
+h4 { font: 600 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 6px 0 0; }
+p { margin: 0; max-width: 72ch; }
+ul, ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.lede { color: var(--muted); font-size: 14px; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+section { display: grid; gap: 12px; align-content: start; min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: clamp(14px, 2.4vw, 22px); }
+section.bare { background: none; border: 0; padding: 0; }
+.tab-panel { display: grid; gap: 22px; min-width: 0; }
+.js .tab-panel:not(.on), .js .pane:not(.on) { display: none; }
+.duo { display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
+.duo > * { flex: 1 1 340px; min-width: 0; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+code { font: 13px var(--mono); }
+.tag { font: 600 10.5px/1 var(--mono); color: var(--accent); text-decoration: none; background: var(--chip); padding: 3px 5px; border-radius: 4px; white-space: nowrap; }
+.tag:hover { text-decoration: underline; }
+.scroll { overflow-x: auto; min-width: 0; border: 1px solid var(--rule); border-radius: 9px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; vertical-align: top; padding: 8px 12px; border-bottom: 1px solid var(--rule); }
+.scroll table { overflow-wrap: normal; }
+.scroll td { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.scroll td:last-child { white-space: normal; min-width: 7rem; }
+.scroll tr.total td { font-weight: 700; background: var(--soft); }
+th { font: 600 11px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); background: var(--soft); }
+i.sw { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 7px; }
+.tiles { display: flex; flex-wrap: wrap; gap: 10px; }
+.tile { flex: 1 1 170px; min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 11px; padding: 14px; display: grid; gap: 4px; align-content: start; }
+.t-label { font: 600 10.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.t-value { font-size: 28px; font-weight: 650; letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tile.neg .t-value { color: var(--neg); }
+.tile.date .t-value { font-size: 22px; }
+.t-sub { font-size: 12.5px; color: var(--muted); }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+figcaption { font-size: 13px; color: var(--muted); }
+.viz { display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch; }
+.plot { flex: 999 1 520px; min-width: 0; }
+.readout { flex: 1 1 220px; min-width: 0; background: var(--soft); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 5px; font-size: 13px; }
+.r-title { font: 600 10.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.r-label { color: var(--muted); }
+.r-value { font-size: 26px; font-weight: 650; letter-spacing: -.04em; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.r-sub:empty, .r-tags:empty, .r-rows:empty { display: none; }
+.r-rows { list-style: none; padding: 0; gap: 0; border-top: 1px solid var(--rule); }
+.r-rows li { display: flex; align-items: center; gap: 8px; padding: 5px 0; border-bottom: 1px solid var(--rule); }
+.r-rows i { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.r-rows span { flex: 1; min-width: 0; }
+.r-rows b { font-variant-numeric: tabular-nums; }
+.r-hint { margin-top: auto; font-size: 11.5px; color: var(--muted); }
+.switch { display: none; flex-wrap: wrap; gap: 6px; }
+.js .switch { display: flex; }
+.switch button { font: 650 12.5px/1.2 var(--sans); min-height: 36px; padding: 6px 12px; border-radius: 99px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); cursor: pointer; }
+.switch button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+svg { width: 100%; height: auto; display: block; overflow: visible; }
+svg text { fill: var(--ink); font: 12px var(--sans); }
+svg .sm { fill: var(--muted); font: 11px var(--mono); }
+svg .val { font: 600 12px var(--sans); }
+svg .num { font: 600 11px var(--mono); }
+svg .grid { stroke: var(--rule); stroke-width: 1; }
+svg .axis { stroke: var(--muted); stroke-width: 1; }
+svg .today { stroke: var(--draft); stroke-width: 1; stroke-dasharray: 3 3; }
+svg [data-read]:focus-visible { outline: none; stroke: var(--ink); stroke-width: 2.5; }
+svg.narrow { display: none; }
+@media (max-width: 600px) { svg.wide { display: none; } svg.narrow { display: block; } }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.legend i.limit { border: 1.5px dashed var(--muted); }
+.legend i.ring { border: 2px solid; border-radius: 50%; }
+ol.events { list-style: none; padding: 0; gap: 0; }
+ol.events li, ul.dates li { display: grid; grid-template-columns: 24px 104px 1fr; gap: 10px; padding: 8px 0; border-top: 1px solid var(--rule); font-size: 14px; }
+ul.dates { list-style: none; padding: 0; gap: 0; }
+ul.dates li { grid-template-columns: 150px 1fr; }
+.n { font: 600 12px/1.7 var(--mono); color: var(--muted); }
+time { font: 600 13px/1.6 var(--mono); color: var(--muted); }
+.ahead time { color: var(--ink); }
+ul.dates li.ahead time::after { content: "ahead"; margin-left: 6px; font: 700 10px/1 var(--sans); text-transform: uppercase; letter-spacing: .04em; background: var(--amber-bg); color: var(--amber); padding: 2px 5px; border-radius: 4px; vertical-align: 2px; }
+.exp { font: 500 11px var(--mono); color: var(--muted); margin-left: 6px; }
+@media (max-width: 520px) { ol.events li { gap: 6px; font-size: 13px; } ul.dates li { grid-template-columns: 1fr; gap: 2px; } }
+.flags { display: flex; flex-wrap: wrap; gap: 10px; }
+.flag { flex: 1 1 300px; min-width: 0; border: 1px solid var(--rule); border-radius: 10px; padding: 14px; display: grid; gap: 7px; align-content: start; }
+.f-meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12px; color: var(--muted); }
+.f-kind { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 5px; background: var(--grey-bg); color: var(--ink); }
+.flag.audit .f-kind { background: var(--rose-bg); color: var(--rose); }
+.flag.deadline .f-kind { background: var(--amber-bg); color: var(--amber); }
+.flag.audit { border-top: 4px solid var(--rose); }
+.flag.deadline { border-top: 4px solid var(--amber); }
+.flag p { font-size: 14px; }
+details.words > summary { font-size: 12.5px; font-weight: 650; color: var(--accent); }
+details.words q { display: block; margin-top: 8px; background: var(--soft); border-radius: 7px; padding: 10px 12px; font-size: 13px; color: var(--ink); }
+.cards { display: grid; gap: 12px; }
+.cards.debt { grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); align-items: start; }
+.card { position: relative; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 14px 14px; display: grid; gap: 8px; min-width: 0; overflow: hidden; }
+.card .stripe { position: absolute; inset: 0 0 auto 0; height: 5px; }
+.card .terms { font-size: 13.5px; color: var(--muted); }
+.card dl { margin: 0; display: grid; }
+.card dl > div { display: grid; grid-template-columns: 9rem 1fr; gap: 12px; padding: 7px 0; border-top: 1px solid var(--rule); font-size: 13.5px; min-width: 0; }
+.card dt { font: 600 11px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.card dd { margin: 0; min-width: 0; }
+@media (max-width: 560px) { .card dl > div { grid-template-columns: 1fr; gap: 2px; } }
+ul.wall { list-style: none; padding: 0; gap: 8px; }
+ul.wall li { display: grid; grid-template-columns: 52px minmax(0, 1fr) 64px; gap: 10px; align-items: center; font-size: 13px; }
+.w-year { font-weight: 650; }
+.w-track { display: block; min-width: 0; }
+.w-bar { display: flex; height: 24px; min-width: 4px; border-radius: 4px; overflow: hidden; }
+.w-bar span { min-width: 2px; }
+.w-total { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.cards.lenses { grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); align-items: start; }
+.cards.lenses .card { font-size: 14px; scroll-margin-top: 12px; transition: opacity .15s; }
+.cards.lenses .card.dim { opacity: .35; }
+.reads { display: flex; flex-wrap: wrap; gap: 4px; font-size: 11.5px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.reads span { background: var(--chip); color: var(--ink); padding: 1px 6px; border-radius: 4px; }
+.change-box { background: var(--soft); border-radius: 8px; padding: 10px; display: grid; gap: 4px; }
+ul.jump { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; font-size: 13.5px; }
+ul.jump a { display: inline-block; padding: 3px 11px; border: 1px solid var(--rule); border-radius: 99px; background: var(--surface); text-decoration: none; }
+.splits { display: grid; gap: 10px; }
+.split { border: 1px solid var(--rule); border-radius: 10px; padding: 12px; display: grid; gap: 8px; }
+.sides { display: flex; flex-wrap: wrap; gap: 10px; }
+.side { flex: 1 1 260px; min-width: 0; background: var(--soft); border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; font-size: 14px; }
+.side:nth-child(even) { background: var(--grey-bg); }
+.s-lens { font: 600 10.5px/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.s-lens a { text-decoration: none; }
+.pill { display: inline-block; font: 600 11px/1.6 var(--mono); padding: 0 8px; border-radius: 10px; border: 1px solid currentColor; text-transform: uppercase; letter-spacing: .04em; }
+.note { font-size: 13px; color: var(--muted); border-left: 3px solid var(--draft); padding: 6px 12px; }
+.stale { color: var(--draft); }
+section.view-box { border: 2px solid var(--accent); }
+section.view-box > h2 { font: 400 34px/1.1 var(--serif); letter-spacing: -.02em; }
+.view { display: grid; gap: 12px; }
+.view .status { font: 600 14px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+ul.points { list-style: none; padding: 0; gap: 6px; }
+ul.points li { background: var(--soft); border-radius: 8px; padding: 9px 12px; font-size: 14.5px; }
+.next { background: var(--amber-bg); color: var(--amber); border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+ol.why { list-style: none; padding: 0; counter-reset: why; gap: 8px; }
+ol.why li { position: relative; background: var(--soft); border-radius: 8px; padding: 10px 12px 10px 40px; }
+ol.why li::before { counter-increment: why; content: counter(why); position: absolute; left: 15px; top: 10px; font: 600 13px/1.6 var(--mono); color: var(--accent); }
+ol.src { list-style: none; padding: 0; gap: 0; font-size: 13px; }
+ol.src li { display: grid; grid-template-columns: 44px 1fr; gap: 8px; min-width: 0; padding: 10px 0; border-top: 1px solid var(--rule); scroll-margin-top: 12px; }
+ol.src li > div { display: grid; gap: 3px; min-width: 0; }
+.sid { font: 600 12px/1.6 var(--mono); color: var(--accent); }
+.sdate { color: var(--muted); font: 11.5px var(--mono); }
+q { color: var(--muted); }
+:target { background: var(--chip); }
+svg [data-tip]:hover { opacity: .85; cursor: help; }
+abbr[data-tip] { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
+#tip { position: fixed; z-index: 20; display: none; max-width: min(20rem, calc(100vw - 32px)); background: var(--ink); color: var(--bg); font-size: 13px; line-height: 1.4; padding: 6px 9px; border-radius: 5px; pointer-events: none; }
+details > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "\25B8"; color: var(--muted); font-size: 18px; }
+details[open] > summary::before { content: "\25BE"; }
+details > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+details[open] > summary { margin-bottom: 12px; }
+footer { font-size: 12px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="band">
+<div class="meta"><span class="draft">Draft, public filings only</span><span class="draft">Fictional sample, not a real company</span><span>As of Nov 12, 2026</span><span>Fictional sample: CRVN</span></div>
+<div class="title-row"><div><p class="kicker">Name brief</p><h1>Corvane Logistics Inc.</h1><p class="sub">7 expert lenses on the same facts, each written blind</p></div><div class="chips"><span class="chip sit">Situation: Pre-default</span><span class="chip lane">Analyst lane: Worth checking</span></div></div>
+<nav class="tabs" aria-label="Name pages"><a href="../../board.html">Research board</a><a href="facts.html">Facts</a><a href="facts.html#debt-tab">Debt</a><span aria-current="page">Lenses and analyst view</span></nav>
+</header>
+<section aria-labelledby="brief"><h2 id="brief">In brief</h2><ul><li>Corvane Logistics is a US truckload carrier with about 3,100 tractors. It is a fictional company, made up to show the page template. <a class="tag" href="#S1">S1</a></li><li>Revenue fell for a third year, to $968.4 million in fiscal 2025 from $1,087.2 million in fiscal 2024. <a class="tag" href="#S2">S2</a></li><li>The fiscal 2025 <abbr tabindex="0" data-tip="Annual report filed with the SEC.">10-K</abbr> states substantial doubt about the ability to continue as a <abbr tabindex="0" data-tip="An accounting term. Substantial doubt means the company may not be able to meet its obligations for the next 12 months.">going concern</abbr>. <a class="tag" href="#S4">S4</a></li><li>Total debt was $879.0 million at Jun 30, 2026, against cash of $31.2 million. <a class="tag" href="#S7">S7</a></li><li><abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> lenders agreed to forbear on a <abbr tabindex="0" data-tip="A promise in a loan agreement, such as a limit on leverage.">covenant</abbr> default until Nov 30, 2026. <a class="tag" href="#S9">S9</a></li><li>The Q3 2026 <abbr tabindex="0" data-tip="Quarterly report filed with the SEC.">10-Q</abbr> is due by Nov 16, 2026, after a notice of late filing. <a class="tag" href="#S13">S13</a></li></ul></section>
+<p class="note"><strong>Source checks: 0 of 19 quotes matched to saved source copies.</strong> Some checks are missing, outdated or unsuccessful. <a href="#sources">Review the source checks</a> before relying on a claim. Matching words does not verify their interpretation or check for newer filings. Click any tag such as <a class="tag" href="#S1">S1</a> to read its quote.</p>
+<p class="note">The system makes no recommendation and sets no price target. A view on what to do belongs to the analyst, in the box at the end of this page.</p>
+<div class="duo">
+<section aria-labelledby="why"><h2 id="why">Why it is worth a look</h2><p class="lede">Written Nov 12, 2026; its facts have not changed since.</p><ol class="why"><li>Three dated events fall between Nov 15 and Nov 30, 2026: notes interest of $5.8 million due Nov 15, 2026, the Q3 <abbr tabindex="0" data-tip="Quarterly report filed with the SEC.">10-Q</abbr> deadline of Nov 16, 2026, and the end of the <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> forbearance on Nov 30, 2026. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S13">S13</a> <a class="tag" href="#S9">S9</a></li><li>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> Facility matures Mar 31, 2027 and the Senior Notes on May 15, 2027. Cash was $31.2 million at Jun 30, 2026. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S10">S10</a> <a class="tag" href="#S7">S7</a></li><li>Adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> fell from 171.2 in fiscal 2022 to 52.1 in fiscal 2025, in millions. <a class="tag" href="#S3">S3</a> <a class="tag" href="#S2">S2</a></li><li>The fiscal 2025 <abbr tabindex="0" data-tip="Annual report filed with the SEC.">10-K</abbr> states substantial doubt about the ability to continue as a <abbr tabindex="0" data-tip="An accounting term. Substantial doubt means the company may not be able to meet its obligations for the next 12 months.">going concern</abbr>, and reports a material weakness. <a class="tag" href="#S4">S4</a> <a class="tag" href="#S5">S5</a></li></ol></section>
+<section aria-labelledby="how"><h2 id="how">How this page works</h2><ul>
+<li>Each part below was written by a separate agent that saw only the facts page and its sources, and no other part. Drafts for a person to edit.</li>
+<li>No lens votes, scores or recommends. Each says what would change its view.</li>
+<li>Where lenses rest on the same source, or on an assumption, the lines are set side by side. Nothing is weighed: that is for a person.</li>
+<li>The analyst's view at the end is written by a person.</li></ul></section>
+</div>
+<section aria-labelledby="differ"><h2 id="differ">Where the lenses differ</h2>
+<p class="lede">Listed by code from the lens parts. The lenses did not see each other. Nothing here is weighed or combined: that is for a person.</p>
+<h3>Assumed by a lens, not taken from the facts</h3><ul><li><strong><a href="#lens-credit-analyst">Distressed credit analyst</a>:</strong> The secured debt ranks ahead of the Senior Notes in its collateral.</li><li><strong><a href="#lens-restructuring-counsel">Restructuring counsel</a>:</strong> A missed coupon does not cross-default the ABL during the grace period.</li><li><strong><a href="#lens-liquidity-treasury">Liquidity and treasury</a>:</strong> The ABL borrowing base does not exceed the commitments.</li><li><strong><a href="#lens-forensic-accountant">Forensic accountant</a>:</strong> Filed figures are as stated.</li><li><strong><a href="#lens-industry-operator">Industry operator</a>:</strong> Fuel and driver pay move with markets the company does not set.</li><li><strong><a href="#lens-catalyst-tracker">Catalyst tracker</a>:</strong> Nov 15, 2026 is a Sunday, so payment falls on the next business day.</li><li><strong><a href="#lens-skeptic">Skeptic</a>:</strong> No price for the notes or the loan was sought outside the sources.</li></ul>
+<details open><summary><h3>The same source, read by more than one lens (6)</h3></summary><div class="splits"><article class="split"><p class="lede">Same source <a class="tag" href="#S2">S2</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>Cash and cash equivalents were $31.2 million at Jun 30, 2026, against $38.2 million at Dec 31, 2025. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S2">S2</a></p></div><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>Free cash flow was (91.2) million in fiscal 2025. <a class="tag" href="#S2">S2</a></p></div><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>Net income was (186.9) million in fiscal 2025. <a class="tag" href="#S2">S2</a></p></div><div class="side"><p class="s-lens"><a href="#lens-industry-operator">Industry operator</a></p><p>Revenue was 1,268.3 in fiscal 2022 and 968.4 in fiscal 2025, in millions. <a class="tag" href="#S3">S3</a> <a class="tag" href="#S2">S2</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S7">S7</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>Total debt was $879.0 million at Jun 30, 2026: <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> $196.0 million, Term Loan B $382.0 million, equipment notes $131.0 million, Senior Notes $170.0 million. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-restructuring-counsel">Restructuring counsel</a></p><p>Notes interest of $5.8 million is due Nov 15, 2026. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>Cash and cash equivalents were $31.2 million at Jun 30, 2026, against $38.2 million at Dec 31, 2025. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S2">S2</a></p></div><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> was drawn $196.0 million against commitments of $200 million. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-liquidity-treasury">Liquidity and treasury</a></p><p>Notes interest of $5.8 million is due Nov 15, 2026. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>Management reported a material weakness over billing IT controls. It was not remediated at Jun 30, 2026. <a class="tag" href="#S5">S5</a> <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-industry-operator">Industry operator</a></p><p>Operating revenues were $452.7 million in the six months to Jun 30, 2026. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>Nov 15, 2026: Senior Notes interest of $5.8 million due. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p>Cash of $31.2 million at Jun 30, 2026 is the latest cash figure. <a class="tag" href="#S7">S7</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p>The latest debt figures are balances at Jun 30, 2026, with no market price for the notes or the term loan. <a class="tag" href="#S7">S7</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S8">S8</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-forensic-accountant">Forensic accountant</a></p><p>The audit committee dismissed the auditor on Jun 3, 2026. The <abbr tabindex="0" data-tip="Current report: a form a US public company files with the SEC to report an important event.">8-K</abbr> reports no disagreements. <a class="tag" href="#S8">S8</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p>The auditor was dismissed on Jun 3, 2026, and the late filing notice came on Nov 10, 2026. <a class="tag" href="#S8">S8</a> <a class="tag" href="#S13">S13</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S9">S9</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-restructuring-counsel">Restructuring counsel</a></p><p><abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> lenders agreed to forbear until Nov 30, 2026, with interest 2.00% above the usual rate. <a class="tag" href="#S9">S9</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>Nov 30, 2026: the <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> forbearance ends. <a class="tag" href="#S9">S9</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S10">S10</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-credit-analyst">Distressed credit analyst</a></p><p>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> matures Mar 31, 2027 and the Senior Notes on May 15, 2027. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S10">S10</a></p></div><div class="side"><p class="s-lens"><a href="#lens-restructuring-counsel">Restructuring counsel</a></p><p>A missed interest payment on the Senior Notes becomes an event of default after 30 days. <a class="tag" href="#S10">S10</a></p></div><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>Mar 31, 2027: the <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> matures. May 15, 2027: the Senior Notes mature. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S10">S10</a></p></div></div></article><article class="split"><p class="lede">Same source <a class="tag" href="#S13">S13</a></p><div class="sides"><div class="side"><p class="s-lens"><a href="#lens-catalyst-tracker">Catalyst tracker</a></p><p>Nov 16, 2026: extended deadline for the Q3 <abbr tabindex="0" data-tip="Quarterly report filed with the SEC.">10-Q</abbr>. <a class="tag" href="#S13">S13</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p>The company said it needs more time to assess its liquidity and its ability to continue as a <abbr tabindex="0" data-tip="An accounting term. Substantial doubt means the company may not be able to meet its obligations for the next 12 months.">going concern</abbr>. <a class="tag" href="#S13">S13</a></p></div><div class="side"><p class="s-lens"><a href="#lens-skeptic">Skeptic</a></p><p>The auditor was dismissed on Jun 3, 2026, and the late filing notice came on Nov 10, 2026. <a class="tag" href="#S8">S8</a> <a class="tag" href="#S13">S13</a></p></div></div></article></div></details>
+</section>
+<section aria-labelledby="change"><h2 id="change">What would change these views</h2><ul><li><strong><a href="#lens-credit-analyst">Distressed credit analyst</a>:</strong> A refinancing or an exchange offer that moves the 2027 maturities.</li><li><strong><a href="#lens-restructuring-counsel">Restructuring counsel</a>:</strong> An <abbr tabindex="0" data-tip="Current report: a form a US public company files with the SEC to report an important event.">8-K</abbr> naming advisers, a support agreement, or a forbearance extension.</li><li><strong><a href="#lens-liquidity-treasury">Liquidity and treasury</a>:</strong> Q3 cash and <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> availability in the <abbr tabindex="0" data-tip="Quarterly report filed with the SEC.">10-Q</abbr> due Nov 16, 2026.</li><li><strong><a href="#lens-forensic-accountant">Forensic accountant</a>:</strong> Remediation reported as complete, or a restatement.</li><li><strong><a href="#lens-industry-operator">Industry operator</a>:</strong> Contract rates or volumes in the Q3 2026 results.</li><li><strong><a href="#lens-catalyst-tracker">Catalyst tracker</a>:</strong> An <abbr tabindex="0" data-tip="Current report: a form a US public company files with the SEC to report an important event.">8-K</abbr> that moves one of these dates.</li><li><strong><a href="#lens-skeptic">Skeptic</a>:</strong> A Q3 2026 filing that keeps the going-concern doubt.</li></ul></section>
+<section aria-labelledby="lenses"><h2 id="lenses">The lenses</h2>
+<ul class="jump"><li><a href="#lens-credit-analyst">Distressed credit analyst</a></li><li><a href="#lens-restructuring-counsel">Restructuring counsel</a></li><li><a href="#lens-liquidity-treasury">Liquidity and treasury</a></li><li><a href="#lens-forensic-accountant">Forensic accountant</a></li><li><a href="#lens-industry-operator">Industry operator</a></li><li><a href="#lens-catalyst-tracker">Catalyst tracker</a></li><li><a href="#lens-skeptic">Skeptic</a></li></ul>
+<div class="switch" role="group" aria-label="Show the lenses that read a section" data-switch="lenses"><button type="button" data-pick="*" aria-pressed="true">All lenses</button><button type="button" data-pick="Capital structure and debt" aria-pressed="false">Capital structure and debt</button><button type="button" data-pick="Debt timeline" aria-pressed="false">Debt timeline</button><button type="button" data-pick="Restructuring terms" aria-pressed="false">Restructuring terms</button><button type="button" data-pick="Key dates" aria-pressed="false">Key dates</button><button type="button" data-pick="Gaps" aria-pressed="false">Gaps</button><button type="button" data-pick="Results by year" aria-pressed="false">Results by year</button><button type="button" data-pick="Recent results" aria-pressed="false">Recent results</button><button type="button" data-pick="Accounting and controls" aria-pressed="false">Accounting and controls</button><button type="button" data-pick="Business" aria-pressed="false">Business</button></div>
+<div class="cards lenses">
+<article class="card" id="lens-credit-analyst"><h3>Distressed credit analyst</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Amounts are principal at Jun 30, 2026 (from the facts).</li><li>The secured debt ranks ahead of the Senior Notes in its collateral (assumed).</li></ul><h4>What the facts show</h4><ul><li>Total debt was $879.0 million at Jun 30, 2026: <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> $196.0 million, Term Loan B $382.0 million, equipment notes $131.0 million, Senior Notes $170.0 million. <a class="tag" href="#S7">S7</a></li><li>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr>, the term loan and the equipment notes are secured. The Senior Notes are <abbr tabindex="0" data-tip="Not backed by pledged assets.">unsecured</abbr>. <a class="tag" href="#S6">S6</a></li><li>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> matures Mar 31, 2027 and the Senior Notes on May 15, 2027. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S10">S10</a></li><li>The term loan matures Jun 30, 2028. <a class="tag" href="#S12">S12</a></li></ul><h4>Not covered</h4><ul><li>Guarantors and which entity owes each instrument: not found in the sources read.</li><li>Restructuring terms: not in the facts.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>A refinancing or an exchange offer that moves the 2027 maturities.</li></ul></div><p class="reads">Reads <span>Capital structure and debt</span><span>Debt timeline</span><span>Restructuring terms</span><span>Key dates</span><span>Gaps</span></p></article>
+<article class="card" id="lens-restructuring-counsel"><h3>Restructuring counsel</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>No adviser hire or support agreement is in the filings read (from the facts).</li><li>A missed coupon does not cross-default the <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> during the <abbr tabindex="0" data-tip="Time after a missed payment before it counts as a default.">grace period</abbr> (assumed).</li></ul><h4>What the facts show</h4><ul><li><abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> lenders agreed to forbear until Nov 30, 2026, with interest 2.00% above the usual rate. <a class="tag" href="#S9">S9</a></li><li>A missed interest payment on the Senior Notes becomes an event of default after 30 days. <a class="tag" href="#S10">S10</a></li><li>Notes interest of $5.8 million is due Nov 15, 2026. <a class="tag" href="#S7">S7</a></li></ul><h4>Not covered</h4><ul><li>Restructuring terms: no plan or offer in the facts.</li><li>Cross-default terms between the instruments: not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>An <abbr tabindex="0" data-tip="Current report: a form a US public company files with the SEC to report an important event.">8-K</abbr> naming advisers, a support agreement, or a forbearance extension.</li></ul></div><p class="reads">Reads <span>Capital structure and debt</span><span>Restructuring terms</span><span>Key dates</span><span>Gaps</span></p></article>
+<article class="card" id="lens-liquidity-treasury"><h3>Liquidity and treasury</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Cash and <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> figures are at Jun 30, 2026 (from the facts).</li><li>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> <abbr tabindex="0" data-tip="The amount a borrower may draw, set by the value of its pledged assets.">borrowing base</abbr> does not exceed the commitments (assumed).</li></ul><h4>What the facts show</h4><ul><li>Cash and cash equivalents were $31.2 million at Jun 30, 2026, against $38.2 million at Dec 31, 2025. <a class="tag" href="#S7">S7</a> <a class="tag" href="#S2">S2</a></li><li>The <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> was drawn $196.0 million against commitments of $200 million. <a class="tag" href="#S7">S7</a></li><li>Free cash flow was (91.2) million in fiscal 2025. <a class="tag" href="#S2">S2</a></li><li>Notes interest of $5.8 million is due Nov 15, 2026. <a class="tag" href="#S7">S7</a></li></ul><h4>Not covered</h4><ul><li>The <abbr tabindex="0" data-tip="The amount a borrower may draw, set by the value of its pledged assets.">borrowing base</abbr>: not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>Q3 cash and <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> availability in the <abbr tabindex="0" data-tip="Quarterly report filed with the SEC.">10-Q</abbr> due Nov 16, 2026.</li></ul></div><p class="reads">Reads <span>Capital structure and debt</span><span>Results by year</span><span>Recent results</span><span>Key dates</span><span>Gaps</span></p></article>
+<article class="card" id="lens-forensic-accountant"><h3>Forensic accountant</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Filed figures are as stated (assumed).</li><li>Adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> is the company's own measure (from the facts).</li></ul><h4>What the facts show</h4><ul><li>Management reported a material weakness over billing IT controls. It was not remediated at Jun 30, 2026. <a class="tag" href="#S5">S5</a> <a class="tag" href="#S7">S7</a></li><li>The audit committee dismissed the auditor on Jun 3, 2026. The <abbr tabindex="0" data-tip="Current report: a form a US public company files with the SEC to report an important event.">8-K</abbr> reports no disagreements. <a class="tag" href="#S8">S8</a></li><li>Fiscal 2025 adjusted <abbr tabindex="0" data-tip="Earnings before interest, taxes, depreciation and amortization.">EBITDA</abbr> of $52.1 million excludes $19.2 million of fleet transition costs. <a class="tag" href="#S19">S19</a></li><li>Net income was (186.9) million in fiscal 2025. <a class="tag" href="#S2">S2</a></li></ul><h4>Not covered</h4><ul><li>Whether the add-back recurs in 2026: not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>Remediation reported as complete, or a restatement.</li></ul></div><p class="reads">Reads <span>Results by year</span><span>Recent results</span><span>Accounting and controls</span><span>Gaps</span></p></article>
+<article class="card" id="lens-industry-operator"><h3>Industry operator</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Fuel and driver pay move with markets the company does not set (assumed).</li><li>Revenue is from freight hauling (from the facts).</li></ul><h4>What the facts show</h4><ul><li>The company ran about 3,100 tractors and 9,400 trailers at Dec 31, 2025. <a class="tag" href="#S1">S1</a></li><li>Revenue was 1,268.3 in fiscal 2022 and 968.4 in fiscal 2025, in millions. <a class="tag" href="#S3">S3</a> <a class="tag" href="#S2">S2</a></li><li>Fuel and driver wages and benefits are its largest operating costs. <a class="tag" href="#S1">S1</a></li><li>Operating revenues were $452.7 million in the six months to Jun 30, 2026. <a class="tag" href="#S7">S7</a></li></ul><h4>Not covered</h4><ul><li>Rate per mile and fleet age: not found in the sources read.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>Contract rates or volumes in the Q3 2026 results.</li></ul></div><p class="reads">Reads <span>Business</span><span>Results by year</span><span>Recent results</span></p></article>
+<article class="card" id="lens-catalyst-tracker"><h3>Catalyst tracker</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>Dates are as the filings give them (from the facts).</li><li>Nov 15, 2026 is a Sunday, so payment falls on the next business day (assumed).</li></ul><h4>What the facts show</h4><ul><li>Nov 15, 2026: Senior Notes interest of $5.8 million due. <a class="tag" href="#S7">S7</a></li><li>Nov 16, 2026: extended deadline for the Q3 <abbr tabindex="0" data-tip="Quarterly report filed with the SEC.">10-Q</abbr>. <a class="tag" href="#S13">S13</a></li><li>Nov 30, 2026: the <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> forbearance ends. <a class="tag" href="#S9">S9</a></li><li>Mar 31, 2027: the <abbr tabindex="0" data-tip="Asset-based loan: a loan the borrower can draw and repay up to a limit, backed by what customers owe it and its stock of goods.">ABL</abbr> matures. May 15, 2027: the Senior Notes mature. <a class="tag" href="#S11">S11</a> <a class="tag" href="#S10">S10</a></li></ul><h4>Not covered</h4><ul><li>Restructuring terms: none in the facts, so no court or vote dates.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>An <abbr tabindex="0" data-tip="Current report: a form a US public company files with the SEC to report an important event.">8-K</abbr> that moves one of these dates.</li></ul></div><p class="reads">Reads <span>Key dates</span><span>Recent results</span><span>Restructuring terms</span></p></article>
+<article class="card" id="lens-skeptic"><h3>Skeptic</h3><p class="terms">Written Nov 12, 2026; its facts have not changed since.</p><h4>Assumptions</h4><ul><li>The Jun 30, 2026 figures are the latest filed (from the facts).</li><li>No price for the notes or the loan was sought outside the sources (assumed).</li></ul><h4>What the facts show</h4><ul><li>The company said it needs more time to assess its liquidity and its ability to continue as a <abbr tabindex="0" data-tip="An accounting term. Substantial doubt means the company may not be able to meet its obligations for the next 12 months.">going concern</abbr>. <a class="tag" href="#S13">S13</a></li><li>Cash of $31.2 million at Jun 30, 2026 is the latest cash figure. <a class="tag" href="#S7">S7</a></li><li>The auditor was dismissed on Jun 3, 2026, and the late filing notice came on Nov 10, 2026. <a class="tag" href="#S8">S8</a> <a class="tag" href="#S13">S13</a></li><li>The latest debt figures are balances at Jun 30, 2026, with no market price for the notes or the term loan. <a class="tag" href="#S7">S7</a></li></ul><h4>Not covered</h4><ul><li>Everything after Jun 30, 2026 except the late filing notice.</li></ul><div class="change-box"><h4>What would change this view</h4><ul><li>A Q3 2026 filing that keeps the going-concern doubt.</li></ul></div><p class="reads">Reads <span>all sections</span></p></article>
+</div>
+<script type="application/json" data-for="lenses">{"credit-analyst":["Capital structure and debt","Debt timeline","Restructuring terms","Key dates","Gaps"],"restructuring-counsel":["Capital structure and debt","Restructuring terms","Key dates","Gaps"],"liquidity-treasury":["Capital structure and debt","Results by year","Recent results","Key dates","Gaps"],"forensic-accountant":["Results by year","Recent results","Accounting and controls","Gaps"],"industry-operator":["Business","Results by year","Recent results"],"catalyst-tracker":["Key dates","Recent results","Restructuring terms"],"skeptic":["*"]}</script>
+</section>
+<section class="view-box" aria-labelledby="view"><h2 id="view">Analyst's view</h2>
+<div class="view"><p class="status" style="color:var(--working)">working</p>
+<p><strong>Board lane:</strong> Worth checking</p>
+<p>Sample view, written to show where a person's view goes. The week of Nov 16 settles more than any filing so far.</p>
+<h3>What I take from the lenses</h3><ul class="points"><li>The week of Nov 16 settles more than any filing so far: the coupon, the 10-Q and the forbearance clock all land within two weeks.</li><li>Liquidity and counsel read the coupon differently. I read the 10-Q for ABL availability before taking a side.</li><li>The quality flags limit how much weight fiscal 2025 adjusted EBITDA can carry. I treat leverage as a range.</li></ul>
+<div class="duo"><div><h3>What I check first</h3><ol><li>Q3 cash and ABL availability, from the 10-Q.</li><li>Whether the coupon is paid, from the 8-K.</li><li>A price on the notes from the desk. The brief has none.</li></ol></div><div><h3>What would move the lane</h3><ul><li>To watching: the coupon is paid and the forbearance runs past Mar 2027.</li><li>To passed: the 2027 maturities are refinanced in full.</li></ul></div></div>
+<p class="next"><strong>Next look:</strong> Nov 17, 2026, after the 10-Q and the coupon date.</p>
+<p class="lede">By analyst, Nov 12, 2026. Written by a person; not checked against the facts.</p></div></section>
+<section aria-labelledby="sources">
+<details id="sources-box">
+<summary><h2 id="sources">Sources (14)</h2></summary>
+<p class="lede">Each entry gives the supplied quote and its check status. A quote match does not confirm the claim's meaning or that the filing is the latest. A long dash is shown as a hyphen.</p>
+<ol class="src">
+<li id="S1"><span class="sid">S1</span><div><a href="https://example.com/corvane/10-k-2025#item-1" target="_blank" rel="noopener">Corvane Logistics Form 10-K for fiscal 2025, Item 1 (fictional)</a><span class="sdate">Mar 16, 2026. Quote has not been checked.</span><q>Corvane Logistics Inc. is an asset-based truckload and regional less-than-truckload carrier serving the Midwest and Southeast United States. At December 31, 2025, we operated approximately 3,100 tractors and 9,400 trailers. Fuel and driver wages and benefits are our largest operating costs.</q></div></li>
+<li id="S2"><span class="sid">S2</span><div><a href="https://example.com/corvane/10-k-2025#item-8" target="_blank" rel="noopener">Corvane Logistics Form 10-K for fiscal 2025, Item 8, selected results (fictional)</a><span class="sdate">Mar 16, 2026. Quote has not been checked.</span><q>Years ended December 31, 2025 2024 2023 (in millions) Operating revenues $ 968.4 $ 1,087.2 $ 1,205.1 Adjusted EBITDA 52.1 84.0 128.3 Net income (loss) (186.9) (112.4) (37.8) Free cash flow (91.2) (64.1) (12.4) Cash and cash equivalents 38.2 61.0 96.3</q></div></li>
+<li id="S3"><span class="sid">S3</span><div><a href="https://example.com/corvane/10-k-2023#item-8" target="_blank" rel="noopener">Corvane Logistics Form 10-K for fiscal 2023, Item 8, selected results (fictional)</a><span class="sdate">Mar 12, 2024. Quote has not been checked.</span><q>Years ended December 31, 2023 2022 2021 (in millions) Operating revenues $ 1,205.1 $ 1,268.3 $ 1,142.0 Adjusted EBITDA 128.3 171.2 162.0 Net income (loss) (37.8) 14.2 21.3 Free cash flow (12.4) 41.0 58.0 Cash and cash equivalents 96.3 118.4 142.0</q></div></li>
+<li id="S4"><span class="sid">S4</span><div><a href="https://example.com/corvane/10-k-2025#note-2" target="_blank" rel="noopener">Corvane Logistics Form 10-K for fiscal 2025, Note 2, Going concern (fictional)</a><span class="sdate">Mar 16, 2026. Quote has not been checked.</span><q>These consolidated financial statements, included in this Annual Report on Form 10-K, were issued on March 16, 2026. These conditions raise substantial doubt about the Company's ability to continue as a going concern within one year after the date that the financial statements are issued.</q></div></li>
+<li id="S5"><span class="sid">S5</span><div><a href="https://example.com/corvane/10-k-2025#item-9a" target="_blank" rel="noopener">Corvane Logistics Form 10-K for fiscal 2025, Item 9A, Controls and procedures (fictional)</a><span class="sdate">Mar 16, 2026. Quote has not been checked.</span><q>Management's report dated March 16, 2026 identified a material weakness: we did not design and maintain effective information technology general controls over the billing system that supports revenue recognition.</q></div></li>
+<li id="S6"><span class="sid">S6</span><div><a href="https://example.com/corvane/10-k-2025#note-9" target="_blank" rel="noopener">Corvane Logistics Form 10-K for fiscal 2025, Note 9, Debt (fictional)</a><span class="sdate">Mar 16, 2026. Quote has not been checked.</span><q>December 31, 2025 2024 (in millions) ABL Facility 184.0 158.0 Term Loan B 384.0 388.0 Equipment notes 136.0 102.0 6.875% Senior Notes 170.0 170.0 Total debt 874.0 818.0. The ABL Facility is secured by a first-priority lien on accounts receivable and cash. The Term Loan B is secured by a first-priority lien on tractors, trailers and other assets and a second-priority lien on ABL collateral. Equipment notes are secured by the specific tractors and trailers they finance. Equipment notes mature at various dates from 2027 through 2031 and bear fixed interest at a weighted average rate of 8.1%. The Senior Notes are unsecured.</q></div></li>
+<li id="S7"><span class="sid">S7</span><div><a href="https://example.com/corvane/10-q-2026-q2" target="_blank" rel="noopener">Corvane Logistics Form 10-Q for the quarter ended Jun 30, 2026 (fictional)</a><span class="sdate">Aug 13, 2026. Quote has not been checked.</span><q>June 30, 2026 (in millions) ABL Facility 196.0 Term Loan B 382.0 Equipment notes 131.0 6.875% Senior Notes 170.0 Total debt 879.0 Cash and cash equivalents 31.2. Aggregate Commitments under the ABL Facility are $200 million. Six months ended June 30, 2026: Operating revenues 452.7 Net loss (88.4). The material weakness has not been remediated as of June 30, 2026. The next interest payment on the Senior Notes, of $5.8 million, is due November 15, 2026.</q></div></li>
+<li id="S8"><span class="sid">S8</span><div><a href="https://example.com/corvane/8-k-2026-06-03" target="_blank" rel="noopener">Corvane Logistics Form 8-K, Item 4.01, change of auditor (fictional)</a><span class="sdate">Jun 3, 2026. Quote has not been checked.</span><q>On June 3, 2026, the Audit Committee dismissed the Company's independent registered public accounting firm. There were no disagreements with the former auditor on any matter of accounting principles or practices, financial statement disclosure, or auditing scope or procedure.</q></div></li>
+<li id="S9"><span class="sid">S9</span><div><a href="https://example.com/corvane/8-k-2026-08-14" target="_blank" rel="noopener">Corvane Logistics Form 8-K, Item 1.01, ABL forbearance agreement (fictional)</a><span class="sdate">Aug 14, 2026. Quote has not been checked.</span><q>On August 14, 2026, the Company entered into a forbearance agreement. The Company's fixed charge coverage ratio was below 1.00 to 1.00 for the period ended June 30, 2026. The Lenders have agreed to forbear from exercising remedies until the earlier of November 30, 2026 and the occurrence of any further Event of Default, with interest at the default rate, being 2.00% per annum above the otherwise applicable rate.</q></div></li>
+<li id="S10"><span class="sid">S10</span><div><a href="https://example.com/corvane/indenture-2019" target="_blank" rel="noopener">Indenture for the 6.875% Senior Notes due 2027, Exhibit 4.1 (fictional)</a><span class="sdate">Nov 15, 2019. Quote has not been checked.</span><q>Indenture dated as of November 15, 2019, for $170 million aggregate principal amount of 6.875% Senior Notes due 2027. Interest shall be payable semi-annually in arrears on May 15 and November 15. The Notes will mature on May 15, 2027. An Event of Default occurs upon a default in the payment of interest which continues for a period of 30 days.</q></div></li>
+<li id="S11"><span class="sid">S11</span><div><a href="https://example.com/corvane/abl-credit-agreement-2020" target="_blank" rel="noopener">ABL credit agreement, Exhibit 10.1 (fictional)</a><span class="sdate">Mar 31, 2020. Quote has not been checked.</span><q>Credit Agreement dated as of March 31, 2020, with Aggregate Commitments of $200 million. Applicable Margin means 2.25% per annum for SOFR Loans. Maturity Date means March 31, 2027.</q></div></li>
+<li id="S12"><span class="sid">S12</span><div><a href="https://example.com/corvane/term-loan-agreement-2021" target="_blank" rel="noopener">Term loan credit agreement, Exhibit 10.1 (fictional)</a><span class="sdate">Jun 30, 2021. Quote has not been checked.</span><q>Term Loan Credit Agreement dated as of June 30, 2021, for Term Loans in an aggregate principal amount of $402 million. Applicable Rate means 4.50% per annum for Term SOFR Loans. Maturity Date means June 30, 2028. The Borrower shall repay 0.25% of the original principal amount quarterly.</q></div></li>
+<li id="S13"><span class="sid">S13</span><div><a href="https://example.com/corvane/nt-10-q-2026-q3" target="_blank" rel="noopener">Corvane Logistics Form 12b-25, notice of late filing for the Q3 2026 Form 10-Q (fictional)</a><span class="sdate">Nov 10, 2026. Quote has not been checked.</span><q>Filed November 10, 2026. The Company requires additional time to complete its assessment of liquidity and its ability to continue as a going concern. The Company expects to file the Form 10-Q no later than November 16, 2026, within the five-day extension period.</q></div></li>
+<li id="S19"><span class="sid">S19</span><div><a href="https://example.com/corvane/q4-2025-release" target="_blank" rel="noopener">Corvane Logistics fourth quarter 2025 results release, Exhibit 99.1 (fictional)</a><span class="sdate">Mar 5, 2026. Quote has not been checked.</span><q>March 5, 2026. Adjusted EBITDA was $52.1 million for the year ended December 31, 2025. Adjusted EBITDA excludes fleet transition costs of $19.2 million for the year ended December 31, 2025.</q></div></li>
+</ol>
+</details>
+</section>
+<footer>Built by build-artifacts.mjs from the name folder. Draft for a person to check. Not advice: no price targets, no recommendation. Dotted terms show a general definition on hover; the definitions are reference, not facts from the filings.</footer>
+</div>
+<div id="tip" role="tooltip"></div>
+<script>
+(() => {
+  const tip = document.getElementById('tip');
+  const show = el => {
+    tip.textContent = el.dataset.tip; tip.style.display = 'block';
+    const r = el.getBoundingClientRect(), t = tip.getBoundingClientRect();
+    tip.style.left = Math.max(16, Math.min(r.left, innerWidth - t.width - 16)) + 'px';
+    tip.style.top = (r.bottom + t.height + 8 > innerHeight ? r.top - t.height - 6 : r.bottom + 6) + 'px';
+  };
+  const hide = () => { tip.style.display = 'none'; };
+  const reveal = () => {
+    const target = document.getElementById(location.hash.slice(1));
+    const box = target && target.closest('details');
+    if (box && !box.open) { box.open = true; target.scrollIntoView(); }
+  };
+  window.addEventListener('hashchange', reveal);
+  reveal();
+  const term = e => e.target.closest && e.target.closest('[data-tip]');
+  // A tap is followed by mouse events at a stale pointer position; let the tap decide.
+  let touched = 0;
+  document.addEventListener('touchstart', () => { touched = Date.now(); }, { passive: true });
+  document.addEventListener('mouseover', e => { if (Date.now() - touched < 800) return; const a = term(e); a ? show(a) : hide(); });
+  document.addEventListener('click', e => { const a = term(e); a ? show(a) : hide(); });
+  document.addEventListener('focusin', e => { const a = term(e); if (a) show(a); });
+  document.addEventListener('focusout', hide);
+  window.addEventListener('scroll', hide, true);
+})();
+</script>
+<script>
+(() => {
+  document.documentElement.classList.add('js');
+  const all = (sel, el = document) => [...el.querySelectorAll(sel)];
+  const panels = all('.tab-panel');
+  const showTab = id => {
+    if (!panels.some(p => p.id === id)) return;
+    panels.forEach(p => p.classList.toggle('on', p.id === id));
+    all('.tabs a[data-tab]').forEach(a => a.setAttribute('aria-current', a.dataset.tab === id ? 'page' : 'false'));
+  };
+  const follow = () => {
+    const target = location.hash.length > 1 && document.getElementById(location.hash.slice(1));
+    const panel = target && (target.classList.contains('tab-panel') ? target : target.closest('.tab-panel'));
+    if (panel) showTab(panel.id);
+  };
+  follow();
+  window.addEventListener('hashchange', follow);
+  all('.tabs a[data-tab]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    showTab(a.dataset.tab);
+    history.replaceState(null, '', '#' + a.dataset.tab);
+  }));
+  const data = {};
+  all('script[type="application/json"][data-for]').forEach(s => { data[s.dataset.for] = JSON.parse(s.textContent); });
+  const fill = (kind, d) => {
+    const box = document.querySelector('.readout[data-for="' + kind + '"]');
+    if (!box || !d) return;
+    const set = (cls, text) => { box.querySelector(cls).textContent = text || ''; };
+    set('.r-title', d.title); set('.r-label', d.label); set('.r-value', d.value); set('.r-sub', d.sub);
+    box.querySelector('.r-rows').replaceChildren(...(d.rows || []).map(r => {
+      const li = document.createElement('li'), sw = document.createElement('i'), n = document.createElement('span'), v = document.createElement('b');
+      sw.style.background = r.color; n.textContent = r.name; v.textContent = r.value;
+      li.append(sw, n, v);
+      return li;
+    }));
+    const t = box.querySelector('.r-tags');
+    t.replaceChildren();
+    if (d.tags && d.tags.length) {
+      t.append('Source ');
+      d.tags.forEach(id => { const a = document.createElement('a'); a.className = 'tag'; a.href = '#' + id; a.textContent = id; t.append(a, ' '); });
+    }
+  };
+  const read = e => {
+    const el = e.target.closest && e.target.closest('[data-read]');
+    if (!el) return;
+    const [kind, view, i] = el.dataset.read.split(':');
+    fill(kind, data[kind] && data[kind][view] && data[kind][view][+i]);
+  };
+  ['mouseover', 'focusin', 'click'].forEach(type => document.addEventListener(type, read));
+  all('[data-switch]').forEach(group => group.addEventListener('click', e => {
+    const b = e.target.closest('button[data-pick]');
+    if (!b) return;
+    const key = group.dataset.switch, pick = b.dataset.pick;
+    all('button[data-pick]', group).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    if (key === 'lenses') {
+      const reads = data.lenses || {};
+      all('.cards.lenses .card').forEach(card => {
+        const r = reads[card.id.replace(/^lens-/, '')] || [];
+        card.classList.toggle('dim', pick !== '*' && !r.includes('*') && !r.includes(pick));
+      });
+      return;
+    }
+    all('.pane[data-group="' + key + '"]').forEach(p => p.classList.toggle('on', p.dataset.key === pick));
+    const list = data[key] && data[key][pick];
+    if (list && list.length) fill(key, list[list.length - 1]);
+  }));
+})();
+</script>
+</body>
+</html>

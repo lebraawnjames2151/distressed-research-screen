@@ -1,0 +1,173 @@
+[
+  {
+    "id": "S1",
+    "title": "Corvane Logistics Form 10-K for fiscal 2025, Item 1 (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-16",
+    "url": "https://example.com/corvane/10-k-2025#item-1",
+    "type": "primary",
+    "quote": "Corvane Logistics Inc. is an asset-based truckload and regional less-than-truckload carrier serving the Midwest and Southeast United States. At December 31, 2025, we operated approximately 3,100 tractors and 9,400 trailers. Fuel and driver wages and benefits are our largest operating costs."
+  },
+  {
+    "id": "S2",
+    "title": "Corvane Logistics Form 10-K for fiscal 2025, Item 8, selected results (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-16",
+    "url": "https://example.com/corvane/10-k-2025#item-8",
+    "type": "primary",
+    "quote": "Years ended December 31, 2025 2024 2023 (in millions) Operating revenues $ 968.4 $ 1,087.2 $ 1,205.1 Adjusted EBITDA 52.1 84.0 128.3 Net income (loss) (186.9) (112.4) (37.8) Free cash flow (91.2) (64.1) (12.4) Cash and cash equivalents 38.2 61.0 96.3"
+  },
+  {
+    "id": "S3",
+    "title": "Corvane Logistics Form 10-K for fiscal 2023, Item 8, selected results (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2024-03-12",
+    "url": "https://example.com/corvane/10-k-2023#item-8",
+    "type": "primary",
+    "quote": "Years ended December 31, 2023 2022 2021 (in millions) Operating revenues $ 1,205.1 $ 1,268.3 $ 1,142.0 Adjusted EBITDA 128.3 171.2 162.0 Net income (loss) (37.8) 14.2 21.3 Free cash flow (12.4) 41.0 58.0 Cash and cash equivalents 96.3 118.4 142.0"
+  },
+  {
+    "id": "S4",
+    "title": "Corvane Logistics Form 10-K for fiscal 2025, Note 2, Going concern (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-16",
+    "url": "https://example.com/corvane/10-k-2025#note-2",
+    "type": "primary",
+    "quote": "These consolidated financial statements, included in this Annual Report on Form 10-K, were issued on March 16, 2026. These conditions raise substantial doubt about the Company's ability to continue as a going concern within one year after the date that the financial statements are issued."
+  },
+  {
+    "id": "S5",
+    "title": "Corvane Logistics Form 10-K for fiscal 2025, Item 9A, Controls and procedures (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-16",
+    "url": "https://example.com/corvane/10-k-2025#item-9a",
+    "type": "primary",
+    "quote": "Management's report dated March 16, 2026 identified a material weakness: we did not design and maintain effective information technology general controls over the billing system that supports revenue recognition."
+  },
+  {
+    "id": "S6",
+    "title": "Corvane Logistics Form 10-K for fiscal 2025, Note 9, Debt (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-16",
+    "url": "https://example.com/corvane/10-k-2025#note-9",
+    "type": "primary",
+    "quote": "December 31, 2025 2024 (in millions) ABL Facility 184.0 158.0 Term Loan B 384.0 388.0 Equipment notes 136.0 102.0 6.875% Senior Notes 170.0 170.0 Total debt 874.0 818.0. The ABL Facility is secured by a first-priority lien on accounts receivable and cash. The Term Loan B is secured by a first-priority lien on tractors, trailers and other assets and a second-priority lien on ABL collateral. Equipment notes are secured by the specific tractors and trailers they finance. Equipment notes mature at various dates from 2027 through 2031 and bear fixed interest at a weighted average rate of 8.1%. The Senior Notes are unsecured."
+  },
+  {
+    "id": "S7",
+    "title": "Corvane Logistics Form 10-Q for the quarter ended Jun 30, 2026 (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-08-13",
+    "url": "https://example.com/corvane/10-q-2026-q2",
+    "type": "primary",
+    "quote": "June 30, 2026 (in millions) ABL Facility 196.0 Term Loan B 382.0 Equipment notes 131.0 6.875% Senior Notes 170.0 Total debt 879.0 Cash and cash equivalents 31.2. Aggregate Commitments under the ABL Facility are $200 million. Six months ended June 30, 2026: Operating revenues 452.7 Net loss (88.4). The material weakness has not been remediated as of June 30, 2026. The next interest payment on the Senior Notes, of $5.8 million, is due November 15, 2026."
+  },
+  {
+    "id": "S8",
+    "title": "Corvane Logistics Form 8-K, Item 4.01, change of auditor (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-06-03",
+    "url": "https://example.com/corvane/8-k-2026-06-03",
+    "type": "primary",
+    "quote": "On June 3, 2026, the Audit Committee dismissed the Company's independent registered public accounting firm. There were no disagreements with the former auditor on any matter of accounting principles or practices, financial statement disclosure, or auditing scope or procedure."
+  },
+  {
+    "id": "S9",
+    "title": "Corvane Logistics Form 8-K, Item 1.01, ABL forbearance agreement (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-08-14",
+    "url": "https://example.com/corvane/8-k-2026-08-14",
+    "type": "primary",
+    "quote": "On August 14, 2026, the Company entered into a forbearance agreement. The Company's fixed charge coverage ratio was below 1.00 to 1.00 for the period ended June 30, 2026. The Lenders have agreed to forbear from exercising remedies until the earlier of November 30, 2026 and the occurrence of any further Event of Default, with interest at the default rate, being 2.00% per annum above the otherwise applicable rate."
+  },
+  {
+    "id": "S10",
+    "title": "Indenture for the 6.875% Senior Notes due 2027, Exhibit 4.1 (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2019-11-15",
+    "url": "https://example.com/corvane/indenture-2019",
+    "type": "primary",
+    "quote": "Indenture dated as of November 15, 2019, for $170 million aggregate principal amount of 6.875% Senior Notes due 2027. Interest shall be payable semi-annually in arrears on May 15 and November 15. The Notes will mature on May 15, 2027. An Event of Default occurs upon a default in the payment of interest which continues for a period of 30 days."
+  },
+  {
+    "id": "S11",
+    "title": "ABL credit agreement, Exhibit 10.1 (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2020-03-31",
+    "url": "https://example.com/corvane/abl-credit-agreement-2020",
+    "type": "primary",
+    "quote": "Credit Agreement dated as of March 31, 2020, with Aggregate Commitments of $200 million. Applicable Margin means 2.25% per annum for SOFR Loans. Maturity Date means March 31, 2027."
+  },
+  {
+    "id": "S12",
+    "title": "Term loan credit agreement, Exhibit 10.1 (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2021-06-30",
+    "url": "https://example.com/corvane/term-loan-agreement-2021",
+    "type": "primary",
+    "quote": "Term Loan Credit Agreement dated as of June 30, 2021, for Term Loans in an aggregate principal amount of $402 million. Applicable Rate means 4.50% per annum for Term SOFR Loans. Maturity Date means June 30, 2028. The Borrower shall repay 0.25% of the original principal amount quarterly."
+  },
+  {
+    "id": "S13",
+    "title": "Corvane Logistics Form 12b-25, notice of late filing for the Q3 2026 Form 10-Q (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-11-10",
+    "url": "https://example.com/corvane/nt-10-q-2026-q3",
+    "type": "primary",
+    "quote": "Filed November 10, 2026. The Company requires additional time to complete its assessment of liquidity and its ability to continue as a going concern. The Company expects to file the Form 10-Q no later than November 16, 2026, within the five-day extension period."
+  },
+  {
+    "id": "S14",
+    "title": "Corvane Logistics Form 10-K for fiscal 2021, Note 9, Debt (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2022-03-14",
+    "url": "https://example.com/corvane/10-k-2021#note-9",
+    "type": "primary",
+    "quote": "December 31, 2021 (in thousands) ABL Facility 40,000 Term Loan B 400,000 6.875% Senior Notes 170,000. Interest paid in 2021: ABL Facility 1,000; Term Loan B 20,000; Senior Notes 11,700."
+  },
+  {
+    "id": "S15",
+    "title": "Corvane Logistics Form 10-K for fiscal 2022, Note 9, Debt (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2023-03-13",
+    "url": "https://example.com/corvane/10-k-2022#note-9",
+    "type": "primary",
+    "quote": "December 31, 2022 (in thousands) ABL Facility 65,000 Term Loan B 396,000 Equipment notes 24,000 6.875% Senior Notes 170,000. In 2022, the Company began financing tractors and trailers with equipment notes. Interest paid in 2022: ABL Facility 2,300; Term Loan B 25,900; Equipment notes 1,000; Senior Notes 11,700. Borrowings in 2022: ABL Facility 25,000; Equipment notes 26,000. Repayments in 2022: Term Loan B 4,000; Equipment notes 2,000."
+  },
+  {
+    "id": "S16",
+    "title": "Corvane Logistics Form 10-K for fiscal 2023, Note 9, Debt (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2024-03-12",
+    "url": "https://example.com/corvane/10-k-2023#note-9",
+    "type": "primary",
+    "quote": "December 31, 2023 (in thousands) ABL Facility 112,000 Term Loan B 392,000 Equipment notes 68,000 6.875% Senior Notes 170,000. Interest paid in 2023: ABL Facility 6,600; Term Loan B 37,800; Equipment notes 3,700; Senior Notes 11,700. Borrowings in 2023: ABL Facility 47,000; Equipment notes 52,000. Repayments in 2023: Term Loan B 4,000; Equipment notes 8,000."
+  },
+  {
+    "id": "S17",
+    "title": "Corvane Logistics Form 10-K for fiscal 2024, Note 9, Debt (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2025-03-14",
+    "url": "https://example.com/corvane/10-k-2024#note-9",
+    "type": "primary",
+    "quote": "December 31, 2024 (in thousands) ABL Facility 158,000 Term Loan B 388,000 Equipment notes 102,000 6.875% Senior Notes 170,000. Interest paid in 2024: ABL Facility 10,300; Term Loan B 38,200; Equipment notes 6,900; Senior Notes 11,700. Borrowings in 2024: ABL Facility 46,000; Equipment notes 48,000. Repayments in 2024: Term Loan B 4,000; Equipment notes 14,000."
+  },
+  {
+    "id": "S18",
+    "title": "Corvane Logistics Form 10-K for fiscal 2025, Note 9, Debt activity (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-16",
+    "url": "https://example.com/corvane/10-k-2025#note-9-activity",
+    "type": "primary",
+    "quote": "December 31, 2025 (in thousands) ABL Facility 184,000 Term Loan B 384,000 Equipment notes 136,000 6.875% Senior Notes 170,000. Interest paid in 2025: ABL Facility 11,200; Term Loan B 34,000; Equipment notes 9,600; Senior Notes 11,700. Borrowings in 2025: ABL Facility 26,000; Equipment notes 52,000. Repayments in 2025: Term Loan B 4,000; Equipment notes 18,000."
+  },
+  {
+    "id": "S19",
+    "title": "Corvane Logistics fourth quarter 2025 results release, Exhibit 99.1 (fictional)",
+    "publisher": "Corvane Logistics Inc. (fictional sample)",
+    "date": "2026-03-05",
+    "url": "https://example.com/corvane/q4-2025-release",
+    "type": "primary",
+    "quote": "March 5, 2026. Adjusted EBITDA was $52.1 million for the year ended December 31, 2025. Adjusted EBITDA excludes fleet transition costs of $19.2 million for the year ended December 31, 2025."
+  }
+]

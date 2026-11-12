@@ -1,0 +1,224 @@
+{
+  "name": "Corvane Logistics Inc.",
+  "ticker": "CRVN",
+  "exchange": "Fictional sample",
+  "slug": "corvane",
+  "as_of": "2026-11-12",
+  "chart_unit": "USD millions",
+  "situation": "pre-default",
+  "fictional": true,
+  "parts": [
+    {
+      "id": "why-look",
+      "title": "Why it is worth a look",
+      "reads": [
+        "*"
+      ]
+    },
+    {
+      "id": "credit-analyst",
+      "title": "Distressed credit analyst",
+      "reads": [
+        "Capital structure and debt",
+        "Debt timeline",
+        "Restructuring terms",
+        "Key dates",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "restructuring-counsel",
+      "title": "Restructuring counsel",
+      "reads": [
+        "Capital structure and debt",
+        "Restructuring terms",
+        "Key dates",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "liquidity-treasury",
+      "title": "Liquidity and treasury",
+      "reads": [
+        "Capital structure and debt",
+        "Results by year",
+        "Recent results",
+        "Key dates",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "forensic-accountant",
+      "title": "Forensic accountant",
+      "reads": [
+        "Results by year",
+        "Recent results",
+        "Accounting and controls",
+        "Gaps"
+      ]
+    },
+    {
+      "id": "industry-operator",
+      "title": "Industry operator",
+      "reads": [
+        "Business",
+        "Results by year",
+        "Recent results"
+      ]
+    },
+    {
+      "id": "catalyst-tracker",
+      "title": "Catalyst tracker",
+      "reads": [
+        "Key dates",
+        "Recent results",
+        "Restructuring terms"
+      ]
+    },
+    {
+      "id": "skeptic",
+      "title": "Skeptic",
+      "reads": [
+        "*"
+      ]
+    }
+  ],
+  "artifacts": {
+    "facts": null,
+    "lenses": null
+  },
+  "lens_inputs": {
+    "why-look": {
+      "date": "2026-11-12",
+      "sections": {
+        "Business": "e0b77e3c6fc3a0d9",
+        "Capital structure and debt": "cdbe90719f387b85",
+        "Results by year": "ee198f9802801b1d",
+        "Recent results": "529b75877eca9b33",
+        "Key dates": "fcb7c9dddc8d753f",
+        "Debt timeline": "6934dc4c2f54e32d",
+        "Accounting and controls": "26ea2e924dee5db5",
+        "Gaps": "69c6acf11f69e6d3"
+      },
+      "sources": {
+        "S7": "ebefff8240698f46",
+        "S13": "aeb3b2149cf4cf3b",
+        "S9": "8559a81dbb4887ae",
+        "S11": "85735e95fbcabafc",
+        "S10": "e32d1d6c2685fd4a",
+        "S3": "a55e4d7bf24f4055",
+        "S2": "3fe77d60434c87e4",
+        "S4": "1eb88fab07c4e84f",
+        "S5": "7c8cffeb50ffb9ac"
+      }
+    },
+    "credit-analyst": {
+      "date": "2026-11-12",
+      "sections": {
+        "Capital structure and debt": "cdbe90719f387b85",
+        "Debt timeline": "6934dc4c2f54e32d",
+        "Restructuring terms": "missing",
+        "Key dates": "fcb7c9dddc8d753f",
+        "Gaps": "69c6acf11f69e6d3"
+      },
+      "sources": {
+        "S7": "ebefff8240698f46",
+        "S6": "da7b9689777532c2",
+        "S11": "85735e95fbcabafc",
+        "S10": "e32d1d6c2685fd4a",
+        "S12": "e0decbe249bb5153"
+      }
+    },
+    "restructuring-counsel": {
+      "date": "2026-11-12",
+      "sections": {
+        "Capital structure and debt": "cdbe90719f387b85",
+        "Restructuring terms": "missing",
+        "Key dates": "fcb7c9dddc8d753f",
+        "Gaps": "69c6acf11f69e6d3"
+      },
+      "sources": {
+        "S9": "8559a81dbb4887ae",
+        "S10": "e32d1d6c2685fd4a",
+        "S7": "ebefff8240698f46"
+      }
+    },
+    "liquidity-treasury": {
+      "date": "2026-11-12",
+      "sections": {
+        "Capital structure and debt": "cdbe90719f387b85",
+        "Results by year": "ee198f9802801b1d",
+        "Recent results": "529b75877eca9b33",
+        "Key dates": "fcb7c9dddc8d753f",
+        "Gaps": "69c6acf11f69e6d3"
+      },
+      "sources": {
+        "S7": "ebefff8240698f46",
+        "S2": "3fe77d60434c87e4"
+      }
+    },
+    "forensic-accountant": {
+      "date": "2026-11-12",
+      "sections": {
+        "Results by year": "ee198f9802801b1d",
+        "Recent results": "529b75877eca9b33",
+        "Accounting and controls": "26ea2e924dee5db5",
+        "Gaps": "69c6acf11f69e6d3"
+      },
+      "sources": {
+        "S5": "7c8cffeb50ffb9ac",
+        "S7": "ebefff8240698f46",
+        "S8": "45e4fc3b2b2e0751",
+        "S19": "390cfd256aeffd6f",
+        "S2": "3fe77d60434c87e4"
+      }
+    },
+    "industry-operator": {
+      "date": "2026-11-12",
+      "sections": {
+        "Business": "e0b77e3c6fc3a0d9",
+        "Results by year": "ee198f9802801b1d",
+        "Recent results": "529b75877eca9b33"
+      },
+      "sources": {
+        "S1": "fcf25aaaf6cc2030",
+        "S3": "a55e4d7bf24f4055",
+        "S2": "3fe77d60434c87e4",
+        "S7": "ebefff8240698f46"
+      }
+    },
+    "catalyst-tracker": {
+      "date": "2026-11-12",
+      "sections": {
+        "Key dates": "fcb7c9dddc8d753f",
+        "Recent results": "529b75877eca9b33",
+        "Restructuring terms": "missing"
+      },
+      "sources": {
+        "S7": "ebefff8240698f46",
+        "S13": "aeb3b2149cf4cf3b",
+        "S9": "8559a81dbb4887ae",
+        "S11": "85735e95fbcabafc",
+        "S10": "e32d1d6c2685fd4a"
+      }
+    },
+    "skeptic": {
+      "date": "2026-11-12",
+      "sections": {
+        "Business": "e0b77e3c6fc3a0d9",
+        "Capital structure and debt": "cdbe90719f387b85",
+        "Results by year": "ee198f9802801b1d",
+        "Recent results": "529b75877eca9b33",
+        "Key dates": "fcb7c9dddc8d753f",
+        "Debt timeline": "6934dc4c2f54e32d",
+        "Accounting and controls": "26ea2e924dee5db5",
+        "Gaps": "69c6acf11f69e6d3"
+      },
+      "sources": {
+        "S13": "aeb3b2149cf4cf3b",
+        "S7": "ebefff8240698f46",
+        "S8": "45e4fc3b2b2e0751"
+      }
+    }
+  }
+}

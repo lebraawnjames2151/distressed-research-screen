@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Asset-based revolving credit facility (ABL Facility)",
+    "short": "ABL revolver",
+    "in_case": false,
+    "security": { "value": "secured", "src": ["S6"] },
+    "amount": { "value": "$196.0 million drawn at Jun 30, 2026, against commitments of $200 million", "src": ["S7"] },
+    "issued": { "value": "Mar 31, 2020", "src": ["S11"] },
+    "issued_date": "2020-03-31",
+    "maturity": { "value": "Mar 31, 2027", "src": ["S11"] },
+    "maturity_date": "2027-03-31",
+    "coupon": { "value": "SOFR plus 2.25%; 2.00% more under the forbearance to Nov 30, 2026", "src": ["S11", "S9"] },
+    "pricing": { "note": "bank facility; no issue price" },
+    "current": { "note": "bank facility; no market quote" },
+    "chart": { "outstanding": 196.0, "limit": 200, "unit": "USD millions", "as_of": "2026-06-30", "src": ["S7"] }
+  },
+  {
+    "name": "First-lien Term Loan B due 2028",
+    "short": "Term loan B",
+    "in_case": false,
+    "security": { "value": "secured", "src": ["S6"] },
+    "amount": { "value": "$382.0 million at Jun 30, 2026; $402 million at signing, repaid at 0.25% a quarter", "src": ["S7", "S12"] },
+    "issued": { "value": "Jun 30, 2021", "src": ["S12"] },
+    "issued_date": "2021-06-30",
+    "maturity": { "value": "Jun 30, 2028", "src": ["S12"] },
+    "maturity_date": "2028-06-30",
+    "coupon": { "value": "SOFR plus 4.50%", "src": ["S12"] },
+    "pricing": { "note": "issue price not found in the sources read" },
+    "current": { "note": "no loan price was reached" },
+    "chart": { "outstanding": 382.0, "unit": "USD millions", "as_of": "2026-06-30", "src": ["S7"] }
+  },
+  {
+    "name": "Equipment notes",
+    "short": "Equipment notes",
+    "in_case": false,
+    "security": { "value": "secured", "src": ["S6"] },
+    "amount": { "value": "$131.0 million at Jun 30, 2026", "src": ["S7"] },
+    "issued": { "value": "from 2022, as tractors and trailers are bought", "src": ["S15"] },
+    "maturity": { "value": "various dates from 2027 through 2031", "src": ["S6"] },
+    "coupon": { "value": "fixed, 8.1% weighted average", "src": ["S6"] },
+    "pricing": { "note": "issued at many dates; no issue price found" },
+    "current": { "note": "privately financed; no market quote" },
+    "chart": { "outstanding": 131.0, "unit": "USD millions", "as_of": "2026-06-30", "src": ["S7"] }
+  },
+  {
+    "name": "6.875% Senior Notes due 2027",
+    "short": "6.875% notes",
+    "in_case": false,
+    "security": { "value": "unsecured", "src": ["S6"] },
+    "amount": { "value": "$170.0 million at Jun 30, 2026", "src": ["S7"] },
+    "issued": { "value": "Nov 15, 2019, $170 million", "src": ["S10"] },
+    "issued_date": "2019-11-15",
+    "maturity": { "value": "May 15, 2027", "src": ["S10"] },
+    "maturity_date": "2027-05-15",
+    "coupon": { "value": "6.875% fixed, paid May 15 and Nov 15; $5.8 million due Nov 15, 2026", "src": ["S10", "S7"] },
+    "pricing": { "note": "issue price not found in the sources read" },
+    "current": { "note": "no note price was reached" },
+    "dates": [{ "date": "2026-11-15", "label": "interest of $5.8 million due", "src": ["S7"] }],
+    "chart": { "outstanding": 170.0, "unit": "USD millions", "as_of": "2026-06-30", "src": ["S7"] }
+  }
+]

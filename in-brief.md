@@ -1,0 +1,6 @@
+- Corvane Logistics is a US truckload carrier with about 3,100 tractors. It is a fictional company, made up to show the page template. [S1]
+- Revenue fell for a third year, to $968.4 million in fiscal 2025 from $1,087.2 million in fiscal 2024. [S2]
+- The fiscal 2025 10-K states substantial doubt about the ability to continue as a going concern. [S4]
+- Total debt was $879.0 million at Jun 30, 2026, against cash of $31.2 million. [S7]
+- ABL lenders agreed to forbear on a covenant default until Nov 30, 2026. [S9]
+- The Q3 2026 10-Q is due by Nov 16, 2026, after a notice of late filing. [S13]

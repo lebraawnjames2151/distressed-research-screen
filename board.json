@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "CRVN": {
+    "status": "working",
+    "note": "Sample view, written to show where a person's view goes. The week of Nov 16 settles more than any filing so far.",
+    "by": "analyst",
+    "date": "2026-11-12",
+    "points": [
+      "The week of Nov 16 settles more than any filing so far: the coupon, the 10-Q and the forbearance clock all land within two weeks.",
+      "Liquidity and counsel read the coupon differently. I read the 10-Q for ABL availability before taking a side.",
+      "The quality flags limit how much weight fiscal 2025 adjusted EBITDA can carry. I treat leverage as a range."
+    ],
+    "check_first": [
+      "Q3 cash and ABL availability, from the 10-Q.",
+      "Whether the coupon is paid, from the 8-K.",
+      "A price on the notes from the desk. The brief has none."
+    ],
+    "moves": [
+      "To watching: the coupon is paid and the forbearance runs past Mar 2027.",
+      "To passed: the 2027 maturities are refinanced in full."
+    ],
+    "next": "Nov 17, 2026, after the 10-Q and the coupon date."
+  }
+}

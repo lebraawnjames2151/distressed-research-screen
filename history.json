@@ -1,0 +1,25 @@
+[
+  { "instrument": "ABL revolver", "date": "2021-12-31", "usd_thousands": 40000, "interest_paid_usd_thousands": 1000, "basis": "principal", "src": ["S14"] },
+  { "instrument": "Term loan B", "date": "2021-12-31", "usd_thousands": 400000, "interest_paid_usd_thousands": 20000, "basis": "principal", "src": ["S14"] },
+  { "instrument": "6.875% notes", "date": "2021-12-31", "usd_thousands": 170000, "interest_paid_usd_thousands": 11700, "basis": "principal", "src": ["S14"] },
+
+  { "instrument": "ABL revolver", "date": "2022-12-31", "usd_thousands": 65000, "interest_paid_usd_thousands": 2300, "borrowed_usd_thousands": 25000, "basis": "principal", "src": ["S15"] },
+  { "instrument": "Term loan B", "date": "2022-12-31", "usd_thousands": 396000, "interest_paid_usd_thousands": 25900, "repaid_usd_thousands": 4000, "basis": "principal", "src": ["S15"] },
+  { "instrument": "Equipment notes", "date": "2022-12-31", "usd_thousands": 24000, "interest_paid_usd_thousands": 1000, "borrowed_usd_thousands": 26000, "repaid_usd_thousands": 2000, "basis": "principal", "src": ["S15"] },
+  { "instrument": "6.875% notes", "date": "2022-12-31", "usd_thousands": 170000, "interest_paid_usd_thousands": 11700, "basis": "principal", "src": ["S15"] },
+
+  { "instrument": "ABL revolver", "date": "2023-12-31", "usd_thousands": 112000, "interest_paid_usd_thousands": 6600, "borrowed_usd_thousands": 47000, "basis": "principal", "src": ["S16"] },
+  { "instrument": "Term loan B", "date": "2023-12-31", "usd_thousands": 392000, "interest_paid_usd_thousands": 37800, "repaid_usd_thousands": 4000, "basis": "principal", "src": ["S16"] },
+  { "instrument": "Equipment notes", "date": "2023-12-31", "usd_thousands": 68000, "interest_paid_usd_thousands": 3700, "borrowed_usd_thousands": 52000, "repaid_usd_thousands": 8000, "basis": "principal", "src": ["S16"] },
+  { "instrument": "6.875% notes", "date": "2023-12-31", "usd_thousands": 170000, "interest_paid_usd_thousands": 11700, "basis": "principal", "src": ["S16"] },
+
+  { "instrument": "ABL revolver", "date": "2024-12-31", "usd_thousands": 158000, "interest_paid_usd_thousands": 10300, "borrowed_usd_thousands": 46000, "basis": "principal", "src": ["S17"] },
+  { "instrument": "Term loan B", "date": "2024-12-31", "usd_thousands": 388000, "interest_paid_usd_thousands": 38200, "repaid_usd_thousands": 4000, "basis": "principal", "src": ["S17"] },
+  { "instrument": "Equipment notes", "date": "2024-12-31", "usd_thousands": 102000, "interest_paid_usd_thousands": 6900, "borrowed_usd_thousands": 48000, "repaid_usd_thousands": 14000, "basis": "principal", "src": ["S17"] },
+  { "instrument": "6.875% notes", "date": "2024-12-31", "usd_thousands": 170000, "interest_paid_usd_thousands": 11700, "basis": "principal", "src": ["S17"] },
+
+  { "instrument": "ABL revolver", "date": "2025-12-31", "usd_thousands": 184000, "interest_paid_usd_thousands": 11200, "borrowed_usd_thousands": 26000, "basis": "principal", "src": ["S18"] },
+  { "instrument": "Term loan B", "date": "2025-12-31", "usd_thousands": 384000, "interest_paid_usd_thousands": 34000, "repaid_usd_thousands": 4000, "basis": "principal", "src": ["S18"] },
+  { "instrument": "Equipment notes", "date": "2025-12-31", "usd_thousands": 136000, "interest_paid_usd_thousands": 9600, "borrowed_usd_thousands": 52000, "repaid_usd_thousands": 18000, "basis": "principal", "src": ["S18"] },
+  { "instrument": "6.875% notes", "date": "2025-12-31", "usd_thousands": 170000, "interest_paid_usd_thousands": 11700, "basis": "principal", "src": ["S18"] }
+]
